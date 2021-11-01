@@ -1,0 +1,1564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.props" Condition="Exists('packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9764BCC2-6DC0-4C26-AB7E-A7F3F98641ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NinjaSystem</RootNamespace>
+    <AssemblyName>NinjaSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_Camera_669941.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DotRas">
+      <HintPath>..\NinjaCare\bin\Debug\DotRas.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=3.4.3.3016, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NinjaSystemRoot\bin\Debug\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.0.5.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\NinjaCare\bin\Debug\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>..\NinjaCare\bin\Debug\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="KAutoHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\KAutoHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MihaZupan.HttpToSocks5Proxy">
+      <HintPath>packages\HttpToSocks5Proxy.1.4.0\lib\net45\MihaZupan.HttpToSocks5Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCV.Net">
+      <HintPath>..\NinjaSystemRoot\bin\Debug\OpenCV.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>..\Rest\Rest\bin\Debug\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\NinjaUnlock\MvcApplication1\bin\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpAdbClient, Version=2.2.0.0, Culture=neutral, PublicKeyToken=d728076f5d82a2e8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SharpAdbClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.89.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xNet, Version=3.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\xNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\changeIpHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\Class18.cs" />
+    <Compile Include="Controller\DcomHelper.cs" />
+    <Compile Include="Controller\ExcelController.cs" />
+    <Compile Include="Controller\HotspotController.cs" />
+    <Compile Include="Controller\LDController.cs" />
+    <Compile Include="Controller\LiteController.cs" />
+    <Compile Include="Controller\PointDefault.cs" />
+    <Compile Include="Controller\Profile_Controller.cs" />
+    <Compile Include="Controller\TaskController.cs" />
+    <Compile Include="Controller\xProxyController.cs" />
+    <Compile Include="Controller\YahooController.cs" />
+    <Compile Include="Data\controlUpdate.cs" />
+    <Compile Include="Controller\FunctionHelper.cs" />
+    <Compile Include="Controller\ImageScanOpenCV.cs" />
+    <Compile Include="Controller\NativeWin32.cs" />
+    <Compile Include="Controller\NinjaADB.cs" />
+    <Compile Include="Controller\ninjaDroidHelper.cs" />
+    <Compile Include="Controller\SendTextKeyBoard.cs" />
+    <Compile Include="Controller\VKey.cs" />
+    <Compile Include="Data\DanhMuc_Bll.cs" />
+    <Compile Include="Data\Data.cs" />
+    <Compile Include="Data\DetailLD_BLL.cs" />
+    <Compile Include="Data\GroupLD_BLL.cs" />
+    <Compile Include="Data\Nhom_Bll.cs" />
+    <Compile Include="Data\CauHinh_Bll.cs" />
+    <Compile Include="Data\NguoiDung_Bll.cs" />
+    <Compile Include="frm_RegisterHana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RegisterHana.Designer.cs">
+      <DependentUpon>frm_RegisterHana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Config.Designer.cs">
+      <DependentUpon>frm_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ExportAcc_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ExportAcc_PRO.Designer.cs">
+      <DependentUpon>frm_ExportAcc_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login_PRO.Designer.cs">
+      <DependentUpon>frm_Login_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_2Fa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_2Fa.Designer.cs">
+      <DependentUpon>frm_2Fa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddFriendLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AddFriendLD.Designer.cs">
+      <DependentUpon>frm_AddFriendLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddFriendLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AddFriendLD_PRO.Designer.cs">
+      <DependentUpon>frm_AddFriendLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CancelRequestLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CancelRequestLD.Designer.cs">
+      <DependentUpon>frm_CancelRequestLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CancelRequestLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CancelRequestLD_PRO.Designer.cs">
+      <DependentUpon>frm_CancelRequestLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CommentGroupLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CommentGroupLD.Designer.cs">
+      <DependentUpon>frm_CommentGroupLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ImportAccountLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ImportAccountLD.Designer.cs">
+      <DependentUpon>frm_ImportAccountLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ImportAccountLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ImportAccountLD_PRO.Designer.cs">
+      <DependentUpon>frm_ImportAccountLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_JoinGroupManualLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_JoinGroupManualLD.Designer.cs">
+      <DependentUpon>frm_JoinGroupManualLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_JoinGroupManualLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_JoinGroupManualLD_PRO.Designer.cs">
+      <DependentUpon>frm_JoinGroupManualLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LoginLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LoginLD.Designer.cs">
+      <DependentUpon>frm_LoginLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LoginLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LoginLD_PRO.Designer.cs">
+      <DependentUpon>frm_LoginLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LoginMessenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LoginMessenger.Designer.cs">
+      <DependentUpon>frm_LoginMessenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MainLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MainLD.Designer.cs">
+      <DependentUpon>frm_MainLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Makemoney_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Makemoney_PRO.Designer.cs">
+      <DependentUpon>frm_Makemoney_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ReactionLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ReactionLD_PRO.Designer.cs">
+      <DependentUpon>frm_ReactionLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ProxyInfo_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ProxyInfo_PRO.Designer.cs">
+      <DependentUpon>frm_ProxyInfo_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Profile_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Profile_PRO.Designer.cs">
+      <DependentUpon>frm_Profile_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PostLD_Group_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PostLD_Group_PRO.Designer.cs">
+      <DependentUpon>frm_PostLD_Group_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PostLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PostLD_PRO.Designer.cs">
+      <DependentUpon>frm_PostLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddGroup_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AddGroup_PRO.Designer.cs">
+      <DependentUpon>frm_AddGroup_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CommentGroupLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CommentGroupLD_PRO.Designer.cs">
+      <DependentUpon>frm_CommentGroupLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Config_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Config_PRO.Designer.cs">
+      <DependentUpon>frm_Config_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCopy.Designer.cs">
+      <DependentUpon>frmCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportContact.Designer.cs">
+      <DependentUpon>frmImportContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_InviteLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_InviteLD_PRO.Designer.cs">
+      <DependentUpon>frm_InviteLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LeaveGroup_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LeaveGroup_PRO.Designer.cs">
+      <DependentUpon>frm_LeaveGroup_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ShareNhomLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ShareNhomLD_PRO.Designer.cs">
+      <DependentUpon>frm_ShareNhomLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Account.Designer.cs">
+      <DependentUpon>frm_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Getbirthday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Getbirthday.Designer.cs">
+      <DependentUpon>frm_Getbirthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ImportContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ImportContact.Designer.cs">
+      <DependentUpon>frm_ImportContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LeaveGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LeaveGroup.Designer.cs">
+      <DependentUpon>frm_LeaveGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MainLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MainLD_PRO.Designer.cs">
+      <DependentUpon>frm_MainLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Profile.Designer.cs">
+      <DependentUpon>frm_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PostLD_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PostLD_Group.Designer.cs">
+      <DependentUpon>frm_PostLD_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DNSInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DNSInfo.Designer.cs">
+      <DependentUpon>frm_DNSInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ReactionLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ReactionLD.Designer.cs">
+      <DependentUpon>frm_ReactionLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DangKy.Designer.cs">
+      <DependentUpon>frm_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ListDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListDelete.Designer.cs">
+      <DependentUpon>frm_ListDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ProxyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ProxyInfo.Designer.cs">
+      <DependentUpon>frm_ProxyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Schedule.Designer.cs">
+      <DependentUpon>frm_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TemplateLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TemplateLink.Designer.cs">
+      <DependentUpon>frm_TemplateLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TransUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TransUser.Designer.cs">
+      <DependentUpon>frm_TransUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AddGroup.Designer.cs">
+      <DependentUpon>frm_AddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AddUser.Designer.cs">
+      <DependentUpon>frm_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Copy.Designer.cs">
+      <DependentUpon>frm_Copy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateLD.Designer.cs">
+      <DependentUpon>frm_CreateLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_InviteLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_InviteLD.Designer.cs">
+      <DependentUpon>frm_InviteLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddGroupLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AddGroupLD.Designer.cs">
+      <DependentUpon>frm_AddGroupLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_confirm.Designer.cs">
+      <DependentUpon>frm_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GroupLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_GroupLD.Designer.cs">
+      <DependentUpon>frm_GroupLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Import.Designer.cs">
+      <DependentUpon>frm_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_2Fa_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_2Fa_PRO.Designer.cs">
+      <DependentUpon>frm_2Fa_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PostManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PostManager.Designer.cs">
+      <DependentUpon>frm_PostManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuetUID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuetUID.Designer.cs">
+      <DependentUpon>frm_QuetUID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SetVPN1111.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SetVPN1111.Designer.cs">
+      <DependentUpon>frm_SetVPN1111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reactionMyfriendgroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reactionMyfriendgroup.Designer.cs">
+      <DependentUpon>frm_reactionMyfriendgroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TuongTacLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TuongTacLD.Designer.cs">
+      <DependentUpon>frm_TuongTacLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reactionMyfriendgroup_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reactionMyfriendgroup_PRO.Designer.cs">
+      <DependentUpon>frm_reactionMyfriendgroup_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_regnick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_regnick.Designer.cs">
+      <DependentUpon>frm_regnick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TuongTacLD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TuongTacLD_PRO.Designer.cs">
+      <DependentUpon>frm_TuongTacLD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PostLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PostLD.Designer.cs">
+      <DependentUpon>frm_PostLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MoveGroupLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MoveGroupLD.Designer.cs">
+      <DependentUpon>frm_MoveGroupLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SettingAddFriend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SettingAddFriend.Designer.cs">
+      <DependentUpon>frm_SettingAddFriend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ShareNhomLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ShareNhomLD.Designer.cs">
+      <DependentUpon>frm_ShareNhomLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Unlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Unlock.Designer.cs">
+      <DependentUpon>frm_Unlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Unlock_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Unlock_PRO.Designer.cs">
+      <DependentUpon>frm_Unlock_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update.Designer.cs">
+      <DependentUpon>frm_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ManageAccountLd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ManageAccountLd.Designer.cs">
+      <DependentUpon>frm_ManageAccountLd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LoginMessenger_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LoginMessenger_PRO.Designer.cs">
+      <DependentUpon>frm_LoginMessenger_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CareFacebookModel.cs" />
+    <Compile Include="Model\ClientModel.cs" />
+    <Compile Include="Model\ConfigForm\ConfigAdd.cs" />
+    <Compile Include="Model\ConfigForm\ConfigFormAddFriendContact.cs" />
+    <Compile Include="Model\ConfigForm\ConfigFormJoinGroupManual.cs" />
+    <Compile Include="Model\ConfigForm\ConfigFormProfile.cs" />
+    <Compile Include="Model\ConfigForm\ConfigPost.cs" />
+    <Compile Include="Model\configmakemoney.cs" />
+    <Compile Include="Model\DanhMucModel.cs" />
+    <Compile Include="Model\DatabaseConfig.cs" />
+    <Compile Include="Model\DetailLDModel.cs" />
+    <Compile Include="Model\DetechImageModel.cs" />
+    <Compile Include="Model\DetechModel.cs" />
+    <Compile Include="Model\fbmoney.cs" />
+    <Compile Include="Model\GroupFB.cs" />
+    <Compile Include="Model\GroupLDModel.cs" />
+    <Compile Include="Model\Groups.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Controller\CustomerController.cs" />
+    <Compile Include="Model\AccountNinja.cs" />
+    <Compile Include="Model\AppModel.cs" />
+    <Compile Include="Model\comboboxItem.cs" />
+    <Compile Include="Model\ImeiModel.cs" />
+    <Compile Include="Model\job.cs" />
+    <Compile Include="Model\LDModel.cs" />
+    <Compile Include="Model\PositionLD.cs" />
+    <Compile Include="Model\Proxyv6.cs" />
+    <Compile Include="Model\regnick.cs" />
+    <Compile Include="Model\RegnickModel.cs" />
+    <Compile Include="Model\Schedule.cs" />
+    <Compile Include="Model\Schedule\PostModel.cs" />
+    <Compile Include="Model\SettingApp.cs" />
+    <Compile Include="Model\SettingModel.cs" />
+    <Compile Include="Model\CustomerTrialModel.cs" />
+    <Compile Include="Model\FacebookModel.cs" />
+    <Compile Include="Model\ResultRequest.cs" />
+    <Compile Include="Model\SettingTool.cs" />
+    <Compile Include="Model\SettingTuongTac.cs" />
+    <Compile Include="Model\SetupAdmin.cs" />
+    <Compile Include="Model\TinSoftModel.cs" />
+    <Compile Include="Model\TMproxyModel.cs" />
+    <Compile Include="Model\TwoFaModel.cs" />
+    <Compile Include="Model\Update.cs" />
+    <Compile Include="Program.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="runLDs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="runLDs.Designer.cs">
+      <DependentUpon>runLDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncAccount.Designer.cs">
+      <DependentUpon>SyncAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userLD.Designer.cs">
+      <DependentUpon>userLD.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_2Fa.resx">
+      <DependentUpon>frm_2Fa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AddFriendLD.resx">
+      <DependentUpon>frm_AddFriendLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AddFriendLD_PRO.resx">
+      <DependentUpon>frm_AddFriendLD_PRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RegisterHana.resx">
+      <DependentUpon>frm_RegisterHana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CancelRequestLD.resx">
+      <DependentUpon>frm_CancelRequestLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CancelRequestLD_PRO.resx">
+      <DependentUpon>frm_CancelRequestLD_PRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CommentGroupLD.resx">
+      <DependentUpon>frm_CommentGroupLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Config.resx">
+      <DependentUpon>frm_Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ImportAccountLD.resx">
+      <DependentUpon>frm_ImportAccountLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ImportAccountLD_PRO.resx">
+      <DependentUpon>frm_ImportAccountLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_JoinGroupManualLD.resx">
+      <DependentUpon>frm_JoinGroupManualLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_JoinGroupManualLD_PRO.resx">
+      <DependentUpon>frm_JoinGroupManualLD_PRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LoginLD.resx">
+      <DependentUpon>frm_LoginLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ExportAcc_PRO.resx">
+      <DependentUpon>frm_ExportAcc_PRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LoginLD_PRO.resx">
+      <DependentUpon>frm_LoginLD_PRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LoginMessenger.resx">
+      <DependentUpon>frm_LoginMessenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login_PRO.resx">
+      <DependentUpon>frm_Login_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainLD.resx">
+      <DependentUpon>frm_MainLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Makemoney_PRO.resx">
+      <DependentUpon>frm_Makemoney_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ReactionLD_PRO.resx">
+      <DependentUpon>frm_ReactionLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ProxyInfo_PRO.resx">
+      <DependentUpon>frm_ProxyInfo_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Profile_PRO.resx">
+      <DependentUpon>frm_Profile_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PostLD_Group_PRO.resx">
+      <DependentUpon>frm_PostLD_Group_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PostLD_PRO.resx">
+      <DependentUpon>frm_PostLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AddGroup_PRO.resx">
+      <DependentUpon>frm_AddGroup_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CommentGroupLD_PRO.resx">
+      <DependentUpon>frm_CommentGroupLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Config_PRO.resx">
+      <DependentUpon>frm_Config_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCopy.resx">
+      <DependentUpon>frmCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportContact.resx">
+      <DependentUpon>frmImportContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_InviteLD_PRO.resx">
+      <DependentUpon>frm_InviteLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LeaveGroup_PRO.resx">
+      <DependentUpon>frm_LeaveGroup_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ShareNhomLD_PRO.resx">
+      <DependentUpon>frm_ShareNhomLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Account.resx">
+      <DependentUpon>frm_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Getbirthday.resx">
+      <DependentUpon>frm_Getbirthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ImportContact.resx">
+      <DependentUpon>frm_ImportContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LeaveGroup.resx">
+      <DependentUpon>frm_LeaveGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainLD_PRO.resx">
+      <DependentUpon>frm_MainLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Profile.resx">
+      <DependentUpon>frm_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PostLD_Group.resx">
+      <DependentUpon>frm_PostLD_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DNSInfo.resx">
+      <DependentUpon>frm_DNSInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ReactionLD.resx">
+      <DependentUpon>frm_ReactionLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DangKy.resx">
+      <DependentUpon>frm_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListDelete.resx">
+      <DependentUpon>frm_ListDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ProxyInfo.resx">
+      <DependentUpon>frm_ProxyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Schedule.resx">
+      <DependentUpon>frm_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TemplateLink.resx">
+      <DependentUpon>frm_TemplateLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TransUser.resx">
+      <DependentUpon>frm_TransUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AddGroup.resx">
+      <DependentUpon>frm_AddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AddUser.resx">
+      <DependentUpon>frm_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Copy.resx">
+      <DependentUpon>frm_Copy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateLD.resx">
+      <DependentUpon>frm_CreateLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_InviteLD.resx">
+      <DependentUpon>frm_InviteLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AddGroupLD.resx">
+      <DependentUpon>frm_AddGroupLD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_confirm.resx">
+      <DependentUpon>frm_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_GroupLD.resx">
+      <DependentUpon>frm_GroupLD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Import.resx">
+      <DependentUpon>frm_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_2Fa_PRO.resx">
+      <DependentUpon>frm_2Fa_PRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PostManager.resx">
+      <DependentUpon>frm_PostManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuetUID.resx">
+      <DependentUpon>frm_QuetUID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SetVPN1111.resx">
+      <DependentUpon>frm_SetVPN1111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reactionMyfriendgroup.resx">
+      <DependentUpon>frm_reactionMyfriendgroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TuongTacLD.resx">
+      <DependentUpon>frm_TuongTacLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reactionMyfriendgroup_PRO.resx">
+      <DependentUpon>frm_reactionMyfriendgroup_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_regnick.resx">
+      <DependentUpon>frm_regnick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TuongTacLD_PRO.resx">
+      <DependentUpon>frm_TuongTacLD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PostLD.resx">
+      <DependentUpon>frm_PostLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MoveGroupLD.resx">
+      <DependentUpon>frm_MoveGroupLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SettingAddFriend.resx">
+      <DependentUpon>frm_SettingAddFriend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ShareNhomLD.resx">
+      <DependentUpon>frm_ShareNhomLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Unlock.resx">
+      <DependentUpon>frm_Unlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Unlock_PRO.resx">
+      <DependentUpon>frm_Unlock_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update.resx">
+      <DependentUpon>frm_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ManageAccountLd.resx">
+      <DependentUpon>frm_ManageAccountLd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LoginMessenger_PRO.resx">
+      <DependentUpon>frm_LoginMessenger_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="runLDs.resx">
+      <DependentUpon>runLDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncAccount.resx">
+      <DependentUpon>SyncAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLD.resx">
+      <DependentUpon>userLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\unknow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\unknow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\power-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\power-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\trash-9-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\settings-5-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\upload-3-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\upload-3-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\clouds-2-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\sinchronize-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\sinchronize-24-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\add-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\add-group-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\power-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add2_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circled Play_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit File_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gears_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.1715367.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause Squared_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rename_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sort Down_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sort Up_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash Can_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up Down Arrow _48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\facebook %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\facebook24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-out-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="z2811450293996_4cc3dd6678ec5e51ed312ea0378145ac.jpg" />
+    <None Include="Resources\taotaikhoan.png" />
+    <None Include="Resources\toidau.png" />
+    <None Include="Resources\tao.png" />
+    <None Include="bin\Debug\app\icons8-money-bag-50.png" />
+    <None Include="bin\Debug\app\icons8-money-bag.png" />
+    <Content Include="Resources\0_continue_login.png" />
+    <Content Include="Resources\0_login_dangnhap.png" />
+    <None Include="Resources\tructiep_red.png" />
+    <None Include="Resources\xong_post.png" />
+    <None Include="Resources\unfriend3.png" />
+    <None Include="Resources\unfriend2.png" />
+    <None Include="Resources\thamgia.png" />
+    <None Include="Resources\yellow.png" />
+    <None Include="Resources\timthan.png" />
+    <None Include="Resources\unfriend_4x.png" />
+    <None Include="Resources\zl_noti_red.png" />
+    <None Include="Resources\1x_profile_continue_en.png" />
+    <Content Include="Resources\1_addfriend.png" />
+    <Content Include="Resources\1_alow_access.png" />
+    <Content Include="Resources\1_buttonanswer.png" />
+    <None Include="Resources\unfriend.png" />
+    <None Include="Resources\zl_batdauthaoluan.png" />
+    <None Include="Resources\ninjasystemv4chuan.gif" />
+    <None Include="Resources\1_contactmessenger.png" />
+    <None Include="Resources\1_chatmessenger.png" />
+    <None Include="Resources\1_commentvideo_3x.png" />
+    <None Include="Resources\1_buttonanswer_3x.png" />
+    <None Include="Resources\1_contactmessenger_3x.png" />
+    <Content Include="Resources\1_continue_login.png" />
+    <Content Include="Resources\1_continue_postimage.png" />
+    <None Include="Resources\1_dangnhap.png" />
+    <Content Include="Resources\1_inputid_sodienthoai.png" />
+    <Content Include="Resources\1_inputpass_matkhau.png" />
+    <None Include="Resources\1_invitegroup_en.png" />
+    <Content Include="Resources\1_invite_group.png" />
+    <None Include="Resources\1_invite_group_3x.png" />
+    <Content Include="Resources\1_joingroup.png" />
+    <None Include="Resources\1_joingroup_3x.png" />
+    <Content Include="Resources\1_joingroup_low.png" />
+    <None Include="Resources\1_likevideo_3x.png" />
+    <None Include="Resources\1_login1.png" />
+    <Content Include="Resources\1_login_dangnhap.png" />
+    <None Include="Resources\1_login_dangnhap_3x.png" />
+    <None Include="Resources\1_logout_alldevices.png" />
+    <None Include="Resources\1_logoutdone_3x.png" />
+    <None Include="Resources\1_logout.png" />
+    <Content Include="Resources\1_memu_more.png" />
+    <None Include="Resources\1_onlinemessenger.png" />
+    <None Include="Resources\1_postGroup.png" />
+    <None Include="Resources\1_more_device_3x.png" />
+    <None Include="Resources\1_moredevices_4x.png" />
+    <None Include="Resources\1_password.png" />
+    <None Include="Resources\1_phoneEmail.png" />
+    <None Include="Resources\1_morepage_3x.png" />
+    <None Include="Resources\1_postgroup_en.png" />
+    <None Include="Resources\1_onlinemessenger_3x.png" />
+    <None Include="Resources\1_noilamviec.png" />
+    <Content Include="Resources\1_postimage.png" />
+    <None Include="Resources\1_sharelive_3x.png" />
+    <None Include="Resources\1_postimage_3x.png" />
+    <None Include="Resources\1_sapxong.png" />
+    <None Include="Resources\1_setupaccount.png" />
+    <None Include="Resources\1_sharelive_3xEn.png" />
+    <None Include="Resources\1_quequan.png" />
+    <Content Include="Resources\1_sharevideo.png" />
+    <None Include="Resources\1_sharevideo_hi.png" />
+    <None Include="Resources\2_checkanswer.png" />
+    <None Include="Resources\1_sharevideo_3x.png" />
+    <None Include="Resources\1_xoaloimoigroup.png" />
+    <None Include="Resources\1_truonghoc.png" />
+    <None Include="Resources\1_tinhthanhpho.png" />
+    <Content Include="Resources\2_inputid_sodienthoai.png" />
+    <None Include="Resources\2_inputname.png" />
+    <None Include="Resources\2_inputid_sodienthoai_3x.png" />
+    <Content Include="Resources\2_inputpass_matkhau.png" />
+    <None Include="Resources\2_password_retype.png" />
+    <None Include="Resources\2_password_new.png" />
+    <None Include="Resources\2_password_curent.png" />
+    <None Include="Resources\2_inputpass_matkhau_3x.png" />
+    <None Include="Resources\2_password_new_en1.png" />
+    <None Include="Resources\2_password_curent_en1.png" />
+    <Content Include="Resources\2_post_content.png" />
+    <Content Include="Resources\2_writeanswer.png" />
+    <None Include="Resources\cancelrequest_3x.png" />
+    <Content Include="Resources\3x_2fa_2yeuto.png" />
+    <Content Include="Resources\3x_2fa_input.png" />
+    <Content Include="Resources\3x_addfriend.png" />
+    <Content Include="Resources\3x_addfriend_contact.png" />
+    <None Include="Resources\3x_checkpoint_tam_khoa_1.png" />
+    <None Include="Resources\3x_editaccount.png" />
+    <None Include="Resources\3x_banvietgidi.png" />
+    <None Include="Resources\3x_followfriend.png" />
+    <Content Include="Resources\3x_group_postimg.png" />
+    <None Include="Resources\3x_group_postimg_new.png" />
+    <Content Include="Resources\3x_group_poststatus.png" />
+    <None Include="Resources\3x_hahastory.png" />
+    <None Include="Resources\3x_ho.png" />
+    <None Include="Resources\3x_inputpasstosave.png" />
+    <Content Include="Resources\3x_joingroup_check.png" />
+    <None Include="Resources\3x_likestory.png" />
+    <Content Include="Resources\3x_login_buttonlogin.png" />
+    <Content Include="Resources\3x_login_email.png" />
+    <Content Include="Resources\3x_login_password.png" />
+    <Content Include="Resources\3x_logout_menu.png" />
+    <Content Include="Resources\3x_logout_menu2.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1960.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1961.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1962.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1963.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1964.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1965.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1966.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1967.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1968.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1969.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1970.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1971.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1972.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1974.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1973.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1975.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1976.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1977.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1978.png" />
+    <None Include="Resources\3x_ngay_sinh_nam_1979.png" />
+    <None Include="Resources\3x_lovestory.png" />
+    <None Include="Resources\3x_post_profile_ban_dang_nghi_gi.png" />
+    <None Include="Resources\3x_nothank.png" />
+    <Content Include="Resources\3x_ngay_sinh_1.png" />
+    <Content Include="Resources\3x_ngay_sinh_10.png" />
+    <Content Include="Resources\3x_ngay_sinh_11.png" />
+    <Content Include="Resources\3x_ngay_sinh_12.png" />
+    <Content Include="Resources\3x_ngay_sinh_13.png" />
+    <Content Include="Resources\3x_ngay_sinh_14.png" />
+    <Content Include="Resources\3x_ngay_sinh_15.png" />
+    <Content Include="Resources\3x_ngay_sinh_16.png" />
+    <Content Include="Resources\3x_ngay_sinh_17.png" />
+    <Content Include="Resources\3x_ngay_sinh_18.png" />
+    <Content Include="Resources\3x_ngay_sinh_19.png" />
+    <Content Include="Resources\3x_ngay_sinh_2.png" />
+    <Content Include="Resources\3x_ngay_sinh_20.png" />
+    <Content Include="Resources\3x_ngay_sinh_21.png" />
+    <Content Include="Resources\3x_ngay_sinh_22.png" />
+    <Content Include="Resources\3x_ngay_sinh_23.png" />
+    <Content Include="Resources\3x_ngay_sinh_24.png" />
+    <Content Include="Resources\3x_ngay_sinh_25.png" />
+    <Content Include="Resources\3x_ngay_sinh_26.png" />
+    <Content Include="Resources\3x_ngay_sinh_27.png" />
+    <Content Include="Resources\3x_ngay_sinh_28.png" />
+    <Content Include="Resources\3x_ngay_sinh_29.png" />
+    <Content Include="Resources\3x_ngay_sinh_3.png" />
+    <Content Include="Resources\3x_ngay_sinh_30.png" />
+    <Content Include="Resources\3x_ngay_sinh_31.png" />
+    <Content Include="Resources\3x_ngay_sinh_4.png" />
+    <Content Include="Resources\3x_ngay_sinh_5.png" />
+    <Content Include="Resources\3x_ngay_sinh_6.png" />
+    <Content Include="Resources\3x_ngay_sinh_7.png" />
+    <Content Include="Resources\3x_ngay_sinh_8.png" />
+    <Content Include="Resources\3x_ngay_sinh_9.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1980.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1981.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1982.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1983.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1984.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1985.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1986.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1987.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1988.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1989.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1990.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1991.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1992.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1993.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1994.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1995.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1996.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1997.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1998.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_1999.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2000.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2001.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2002.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2003.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2004.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2005.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2006.png" />
+    <Content Include="Resources\3x_ngay_sinh_nam_2007.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_1.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_10.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_11.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_12.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_13.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_14.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_15.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_16.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_17.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_18.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_19.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_2.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_20.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_21.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_22.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_23.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_24.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_25.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_26.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_27.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_28.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_29.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_3.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_30.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_31.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_4.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_5.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_6.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_7.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_8.png" />
+    <Content Include="Resources\3x_ngay_sinh_thang_9.png" />
+    <Content Include="Resources\3x_profile_changepass.png" />
+    <None Include="Resources\3x_profile_changepass_en1.png" />
+    <Content Include="Resources\3x_profile_changepass_en.png" />
+    <Content Include="Resources\3x_profile_duytri.png" />
+    <None Include="Resources\3x_profile_duytri_en1.png" />
+    <Content Include="Resources\3x_profile_duytri1.png" />
+    <Content Include="Resources\3x_profile_duytri_en.png" />
+    <Content Include="Resources\3x_profile_ho.png" />
+    <Content Include="Resources\3x_profile_password_current.png" />
+    <Content Include="Resources\3x_profile_password_new.png" />
+    <Content Include="Resources\3x_profile_password_retype.png" />
+    <None Include="Resources\3x_profile_password_retype_en.png" />
+    <Content Include="Resources\3x_profile_password_save.png" />
+    <None Include="Resources\3x_profile_password_save_en1.png" />
+    <Content Include="Resources\3x_profile_password_save_en.png" />
+    <Content Include="Resources\3x_profile_saipass.png" />
+    <Content Include="Resources\3x_profile_saipass2.png" />
+    <None Include="Resources\3x_savechange.png" />
+    <Content Include="Resources\3x_sharegroup_dalike.png" />
+    <Content Include="Resources\3x_sharevideo_buttonshare.png" />
+    <None Include="Resources\3x_ten.png" />
+    <None Include="Resources\3x_viewchange.png" />
+    <None Include="Resources\3x_xoabl.png" />
+    <None Include="Resources\4x_login_dangnhap.png" />
+    <None Include="Resources\4x_inputpass_matkhau.png" />
+    <None Include="Resources\4x_phoneEmail.png" />
+    <Content Include="Resources\3x_share_live_button_trang.png" />
+    <Content Include="Resources\3x_share_playlist_3cham.png" />
+    <Content Include="Resources\3x_share_playlist_3cham_trang.png" />
+    <Content Include="Resources\3x_share_playlist_chia_se.png" />
+    <Content Include="Resources\3x_share_playlist_chia_se_trang.png" />
+    <Content Include="Resources\3x_share_playlist_phat.png" />
+    <Content Include="Resources\3x_share_video_khang_spam.png" />
+    <Content Include="Resources\3x_share_video_watch.png" />
+    <Content Include="Resources\3x_share_video_watch_trang.png" />
+    <Content Include="Resources\3x_unfriend_299.png" />
+    <Content Include="Resources\3x_write_group_answer.png" />
+    <None Include="Resources\active_messenger.png" />
+    <Content Include="Resources\addld.png" />
+    <None Include="Resources\black.png" />
+    <None Include="Resources\blueaqua.png" />
+    <None Include="Resources\blueaqua1.png" />
+    <None Include="Resources\bluesky.png" />
+    <Content Include="Resources\avatar.png" />
+    <Content Include="Resources\birthday.png" />
+    <None Include="Resources\caidat.png" />
+    <None Include="Resources\canceladdfriend.png" />
+    <None Include="Resources\canthemthongtin.png" />
+    <Content Include="Resources\check.png" />
+    <None Include="Resources\chinhsuathongtin.png" />
+    <None Include="Resources\chinhsuacongkhai.png" />
+    <Content Include="Resources\Delete Shield_32px.png" />
+    <None Include="Resources\gray.png" />
+    <None Include="Resources\hongtim.png" />
+    <None Include="Resources\followblue.png" />
+    <None Include="Resources\followpage3x.png" />
+    <None Include="Resources\followpage3x1.png" />
+    <None Include="Resources\followEn.png" />
+    <None Include="Resources\dungtenthat.jpg" />
+    <Content Include="Resources\hotspot1.png" />
+    <Content Include="Resources\hotspot2.png" />
+    <None Include="Resources\icons8-broom-40.png" />
+    <Content Include="Resources\icons8-columns-48.png" />
+    <None Include="Resources\lOGO_NINJA.png" />
+    <None Include="Resources\icons8-unlock-64.png" />
+    <None Include="Resources\likepage_3x.png" />
+    <None Include="Resources\naudo.png" />
+    <None Include="Resources\invite_group2_3x.png" />
+    <Content Include="Resources\likepage_3x_299.png" />
+    <None Include="Resources\location.png" />
+    <Content Include="Resources\logoninja.png" />
+    <None Include="Resources\okconfirm.png" />
+    <None Include="Resources\moiquanhe.jpg" />
+    <None Include="Resources\luu.jpg" />
+    <Content Include="Resources\pic.jpg" />
+    <None Include="Resources\regnick1.png" />
+    <None Include="Resources\regnick2.png" />
+    <None Include="Resources\pink.png" />
+    <None Include="Resources\purple.png" />
+    <None Include="Resources\red.png" />
+    <None Include="Resources\post.jpg" />
+    <None Include="Resources\post1.jpg" />
+    <Content Include="Resources\regnick.png" />
+    <Content Include="Resources\regnick3.png" />
+    <Content Include="Resources\regnick4.png" />
+    <Content Include="Resources\regnickpro.png" />
+    <None Include="Resources\send.png" />
+    <None Include="Resources\systempro.jpg" />
+    <None Include="Resources\sudung2yeuto.png" />
+    <None Include="Resources\search_video.png" />
+    <None Include="Resources\save change.png" />
+    <Content Include="Resources\systemV4.png" />
+    <None Include="Resources\System_V4.png" />
+    <None Include="Resources\useAuthen_vn.png" />
+    <None Include="Resources\useAuthen.png" />
+    <None Include="Resources\icons8-columns-481.png" />
+    <None Include="Resources\Cursor_30px.png" />
+    <None Include="Resources\Android OS_48px.png" />
+    <None Include="Resources\Delete Shield_30px.png" />
+    <None Include="Resources\Edit Property_30px.png" />
+    <None Include="Resources\Check_40px.png" />
+    <None Include="Resources\icons8-authentication-64.png" />
+    <None Include="bin\Debug\img\securityLogin_vn.png" />
+    <None Include="bin\Debug\img\2fa.png" />
+    <None Include="bin\Debug\img\2fa_vn.png" />
+    <None Include="bin\Debug\img\cancelrequest.png" />
+    <None Include="bin\Debug\img\cancelrequest_vn.png" />
+    <None Include="bin\Debug\img\securityLogin.png" />
+    <None Include="Resources\2fa.png" />
+    <None Include="Resources\2fa_vn.png" />
+    <None Include="Resources\cancelrequest.png" />
+    <None Include="Resources\cancelrequest_vn.png" />
+    <None Include="Resources\2fa1.png" />
+    <None Include="Resources\browser.png" />
+    <None Include="Resources\continue2fa.png" />
+    <None Include="Resources\continue2fa_vn.png" />
+    <None Include="Resources\confirmcode.png" />
+    <None Include="Resources\confirmcode_vn.png" />
+    <None Include="Resources\done_vn.png" />
+    <None Include="Resources\done.png" />
+    <None Include="Resources\a3.1.jpg" />
+    <None Include="Resources\3_allow_access.png" />
+    <None Include="Resources\1_likevideo.png" />
+    <None Include="Resources\1_commentvideo.png" />
+    <None Include="Resources\2_inputcode_2fa.png" />
+    <None Include="Resources\1_imagepost.png" />
+    <None Include="Resources\1_chonanh.png" />
+    <None Include="Resources\2_mota.png" />
+    <None Include="Resources\2_gia.png" />
+    <None Include="Resources\2_tieude.png" />
+    <None Include="Resources\1_postingroup.png" />
+    <None Include="Resources\1_likePage.png" />
+    <None Include="Resources\1_followpage.png" />
+    <None Include="Resources\1_morePage.png" />
+    <None Include="Resources\1_followed.png" />
+    <None Include="Resources\1_login.png" />
+    <None Include="Resources\1_sharelive.png" />
+    <None Include="Resources\1_menu_more.png" />
+    <None Include="Resources\1_cover.png" />
+    <Content Include="Resources\icons8-delete-40.png" />
+    <None Include="Resources\Save_40px.png" />
+    <None Include="Resources\icons8-invite-26.png" />
+    <None Include="Resources\icons8-denied-40.png" />
+    <None Include="Resources\icons8-maximize-window-32.png" />
+    <None Include="Resources\Opened Folder_30px.png" />
+    <None Include="Resources\Spinner_30px.png" />
+    <None Include="Resources\Refresh_30px.png" />
+    <None Include="Resources\Sort_30px.png" />
+    <None Include="Resources\icons8-firewall-521.png" />
+    <None Include="Resources\icons8-user-groups-50.png" />
+    <None Include="Resources\Move Node Down_50px.png" />
+    <None Include="Resources\securityLogin.png" />
+    <None Include="Resources\securityLogin_vn.png" />
+    <None Include="Resources\icons8-facebook-messenger-64.png" />
+    <None Include="Resources\post_vn.png" />
+    <None Include="Resources\post.png" />
+    <None Include="Resources\moregr.png" />
+    <None Include="Resources\moregr_vn.png" />
+    <None Include="Resources\likePage.png" />
+    <None Include="Resources\inputcode_vn.png" />
+    <None Include="Resources\inputcode.png" />
+    <None Include="Resources\input_pass_2fa_vn.png" />
+    <None Include="Resources\input_pass_2fa.png" />
+    <None Include="Resources\icons8-reset-64.png" />
+    <None Include="Resources\icons8-mobile-40.png" />
+    <None Include="Resources\menu_logout.png" />
+    <Content Include="Resources\Synchronize_48px1.png" />
+    <None Include="Resources\Shake Phone_64px.png" />
+    <None Include="Resources\icons8-keyboard.png" />
+    <None Include="Resources\icons8-post.png" />
+    <None Include="Resources\Login_50px.png" />
+    <None Include="Resources\Checked_50px.png" />
+    <None Include="Resources\icons8-settings-32 %282%29.png" />
+    <None Include="Resources\icons8-settings-32.png" />
+    <None Include="Resources\Team_50px.png" />
+    <None Include="Resources\Safe Out_50px.png" />
+    <None Include="Resources\LOG_50px.png" />
+    <None Include="Resources\Sync_50px.png" />
+    <None Include="Resources\Synchronize_48px.png" />
+    <None Include="Resources\62-sad.png" />
+    <None Include="Resources\61-wow.png" />
+    <None Include="Resources\60-haha.png" />
+    <None Include="Resources\59-love.png" />
+    <None Include="Resources\58-likecycle.png" />
+    <None Include="Resources\63-angry.png" />
+    <None Include="Resources\Paste_50px.png" />
+    <None Include="Resources\Share_50px.png" />
+    <None Include="Resources\icons8_Delete_Shield_32.png" />
+    <None Include="Resources\icons8_Document_32.png" />
+    <None Include="Resources\Settings_32px.png" />
+    <None Include="bin\Debug\img\58-likecycle.png" />
+    <None Include="bin\Debug\img\59-love.png" />
+    <None Include="bin\Debug\img\60-haha.png" />
+    <None Include="bin\Debug\img\61-wow.png" />
+    <None Include="bin\Debug\img\62-sad.png" />
+    <None Include="bin\Debug\img\63-angry.png" />
+    <None Include="bin\Debug\icon\enter.png" />
+    <Content Include="iconfinder_Camera_669941.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\System.Data.SQLite.Core.1.0.110.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.Data.SQLite.Core.1.0.110.0\build\net451\System.Data.SQLite.Core.targets'))" />
+    <Error Condition="!Exists('packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.props'))" />
+    <Error Condition="!Exists('packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.targets'))" />
+  </Target>
+  <Import Project="packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.targets" Condition="Exists('packages\OpenCV.Net.3.3.1\build\net40\OpenCV.Net.targets')" />
+  <Import Project="packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="followpage3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\followpage3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_money_bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-money-bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_sharevideo_buttonshare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_sharevideo_buttonshare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_button_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_button_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_checkanswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_checkanswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_bao_ve_tai_khoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_bao_ve_tai_khoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1971" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1971.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inputcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inputcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_writeanswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_writeanswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_onlinemessenger_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_onlinemessenger_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chinhsuacongkhai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chinhsuacongkhai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shake Phone_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shake Phone_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_Window_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close Window_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ninjasystemv4chuan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ninjasystemv4chuan.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1995" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1995.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_sharelive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_sharelive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1984" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1984.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_inputpass_matkhau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_inputpass_matkhau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_logoutdone_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_logoutdone_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_video_khang_spam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_video_khang_spam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_dong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_dong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z2811450293996_4cc3dd6678ec5e51ed312ea0378145ac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\z2811450293996_4cc3dd6678ec5e51ed312ea0378145ac.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="done_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\done_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_changepass_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_changepass_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4x_phoneEmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4x_phoneEmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_sharevideo_hi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_sharevideo_hi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="61_wow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\61-wow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bluesky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bluesky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moregr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moregr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unfriend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unfriend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1990" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1990.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_more_device_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_more_device_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_saipass2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_saipass2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_commentvideo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_commentvideo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_like_watch_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_like_watch_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_likevideo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_likevideo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toidau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toidau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Safe Out_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Safe Out_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minus_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minus_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_imagepost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_imagepost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_saipass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_saipass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2006.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-mobile-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-mobile-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1x_profile_continue_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1x_profile_continue_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="continue2fa_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\continue2fa_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1964" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1964.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete Shield_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete Shield_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_video_watch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_video_watch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_sapxong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_sapxong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_label_facebook_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_label_facebook_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Move Node Down_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Move Node Down_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-facebook-messenger-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-facebook-messenger-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canceladdfriend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canceladdfriend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_joingroup_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_joingroup_check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoninja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoninja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cursor_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cursor_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3_allow_access" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3_allow_access.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-reset-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-reset-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-denied-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-denied-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_followed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_followed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-invite-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-invite-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_postimage_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_postimage_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_gia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_gia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_buttonanswer_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_buttonanswer_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_sharegroup_dalike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_sharegroup_dalike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_inputid_sodienthoai_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_inputid_sodienthoai_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_password_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_password_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1973" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1973.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1962" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1962.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trash_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trash_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="post1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\post1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_password_new_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_password_new_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_nhap_mat_khau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_nhap_mat_khau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="More_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\More_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_addfriend_contact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_addfriend_contact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_inputid_sodienthoai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_inputid_sodienthoai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_joingroup_radio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_joingroup_radio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="followpage3x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\followpage3x1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4x_login_dangnhap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4x_login_dangnhap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_button_finish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_button_finish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_sharevideo_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_sharevideo_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1975" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1975.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_continue_postimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_continue_postimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_banvietgidi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_banvietgidi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blueaqua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blueaqua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1972" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1972.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1963" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1963.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save change" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save change.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="60_haha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\60-haha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_morePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_morePage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Team_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Team_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-unlock-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-unlock-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_inputpass_matkhau_win7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_inputpass_matkhau_win7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="973741a74bb8b1e6e8a9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\973741a74bb8b1e6e8a9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paste_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paste_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelrequest_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelrequest_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1974" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1974.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_yeu_cau_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_yeu_cau_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_likePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_likePage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_quequan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_quequan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-facebook-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-facebook-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_invitegroup_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_invitegroup_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Opened Folder_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Opened Folder_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_postGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_postGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="securityLogin_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\securityLogin_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_follow_page_299" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_follow_page_299.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_Gift_669944" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_Gift_669944.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1_buttonanswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_buttonanswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checked_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checked_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-settings-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-settings-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_sharelive_3xEn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_sharelive_3xEn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_playlist_3cham_trang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_playlist_3cham_trang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_label_2fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_label_2fa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="birthday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\birthday.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regnick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regnick4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_2fa_2yeuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_2fa_2yeuto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_truonghoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_truonghoc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_dangnhap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_dangnhap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_memu_more" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_memu_more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_password_current" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_password_current.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_post_profile_ban_dang_nghi_gi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_post_profile_ban_dang_nghi_gi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_joingroup_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_joingroup_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_playlist_chia_se_trang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_playlist_chia_se_trang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_password_retype" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_password_retype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1989" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1989.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_di_toi_bang_tin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_di_toi_bang_tin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add2_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add2_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize_Window_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimize Window_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_invite_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_invite_group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="useAuthen_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\useAuthen_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_tieude" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_tieude.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize_Window_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimize Window_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1983" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1983.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_playlist_3cham" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_playlist_3cham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1980" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1980.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="browser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\browser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1993" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1993.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1982" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1982.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_login_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_login_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="likePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\likePage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_inputpass_matkhau_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_inputpass_matkhau_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inputcode_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inputcode_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_likevideo_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_likevideo_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regnickpro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regnickpro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System_V4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\System_V4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sync_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sync_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_ngay_sinh_loi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_ngay_sinh_loi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="securityLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\securityLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="confirmcode_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confirmcode_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-authentication-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-authentication-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_followfriend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_followfriend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_logout_menu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_logout_menu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_tinhthanhpho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_tinhthanhpho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1999" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1999.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hongtim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hongtim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="62_sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\62-sad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_tiep_tuc2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_tiep_tuc2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_followpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_followpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1992" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1992.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dungtenthat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dungtenthat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1988" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1988.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_button_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_button_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="59_love" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\59-love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_button_like" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_button_like.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_72h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_72h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit_File_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit File_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_commentvideo_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_commentvideo_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blueaqua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blueaqua1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_ngay_sinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_ngay_sinh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_group_poststatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_group_poststatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1997" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1997.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1986" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1986.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zl_batdauthaoluan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zl_batdauthaoluan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1998" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1998.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_mota" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_mota.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-firewall-52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-firewall-521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1976" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1976.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1967" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1967.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_nhap_ngay_sinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_nhap_ngay_sinh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_inputcode_2fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_inputcode_2fa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_label_avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_label_avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_luu_thong_tin_dang_nhap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_luu_thong_tin_dang_nhap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_Squared_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause Squared_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spinner_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spinner_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a3.1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a3.1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sort_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sort_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\done.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_new_pass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_new_pass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1_continue_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_continue_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2fa_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2fa_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1996" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1996.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_alow_access" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_alow_access.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1987" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1987.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1978" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1978.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1969" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1969.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_duytri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_duytri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_viewchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_viewchange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_invite_group_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_invite_group_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tructiep_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tructiep_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_login_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_login_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Up_Down_Arrow__48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Up Down Arrow _48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_morepage_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_morepage_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_playlist_chia_se" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_playlist_chia_se.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_inputname" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_inputname.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_contactmessenger_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_contactmessenger_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_addfriend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_addfriend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_savechange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_savechange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sudung2yeuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sudung2yeuto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_video" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_video.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-user-groups-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-user-groups-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_bo_qua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_bo_qua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="58_likecycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\58-likecycle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_write_group_answer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_write_group_answer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_password_save_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_password_save_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="active_messenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\active_messenger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="timthan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timthan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_hinh_anh_ban_be" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_hinh_anh_ban_be.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_live_button_trang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_live_button_trang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chinhsuathongtin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chinhsuathongtin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_button_ok_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_button_ok_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="continue2fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\continue2fa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="post_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\post_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-sign-out-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-sign-out-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_48px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_kiem_tra_ten_nguoi_dung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_kiem_tra_ten_nguoi_dung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_password_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_password_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_password_retype" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_password_retype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_post_content" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_post_content.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_tam_khoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_tam_khoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_inputpasstosave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_inputpasstosave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_chatmessenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_chatmessenger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="likepage_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\likepage_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_group_postimg_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_group_postimg_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sort_Up_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sort Up_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Check_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1981" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1981.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taotaikhoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taotaikhoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Share_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Share_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="followblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\followblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unfriend3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unfriend3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_likestory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_likestory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ten" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ten.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_sharevideo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_sharevideo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-settings-32 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-settings-32 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_password_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_password_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_chonanh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_chonanh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="useAuthen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\useAuthen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="input_pass_2fa_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\input_pass_2fa_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-cancel-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-cancel-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_logout_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_logout_menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_tam_khoa_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_tam_khoa_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_label_input_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_label_input_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_xoabl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_xoabl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelrequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelrequest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1961" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1961.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sort_Down_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sort Down_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-google-web-search-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-google-web-search-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_khang_spam_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_khang_spam_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_moredevices_4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_moredevices_4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_gui" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_gui.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_2fa_input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_2fa_input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_login_buttonlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_login_buttonlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moregr_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moregr_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canthemthongtin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canthemthongtin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_password_retype_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_password_retype_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rename_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rename_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1994" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1994.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1985" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1985.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_video_watch_trang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_video_watch_trang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_joingroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_joingroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1977" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1977.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_step5_ten_nguoi_dung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_step5_ten_nguoi_dung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_nothank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_nothank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1966" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1966.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_button_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_button_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trash_Can_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trash Can_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_addfriend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_addfriend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_button_another" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_button_another.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_group_postimg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_group_postimg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gears_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gears_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit Property_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit Property_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-broom-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-broom-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="systempro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\systempro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_setupaccount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_setupaccount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_password_curent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_password_curent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unfriend_4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unfriend_4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1965" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1965.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1979" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1979.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1968" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1968.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2_password_curent_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_password_curent_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lOGO_NINJA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lOGO_NINJA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Android OS_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Android OS_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zl_noti_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zl_noti_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="confirmcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confirmcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_User_group_132235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_User_group_132235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_hahastory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_hahastory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_contactmessenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_contactmessenger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_postgroup_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_postgroup_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="okconfirm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\okconfirm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_onlinemessenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_onlinemessenger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="input_pass_2fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\input_pass_2fa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unfriend2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unfriend2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_login_dangnhap_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_login_dangnhap_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_change_pass_logout_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_change_pass_logout_all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_lovestory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_lovestory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_duytri_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_duytri_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_postimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_postimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_step6_nguoi_theo_doi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_step6_nguoi_theo_doi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_thang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_thang_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_xoaloimoigroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_xoaloimoigroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_ngay_sinh_loi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_ngay_sinh_loi2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Document_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_Document_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="likepage_3x_299" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\likepage_3x_299.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4x_inputpass_matkhau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4x_inputpass_matkhau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1970" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1970.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circled_Play_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circled Play_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invite_group2_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invite_group2_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caidat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caidat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-columns-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-columns-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_ho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_ho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_postingroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_postingroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_sharelive_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_sharelive_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Delete_Shield_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_Delete_Shield_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2004.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_change_pass_logout_all2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_change_pass_logout_all2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelrequest_3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelrequest_3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="followEn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\followEn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xong_post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xong_post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_noilamviec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_noilamviec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_unfriend_299" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_unfriend_299.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_tiep_tuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_tiep_tuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_profile_changepass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_profile_changepass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_menu_more" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_menu_more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="location" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\location.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1991" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1991.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_editaccount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_editaccount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_1960" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_1960.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_joingroup_low" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_joingroup_low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lite_login_input_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lite_login_input_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_share_playlist_phat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_share_playlist_phat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_ngay_sinh_nam_2000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_ngay_sinh_nam_2000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_1715367" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.1715367.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_phoneEmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_phoneEmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3x_checkpoint_gui2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3x_checkpoint_gui2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="naudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\naudo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1_login_dangnhap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_login_dangnhap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-maximize-window-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-maximize-window-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-exit-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-exit-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_logout_alldevices" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_logout_alldevices.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moiquanhe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moiquanhe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\luu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
