@@ -171,6 +171,8 @@ namespace NinjaSystem
             para["state"] = acc.state;
             para["city"] = acc.city;
             para["gender"] = acc.gender;
+            para["token"] = acc.token;
+            para["cookies"] = acc.cookies;
             return data.insert(para, "Account");
         }
         public bool updateAccountByUID(Account acc)

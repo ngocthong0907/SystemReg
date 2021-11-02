@@ -97,20 +97,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clProxy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clBackupLD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblcountAcc = new System.Windows.Forms.Label();
-            this.btnStop = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnCheckToken = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_config_devices = new Bunifu.Framework.UI.BunifuImageButton();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_addUser = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pibStatus = new System.Windows.Forms.PictureBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.pnLD = new System.Windows.Forms.FlowLayoutPanel();
             this.mnuUser = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.loadDanhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chọnDòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -172,6 +158,21 @@
             this.mởCheckpointNgàySinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnusetupProxy = new System.Windows.Forms.ToolStripMenuItem();
             this.mnumoney = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblcountAcc = new System.Windows.Forms.Label();
+            this.btnStop = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnCheckToken = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_config_devices = new Bunifu.Framework.UI.BunifuImageButton();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_addUser = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pibStatus = new System.Windows.Forms.PictureBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pnLD = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -196,7 +197,9 @@
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            this.mnuUser.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCheckToken)).BeginInit();
@@ -206,7 +209,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_addUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibStatus)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.mnuUser.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnreset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnmanage)).BeginInit();
@@ -221,10 +223,10 @@
             this.panel2.Controls.Add(this.tabControl2);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(96, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(72, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(289, 838);
+            this.panel2.Size = new System.Drawing.Size(217, 681);
             this.panel2.TabIndex = 3;
             // 
             // tabControl2
@@ -232,21 +234,19 @@
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage2);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(0, 59);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl2.Location = new System.Drawing.Point(0, 48);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(289, 779);
+            this.tabControl2.Size = new System.Drawing.Size(217, 633);
             this.tabControl2.TabIndex = 2;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.dgvDanhMuc);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(281, 750);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(209, 607);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "Danh Mục";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -266,8 +266,7 @@
             this.dataGridViewTextBoxColumn3});
             this.dgvDanhMuc.ContextMenuStrip = this.contextMenuStrip2;
             this.dgvDanhMuc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDanhMuc.Location = new System.Drawing.Point(4, 4);
-            this.dgvDanhMuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDanhMuc.Location = new System.Drawing.Point(3, 3);
             this.dgvDanhMuc.Name = "dgvDanhMuc";
             this.dgvDanhMuc.ReadOnly = true;
             this.dgvDanhMuc.RowHeadersVisible = false;
@@ -275,7 +274,7 @@
             this.dgvDanhMuc.RowTemplate.DividerHeight = 50;
             this.dgvDanhMuc.RowTemplate.Height = 100;
             this.dgvDanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhMuc.Size = new System.Drawing.Size(273, 742);
+            this.dgvDanhMuc.Size = new System.Drawing.Size(203, 601);
             this.dgvDanhMuc.TabIndex = 5;
             this.dgvDanhMuc.DoubleClick += new System.EventHandler(this.dgvGroupLD_DoubleClick);
             // 
@@ -308,13 +307,13 @@
             this.openAllLDToolStripMenuItem,
             this.mnuContact});
             this.contextMenuStrip2.Name = "mnuUser";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(258, 214);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(219, 214);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem9.Image")));
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(257, 30);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(218, 30);
             this.toolStripMenuItem9.Text = "Load Danh Mục";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
             // 
@@ -322,7 +321,7 @@
             // 
             this.selectGroupToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Cursor_30px;
             this.selectGroupToolStripMenuItem.Name = "selectGroupToolStripMenuItem";
-            this.selectGroupToolStripMenuItem.Size = new System.Drawing.Size(257, 30);
+            this.selectGroupToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.selectGroupToolStripMenuItem.Text = "Load Tài Khoản";
             this.selectGroupToolStripMenuItem.Click += new System.EventHandler(this.selectGroupToolStripMenuItem_Click);
             // 
@@ -330,7 +329,7 @@
             // 
             this.toolStripMenuItem10.Image = global::NinjaSystem.Properties.Resources.Delete_Shield_30px;
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(257, 30);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(218, 30);
             this.toolStripMenuItem10.Text = "Chạy Tương Tác";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
@@ -338,7 +337,7 @@
             // 
             this.toolStripMenuItem12.Image = global::NinjaSystem.Properties.Resources.icons8_broom_40;
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(257, 30);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(218, 30);
             this.toolStripMenuItem12.Text = "Xóa Danh Mục";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
             // 
@@ -346,7 +345,7 @@
             // 
             this.mnurenamegroup.Image = global::NinjaSystem.Properties.Resources.Rename_48px;
             this.mnurenamegroup.Name = "mnurenamegroup";
-            this.mnurenamegroup.Size = new System.Drawing.Size(257, 30);
+            this.mnurenamegroup.Size = new System.Drawing.Size(218, 30);
             this.mnurenamegroup.Text = "Đổi tên danh mục";
             this.mnurenamegroup.Click += new System.EventHandler(this.mnurenamegroup_Click);
             // 
@@ -354,7 +353,7 @@
             // 
             this.openAllLDToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Close_Window_48px;
             this.openAllLDToolStripMenuItem.Name = "openAllLDToolStripMenuItem";
-            this.openAllLDToolStripMenuItem.Size = new System.Drawing.Size(257, 30);
+            this.openAllLDToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.openAllLDToolStripMenuItem.Text = "Close All LD";
             this.openAllLDToolStripMenuItem.Visible = false;
             this.openAllLDToolStripMenuItem.Click += new System.EventHandler(this.openAllLDToolStripMenuItem_Click);
@@ -363,18 +362,17 @@
             // 
             this.mnuContact.Image = global::NinjaSystem.Properties.Resources.icons8_user_groups_50;
             this.mnuContact.Name = "mnuContact";
-            this.mnuContact.Size = new System.Drawing.Size(257, 30);
+            this.mnuContact.Size = new System.Drawing.Size(218, 30);
             this.mnuContact.Text = "Cập nhập danh bạ vào LD";
             this.mnuContact.Click += new System.EventHandler(this.mnuContact_Click);
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.dgvLD);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(281, 750);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(209, 607);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "Danh Sách LD";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -394,8 +392,7 @@
             this.dataGridViewTextBoxColumn1});
             this.dgvLD.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvLD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLD.Location = new System.Drawing.Point(4, 4);
-            this.dgvLD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvLD.Location = new System.Drawing.Point(3, 3);
             this.dgvLD.Name = "dgvLD";
             this.dgvLD.ReadOnly = true;
             this.dgvLD.RowHeadersVisible = false;
@@ -403,7 +400,7 @@
             this.dgvLD.RowTemplate.DividerHeight = 50;
             this.dgvLD.RowTemplate.Height = 100;
             this.dgvLD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLD.Size = new System.Drawing.Size(273, 742);
+            this.dgvLD.Size = new System.Drawing.Size(203, 601);
             this.dgvLD.TabIndex = 6;
             this.dgvLD.Visible = false;
             this.dgvLD.Click += new System.EventHandler(this.dgvLD_Click);
@@ -445,13 +442,13 @@
             this.gánKey1111ToolStripMenuItem,
             this.xóaDataLDPlayerToolStripMenuItem});
             this.contextMenuStrip1.Name = "mnuUser";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(271, 454);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(234, 454);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = global::NinjaSystem.Properties.Resources.Cursor_30px;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(270, 30);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(233, 30);
             this.toolStripMenuItem1.Text = "Select LDPlayer";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -459,7 +456,7 @@
             // 
             this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(270, 30);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(233, 30);
             this.toolStripMenuItem2.Text = "Open LDPlayer";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -467,7 +464,7 @@
             // 
             this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(270, 30);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(233, 30);
             this.toolStripMenuItem3.Text = "Close LDPlayer";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -475,7 +472,7 @@
             // 
             this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(270, 30);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(233, 30);
             this.toolStripMenuItem4.Text = "Close All";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
@@ -483,7 +480,7 @@
             // 
             this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(270, 30);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(233, 30);
             this.toolStripMenuItem5.Text = "Install App Facebook";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
@@ -491,7 +488,7 @@
             // 
             this.toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(270, 30);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(233, 30);
             this.toolStripMenuItem6.Text = "Add New LDPlayer";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
@@ -499,7 +496,7 @@
             // 
             this.cloneLDToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cloneLDToolStripMenuItem.Image")));
             this.cloneLDToolStripMenuItem.Name = "cloneLDToolStripMenuItem";
-            this.cloneLDToolStripMenuItem.Size = new System.Drawing.Size(270, 30);
+            this.cloneLDToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
             this.cloneLDToolStripMenuItem.Text = "Clone LDPlayer";
             this.cloneLDToolStripMenuItem.Click += new System.EventHandler(this.cloneLDToolStripMenuItem_Click);
             // 
@@ -507,7 +504,7 @@
             // 
             this.deleteLDPlayerToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Delete_Shield_30px;
             this.deleteLDPlayerToolStripMenuItem.Name = "deleteLDPlayerToolStripMenuItem";
-            this.deleteLDPlayerToolStripMenuItem.Size = new System.Drawing.Size(270, 30);
+            this.deleteLDPlayerToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
             this.deleteLDPlayerToolStripMenuItem.Text = "Delete LDPlayer";
             this.deleteLDPlayerToolStripMenuItem.Click += new System.EventHandler(this.deleteLDPlayerToolStripMenuItem_Click);
             // 
@@ -515,7 +512,7 @@
             // 
             this.renameAllLDToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Edit_Property_30px;
             this.renameAllLDToolStripMenuItem.Name = "renameAllLDToolStripMenuItem";
-            this.renameAllLDToolStripMenuItem.Size = new System.Drawing.Size(270, 30);
+            this.renameAllLDToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
             this.renameAllLDToolStripMenuItem.Text = "Rename All LD";
             this.renameAllLDToolStripMenuItem.Click += new System.EventHandler(this.renameAllLDToolStripMenuItem_Click);
             // 
@@ -523,7 +520,7 @@
             // 
             this.sapwToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Sort_30px;
             this.sapwToolStripMenuItem.Name = "sapwToolStripMenuItem";
-            this.sapwToolStripMenuItem.Size = new System.Drawing.Size(270, 30);
+            this.sapwToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
             this.sapwToolStripMenuItem.Text = "Sắp Xếp LD";
             this.sapwToolStripMenuItem.Click += new System.EventHandler(this.sapwToolStripMenuItem_Click);
             // 
@@ -531,7 +528,7 @@
             // 
             this.mnuProxy.Image = global::NinjaSystem.Properties.Resources.icons8_firewall_52;
             this.mnuProxy.Name = "mnuProxy";
-            this.mnuProxy.Size = new System.Drawing.Size(270, 30);
+            this.mnuProxy.Size = new System.Drawing.Size(233, 30);
             this.mnuProxy.Text = "Gán Proxy";
             this.mnuProxy.Click += new System.EventHandler(this.mnuProxy_Click);
             // 
@@ -539,7 +536,7 @@
             // 
             this.toolStripMenuItem13.Image = global::NinjaSystem.Properties.Resources.Move_Node_Down_50px;
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(270, 30);
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(233, 30);
             this.toolStripMenuItem13.Text = "Chuyển LD sang Nhóm khác";
             this.toolStripMenuItem13.Click += new System.EventHandler(this.toolStripMenuItem13_Click);
             // 
@@ -547,7 +544,7 @@
             // 
             this.mnuImportContact.Image = global::NinjaSystem.Properties.Resources.icons8_user_groups_50;
             this.mnuImportContact.Name = "mnuImportContact";
-            this.mnuImportContact.Size = new System.Drawing.Size(270, 30);
+            this.mnuImportContact.Size = new System.Drawing.Size(233, 30);
             this.mnuImportContact.Text = "Cập nhập danh bạ vào LD";
             this.mnuImportContact.Click += new System.EventHandler(this.mnuImportContact_Click);
             // 
@@ -555,7 +552,7 @@
             // 
             this.gánKey1111ToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Spinner_30px;
             this.gánKey1111ToolStripMenuItem.Name = "gánKey1111ToolStripMenuItem";
-            this.gánKey1111ToolStripMenuItem.Size = new System.Drawing.Size(270, 30);
+            this.gánKey1111ToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
             this.gánKey1111ToolStripMenuItem.Text = "Gán Key 1.1.1.1 VPN";
             this.gánKey1111ToolStripMenuItem.Click += new System.EventHandler(this.gánKey1111ToolStripMenuItem_Click);
             // 
@@ -563,7 +560,7 @@
             // 
             this.xóaDataLDPlayerToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Trash_Can_48px;
             this.xóaDataLDPlayerToolStripMenuItem.Name = "xóaDataLDPlayerToolStripMenuItem";
-            this.xóaDataLDPlayerToolStripMenuItem.Size = new System.Drawing.Size(270, 30);
+            this.xóaDataLDPlayerToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
             this.xóaDataLDPlayerToolStripMenuItem.Text = "Xóa Data LDPlayer";
             this.xóaDataLDPlayerToolStripMenuItem.Click += new System.EventHandler(this.xóaDataLDPlayerToolStripMenuItem_Click);
             // 
@@ -572,9 +569,9 @@
             this.panel6.Controls.Add(this.bunifuThinButton21);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(289, 59);
+            this.panel6.Size = new System.Drawing.Size(217, 48);
             this.panel6.TabIndex = 0;
             // 
             // bunifuThinButton21
@@ -595,10 +592,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(148)))), ((int)(((byte)(29)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(148)))), ((int)(((byte)(29)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(35, 2);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(26, 2);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(219, 54);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(164, 44);
             this.bunifuThinButton21.TabIndex = 2;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -614,11 +611,9 @@
             // 
             this.groupBox1.Controls.Add(this.tabControl1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(385, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(289, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1539, 838);
+            this.groupBox1.Size = new System.Drawing.Size(1154, 681);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách tài khoản";
@@ -628,22 +623,20 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(4, 19);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Location = new System.Drawing.Point(3, 16);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1531, 815);
+            this.tabControl1.Size = new System.Drawing.Size(1148, 662);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1523, 786);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1140, 636);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Account";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -654,19 +647,17 @@
             this.panel3.Controls.Add(this.checkBox2);
             this.panel3.Controls.Add(this.dgvUser);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(4, 64);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(3, 52);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1515, 718);
+            this.panel3.Size = new System.Drawing.Size(1134, 581);
             this.panel3.TabIndex = 1;
             // 
             // richLogs
             // 
             this.richLogs.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.richLogs.Location = new System.Drawing.Point(0, 707);
-            this.richLogs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richLogs.Location = new System.Drawing.Point(0, 571);
             this.richLogs.Name = "richLogs";
-            this.richLogs.Size = new System.Drawing.Size(1515, 11);
+            this.richLogs.Size = new System.Drawing.Size(1134, 10);
             this.richLogs.TabIndex = 137;
             this.richLogs.Text = "";
             this.richLogs.Visible = false;
@@ -676,10 +667,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(20, 5);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Location = new System.Drawing.Point(15, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(18, 17);
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 8;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
@@ -717,11 +707,10 @@
             this.dgvUser.ContextMenuStrip = this.mnuUser;
             this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUser.Location = new System.Drawing.Point(0, 0);
-            this.dgvUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersVisible = false;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(1515, 718);
+            this.dgvUser.Size = new System.Drawing.Size(1134, 581);
             this.dgvUser.TabIndex = 4;
             this.dgvUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellClick);
             this.dgvUser.SelectionChanged += new System.EventHandler(this.dgvUser_SelectionChanged);
@@ -860,200 +849,6 @@
             this.clBackupLD.HeaderText = "Time Backup";
             this.clBackupLD.Name = "clBackupLD";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.bunifuImageButton3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblcountAcc);
-            this.panel1.Controls.Add(this.btnStop);
-            this.panel1.Controls.Add(this.btnCheckToken);
-            this.panel1.Controls.Add(this.btn_config_devices);
-            this.panel1.Controls.Add(this.txtSearch);
-            this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.bunifuImageButton2);
-            this.panel1.Controls.Add(this.btn_addUser);
-            this.panel1.Controls.Add(this.pibStatus);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1515, 60);
-            this.panel1.TabIndex = 0;
-            // 
-            // bunifuImageButton3
-            // 
-            this.bunifuImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton3.Image = global::NinjaSystem.Properties.Resources.icons8_facebook_48;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(61, 2);
-            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(53, 49);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 170;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click_1);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(579, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 23);
-            this.label1.TabIndex = 168;
-            this.label1.Text = "Số acc đã chọn:";
-            // 
-            // lblcountAcc
-            // 
-            this.lblcountAcc.AutoSize = true;
-            this.lblcountAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcountAcc.ForeColor = System.Drawing.Color.Red;
-            this.lblcountAcc.Location = new System.Drawing.Point(812, 20);
-            this.lblcountAcc.Name = "lblcountAcc";
-            this.lblcountAcc.Size = new System.Drawing.Size(0, 20);
-            this.lblcountAcc.TabIndex = 169;
-            // 
-            // btnStop
-            // 
-            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStop.Image = global::NinjaSystem.Properties.Resources.Pause_Squared_48px;
-            this.btnStop.ImageActive = null;
-            this.btnStop.Location = new System.Drawing.Point(1081, 6);
-            this.btnStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(55, 49);
-            this.btnStop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnStop.TabIndex = 9;
-            this.btnStop.TabStop = false;
-            this.btnStop.Visible = false;
-            this.btnStop.Zoom = 10;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
-            // 
-            // btnCheckToken
-            // 
-            this.btnCheckToken.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCheckToken.Image = global::NinjaSystem.Properties.Resources.Cursor_30px;
-            this.btnCheckToken.ImageActive = null;
-            this.btnCheckToken.Location = new System.Drawing.Point(1200, 6);
-            this.btnCheckToken.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCheckToken.Name = "btnCheckToken";
-            this.btnCheckToken.Size = new System.Drawing.Size(53, 48);
-            this.btnCheckToken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCheckToken.TabIndex = 30;
-            this.btnCheckToken.TabStop = false;
-            this.btnCheckToken.Visible = false;
-            this.btnCheckToken.Zoom = 10;
-            this.btnCheckToken.Click += new System.EventHandler(this.btnCheckToken_Click);
-            // 
-            // btn_config_devices
-            // 
-            this.btn_config_devices.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_config_devices.Image = global::NinjaSystem.Properties.Resources.Shake_Phone_64px;
-            this.btn_config_devices.ImageActive = null;
-            this.btn_config_devices.Location = new System.Drawing.Point(1141, 6);
-            this.btn_config_devices.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_config_devices.Name = "btn_config_devices";
-            this.btn_config_devices.Size = new System.Drawing.Size(53, 48);
-            this.btn_config_devices.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_config_devices.TabIndex = 30;
-            this.btn_config_devices.TabStop = false;
-            this.btn_config_devices.Visible = false;
-            this.btn_config_devices.Zoom = 10;
-            this.btn_config_devices.Click += new System.EventHandler(this.btn_config_devices_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Location = new System.Drawing.Point(1246, 11);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(1);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(195, 22);
-            this.txtSearch.TabIndex = 29;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Image = global::NinjaSystem.Properties.Resources.icons8_google_web_search_48;
-            this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(1447, -4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(45, 59);
-            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSearch.TabIndex = 28;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Zoom = 10;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton2.Image = global::NinjaSystem.Properties.Resources.Circled_Play_48px;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1023, 5);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(53, 49);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 26;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Visible = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // btn_addUser
-            // 
-            this.btn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_addUser.Image = global::NinjaSystem.Properties.Resources.Add_48px;
-            this.btn_addUser.ImageActive = null;
-            this.btn_addUser.Location = new System.Drawing.Point(3, 2);
-            this.btn_addUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_addUser.Name = "btn_addUser";
-            this.btn_addUser.Size = new System.Drawing.Size(53, 49);
-            this.btn_addUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_addUser.TabIndex = 26;
-            this.btn_addUser.TabStop = false;
-            this.btn_addUser.Zoom = 10;
-            this.btn_addUser.Click += new System.EventHandler(this.btn_addUser_Click);
-            // 
-            // pibStatus
-            // 
-            this.pibStatus.Image = ((System.Drawing.Image)(resources.GetObject("pibStatus.Image")));
-            this.pibStatus.Location = new System.Drawing.Point(1260, 43);
-            this.pibStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pibStatus.Name = "pibStatus";
-            this.pibStatus.Size = new System.Drawing.Size(129, 12);
-            this.pibStatus.TabIndex = 23;
-            this.pibStatus.TabStop = false;
-            this.pibStatus.Visible = false;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.pnLD);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(1);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(1);
-            this.tabPage4.Size = new System.Drawing.Size(1548, 783);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "LDView";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // pnLD
-            // 
-            this.pnLD.AutoScroll = true;
-            this.pnLD.BackColor = System.Drawing.Color.Black;
-            this.pnLD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnLD.Location = new System.Drawing.Point(1, 1);
-            this.pnLD.Margin = new System.Windows.Forms.Padding(1);
-            this.pnLD.Name = "pnLD";
-            this.pnLD.Size = new System.Drawing.Size(1546, 781);
-            this.pnLD.TabIndex = 0;
-            // 
             // mnuUser
             // 
             this.mnuUser.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -1083,14 +878,14 @@
             this.mnusetupProxy,
             this.mnumoney});
             this.mnuUser.Name = "mnuUser";
-            this.mnuUser.Size = new System.Drawing.Size(334, 724);
+            this.mnuUser.Size = new System.Drawing.Size(285, 724);
             this.mnuUser.Opening += new System.ComponentModel.CancelEventHandler(this.mnuUser_Opening);
             // 
             // loadDanhSáchToolStripMenuItem
             // 
             this.loadDanhSáchToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("loadDanhSáchToolStripMenuItem.Image")));
             this.loadDanhSáchToolStripMenuItem.Name = "loadDanhSáchToolStripMenuItem";
-            this.loadDanhSáchToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.loadDanhSáchToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.loadDanhSáchToolStripMenuItem.Text = "Load Danh Sách";
             this.loadDanhSáchToolStripMenuItem.Click += new System.EventHandler(this.loadDanhSáchToolStripMenuItem_Click);
             // 
@@ -1098,7 +893,7 @@
             // 
             this.chọnDòngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chọnDòngToolStripMenuItem.Image")));
             this.chọnDòngToolStripMenuItem.Name = "chọnDòngToolStripMenuItem";
-            this.chọnDòngToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.chọnDòngToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.chọnDòngToolStripMenuItem.Text = "Chọn Dòng";
             this.chọnDòngToolStripMenuItem.Click += new System.EventHandler(this.chọnDòngToolStripMenuItem_Click);
             // 
@@ -1120,97 +915,97 @@
             this.mnuexportbackup});
             this.copyToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.copyToolStripMenuItem.Text = "Copy";
             // 
             // copyToolStripMenuItem1
             // 
             this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
-            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(392, 26);
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(321, 22);
             this.copyToolStripMenuItem1.Text = "Copy UID";
             this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
             // 
             // copyPassToolStripMenuItem
             // 
             this.copyPassToolStripMenuItem.Name = "copyPassToolStripMenuItem";
-            this.copyPassToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyPassToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyPassToolStripMenuItem.Text = "Copy Pass";
             this.copyPassToolStripMenuItem.Click += new System.EventHandler(this.copyPassToolStripMenuItem_Click);
             // 
             // copyTokenToolStripMenuItem
             // 
             this.copyTokenToolStripMenuItem.Name = "copyTokenToolStripMenuItem";
-            this.copyTokenToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyTokenToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyTokenToolStripMenuItem.Text = "Copy Token";
             this.copyTokenToolStripMenuItem.Click += new System.EventHandler(this.copyTokenToolStripMenuItem_Click);
             // 
             // copyCookieToolStripMenuItem
             // 
             this.copyCookieToolStripMenuItem.Name = "copyCookieToolStripMenuItem";
-            this.copyCookieToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyCookieToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyCookieToolStripMenuItem.Text = "Copy Cookie";
             this.copyCookieToolStripMenuItem.Click += new System.EventHandler(this.copyCookieToolStripMenuItem_Click);
             // 
             // copyPrivateKeyToolStripMenuItem
             // 
             this.copyPrivateKeyToolStripMenuItem.Name = "copyPrivateKeyToolStripMenuItem";
-            this.copyPrivateKeyToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyPrivateKeyToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyPrivateKeyToolStripMenuItem.Text = "Copy Private Key";
             this.copyPrivateKeyToolStripMenuItem.Click += new System.EventHandler(this.copyPrivateKeyToolStripMenuItem_Click);
             // 
             // copy2FACodeToolStripMenuItem
             // 
             this.copy2FACodeToolStripMenuItem.Name = "copy2FACodeToolStripMenuItem";
-            this.copy2FACodeToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copy2FACodeToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copy2FACodeToolStripMenuItem.Text = "Copy 2FA Code";
             this.copy2FACodeToolStripMenuItem.Click += new System.EventHandler(this.copy2FACodeToolStripMenuItem_Click);
             // 
             // copyUIDPassToolStripMenuItem
             // 
             this.copyUIDPassToolStripMenuItem.Name = "copyUIDPassToolStripMenuItem";
-            this.copyUIDPassToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyUIDPassToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyUIDPassToolStripMenuItem.Text = "Copy UID | Pass";
             this.copyUIDPassToolStripMenuItem.Click += new System.EventHandler(this.copyUIDPassToolStripMenuItem_Click);
             // 
             // copyUIDPassPrivateKeyToolStripMenuItem
             // 
             this.copyUIDPassPrivateKeyToolStripMenuItem.Name = "copyUIDPassPrivateKeyToolStripMenuItem";
-            this.copyUIDPassPrivateKeyToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyUIDPassPrivateKeyToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyUIDPassPrivateKeyToolStripMenuItem.Text = "Copy UID | Pass | Private key";
             this.copyUIDPassPrivateKeyToolStripMenuItem.Click += new System.EventHandler(this.copyUIDPassPrivateKeyToolStripMenuItem_Click);
             // 
             // copyEmailPassPrivateKey
             // 
             this.copyEmailPassPrivateKey.Name = "copyEmailPassPrivateKey";
-            this.copyEmailPassPrivateKey.Size = new System.Drawing.Size(392, 26);
+            this.copyEmailPassPrivateKey.Size = new System.Drawing.Size(321, 22);
             this.copyEmailPassPrivateKey.Text = "Copy Email|Pass|Private key";
             this.copyEmailPassPrivateKey.Click += new System.EventHandler(this.copyEmailPassPrivateKey_Click);
             // 
             // copyUIDPassTokenCookieToolStripMenuItem
             // 
             this.copyUIDPassTokenCookieToolStripMenuItem.Name = "copyUIDPassTokenCookieToolStripMenuItem";
-            this.copyUIDPassTokenCookieToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyUIDPassTokenCookieToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyUIDPassTokenCookieToolStripMenuItem.Text = "Copy UID | Pass | Token | Cookie";
             this.copyUIDPassTokenCookieToolStripMenuItem.Click += new System.EventHandler(this.copyUIDPassTokenCookieToolStripMenuItem_Click);
             // 
             // copyUIDPassPrivateKeyBirthdayToolStripMenuItem
             // 
             this.copyUIDPassPrivateKeyBirthdayToolStripMenuItem.Name = "copyUIDPassPrivateKeyBirthdayToolStripMenuItem";
-            this.copyUIDPassPrivateKeyBirthdayToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyUIDPassPrivateKeyBirthdayToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyUIDPassPrivateKeyBirthdayToolStripMenuItem.Text = "Copy UID | Pass | Private key | Birthday";
             this.copyUIDPassPrivateKeyBirthdayToolStripMenuItem.Click += new System.EventHandler(this.copyUIDPassPrivateKeyBirthdayToolStripMenuItem_Click);
             // 
             // copyTùyChỉnhToolStripMenuItem
             // 
             this.copyTùyChỉnhToolStripMenuItem.Name = "copyTùyChỉnhToolStripMenuItem";
-            this.copyTùyChỉnhToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
+            this.copyTùyChỉnhToolStripMenuItem.Size = new System.Drawing.Size(321, 22);
             this.copyTùyChỉnhToolStripMenuItem.Text = "Copy tùy chỉnh";
             this.copyTùyChỉnhToolStripMenuItem.Click += new System.EventHandler(this.copyTùyChỉnhToolStripMenuItem_Click);
             // 
             // mnuexportbackup
             // 
             this.mnuexportbackup.Name = "mnuexportbackup";
-            this.mnuexportbackup.Size = new System.Drawing.Size(392, 26);
+            this.mnuexportbackup.Size = new System.Drawing.Size(321, 22);
             this.mnuexportbackup.Text = "Xuất thông tin acc và file backup LD, Facebook";
             this.mnuexportbackup.Click += new System.EventHandler(this.mnuexportbackup_Click);
             // 
@@ -1218,7 +1013,7 @@
             // 
             this.mnuUpdateAccount.Image = global::NinjaSystem.Properties.Resources.Edit_File_48px;
             this.mnuUpdateAccount.Name = "mnuUpdateAccount";
-            this.mnuUpdateAccount.Size = new System.Drawing.Size(333, 30);
+            this.mnuUpdateAccount.Size = new System.Drawing.Size(284, 30);
             this.mnuUpdateAccount.Text = "Update Account";
             this.mnuUpdateAccount.Click += new System.EventHandler(this.mnuUpdateAccount_Click);
             // 
@@ -1226,7 +1021,7 @@
             // 
             this.toolStripMenuItem14.Image = global::NinjaSystem.Properties.Resources.icons8_sign_out_48;
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(333, 30);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(284, 30);
             this.toolStripMenuItem14.Text = "Chuyển account sang Danh Mục Khác";
             this.toolStripMenuItem14.Click += new System.EventHandler(this.toolStripMenuItem14_Click);
             // 
@@ -1234,7 +1029,7 @@
             // 
             this.toolStripMenuItem11.Image = global::NinjaSystem.Properties.Resources.icons8_sign_out_48;
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(333, 30);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(284, 30);
             this.toolStripMenuItem11.Text = "Chuyển LD sang Nhóm khác";
             this.toolStripMenuItem11.Visible = false;
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click_1);
@@ -1243,7 +1038,7 @@
             // 
             this.checkInfoUIDToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Check_40px;
             this.checkInfoUIDToolStripMenuItem.Name = "checkInfoUIDToolStripMenuItem";
-            this.checkInfoUIDToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.checkInfoUIDToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.checkInfoUIDToolStripMenuItem.Text = "Check Info UID";
             this.checkInfoUIDToolStripMenuItem.Click += new System.EventHandler(this.checkInfoUIDToolStripMenuItem_Click);
             // 
@@ -1252,7 +1047,7 @@
             this.checkUIDToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.check;
             this.checkUIDToolStripMenuItem.Name = "checkUIDToolStripMenuItem";
             this.checkUIDToolStripMenuItem.ShowShortcutKeys = false;
-            this.checkUIDToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.checkUIDToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.checkUIDToolStripMenuItem.Text = "Check UID Live";
             this.checkUIDToolStripMenuItem.Click += new System.EventHandler(this.checkUIDToolStripMenuItem_Click);
             // 
@@ -1260,7 +1055,7 @@
             // 
             this.toolStripMenuItem7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem7.Image")));
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(333, 30);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(284, 30);
             this.toolStripMenuItem7.Text = "Check Name";
             this.toolStripMenuItem7.Visible = false;
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
@@ -1273,14 +1068,14 @@
             this.mnuloginMessenger});
             this.mnuToLogoutLogIn.Image = global::NinjaSystem.Properties.Resources.Login_50px;
             this.mnuToLogoutLogIn.Name = "mnuToLogoutLogIn";
-            this.mnuToLogoutLogIn.Size = new System.Drawing.Size(333, 30);
+            this.mnuToLogoutLogIn.Size = new System.Drawing.Size(284, 30);
             this.mnuToLogoutLogIn.Text = "Logout - Login";
             // 
             // mnuLogoutIn
             // 
             this.mnuLogoutIn.Image = global::NinjaSystem.Properties.Resources.Login_50px;
             this.mnuLogoutIn.Name = "mnuLogoutIn";
-            this.mnuLogoutIn.Size = new System.Drawing.Size(196, 26);
+            this.mnuLogoutIn.Size = new System.Drawing.Size(164, 22);
             this.mnuLogoutIn.Text = "Logout - Login";
             this.mnuLogoutIn.Click += new System.EventHandler(this.mnuLogoutIn_Click);
             // 
@@ -1288,7 +1083,7 @@
             // 
             this.mnulogout.Image = global::NinjaSystem.Properties.Resources.Safe_Out_50px;
             this.mnulogout.Name = "mnulogout";
-            this.mnulogout.Size = new System.Drawing.Size(196, 26);
+            this.mnulogout.Size = new System.Drawing.Size(164, 22);
             this.mnulogout.Text = "Logout";
             this.mnulogout.Visible = false;
             this.mnulogout.Click += new System.EventHandler(this.mnulogout_Click);
@@ -1297,7 +1092,7 @@
             // 
             this.mnuloginMessenger.Image = global::NinjaSystem.Properties.Resources.icons8_facebook_messenger_64;
             this.mnuloginMessenger.Name = "mnuloginMessenger";
-            this.mnuloginMessenger.Size = new System.Drawing.Size(196, 26);
+            this.mnuloginMessenger.Size = new System.Drawing.Size(164, 22);
             this.mnuloginMessenger.Text = "Login Messenger";
             this.mnuloginMessenger.Click += new System.EventHandler(this.mnuloginMessenger_Click);
             // 
@@ -1305,7 +1100,7 @@
             // 
             this.loginToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.icons8_facebook_48;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.loginToolStripMenuItem.Text = "Open App Facebook";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
@@ -1313,7 +1108,7 @@
             // 
             this.mnu_Run.Image = ((System.Drawing.Image)(resources.GetObject("mnu_Run.Image")));
             this.mnu_Run.Name = "mnu_Run";
-            this.mnu_Run.Size = new System.Drawing.Size(333, 30);
+            this.mnu_Run.Size = new System.Drawing.Size(284, 30);
             this.mnu_Run.Text = "Chạy Tương Tác";
             this.mnu_Run.Click += new System.EventHandler(this.mnu_Run_Click);
             // 
@@ -1321,7 +1116,7 @@
             // 
             this.mnuReactionUID.Image = global::NinjaSystem.Properties.Resources._58_likecycle;
             this.mnuReactionUID.Name = "mnuReactionUID";
-            this.mnuReactionUID.Size = new System.Drawing.Size(333, 30);
+            this.mnuReactionUID.Size = new System.Drawing.Size(284, 30);
             this.mnuReactionUID.Text = "Tương tác vào UID, Page ID";
             this.mnuReactionUID.Click += new System.EventHandler(this.mnuReactionUID_Click);
             // 
@@ -1329,7 +1124,7 @@
             // 
             this.mnureactionofnick.Image = global::NinjaSystem.Properties.Resources._3x_lovestory;
             this.mnureactionofnick.Name = "mnureactionofnick";
-            this.mnureactionofnick.Size = new System.Drawing.Size(333, 30);
+            this.mnureactionofnick.Size = new System.Drawing.Size(284, 30);
             this.mnureactionofnick.Text = "Tương tác vào bạn bè, nhóm của nick";
             this.mnureactionofnick.Click += new System.EventHandler(this.mnureactionofnick_Click);
             // 
@@ -1337,7 +1132,7 @@
             // 
             this.mnuPost.Image = ((System.Drawing.Image)(resources.GetObject("mnuPost.Image")));
             this.mnuPost.Name = "mnuPost";
-            this.mnuPost.Size = new System.Drawing.Size(333, 30);
+            this.mnuPost.Size = new System.Drawing.Size(284, 30);
             this.mnuPost.Text = "Đăng bài viết";
             this.mnuPost.Click += new System.EventHandler(this.mnuPost_Click);
             // 
@@ -1349,7 +1144,7 @@
             this.mnuinvitefirend});
             this.kếtBạnToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kếtBạnToolStripMenuItem.Image")));
             this.kếtBạnToolStripMenuItem.Name = "kếtBạnToolStripMenuItem";
-            this.kếtBạnToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.kếtBạnToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.kếtBạnToolStripMenuItem.Text = "Bạn bè";
             this.kếtBạnToolStripMenuItem.Click += new System.EventHandler(this.kếtBạnToolStripMenuItem_Click);
             // 
@@ -1357,7 +1152,7 @@
             // 
             this.mnuKetBan.Image = global::NinjaSystem.Properties.Resources.Team_50px;
             this.mnuKetBan.Name = "mnuKetBan";
-            this.mnuKetBan.Size = new System.Drawing.Size(260, 26);
+            this.mnuKetBan.Size = new System.Drawing.Size(215, 22);
             this.mnuKetBan.Text = "Kết bạn theo UID";
             this.mnuKetBan.Click += new System.EventHandler(this.mnuKetBan_Click);
             // 
@@ -1365,7 +1160,7 @@
             // 
             this.mnuCancelRequest.Image = global::NinjaSystem.Properties.Resources.icons8_denied_40;
             this.mnuCancelRequest.Name = "mnuCancelRequest";
-            this.mnuCancelRequest.Size = new System.Drawing.Size(260, 26);
+            this.mnuCancelRequest.Size = new System.Drawing.Size(215, 22);
             this.mnuCancelRequest.Text = "Hủy lời mời kết bạn";
             this.mnuCancelRequest.Click += new System.EventHandler(this.mnuCancelRequest_Click);
             // 
@@ -1373,7 +1168,7 @@
             // 
             this.mnuinvitefirend.Image = global::NinjaSystem.Properties.Resources.icons8_invite_26;
             this.mnuinvitefirend.Name = "mnuinvitefirend";
-            this.mnuinvitefirend.Size = new System.Drawing.Size(260, 26);
+            this.mnuinvitefirend.Size = new System.Drawing.Size(215, 22);
             this.mnuinvitefirend.Text = "Mời bạn thích page, group";
             this.mnuinvitefirend.Click += new System.EventHandler(this.mnuinvitefirend_Click);
             // 
@@ -1381,7 +1176,7 @@
             // 
             this.toolStripMenuItem8.Image = global::NinjaSystem.Properties.Resources.Share_50px;
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(333, 30);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(284, 30);
             this.toolStripMenuItem8.Text = "Share Live stream, Video, Seeding";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
@@ -1394,7 +1189,7 @@
             this.mnuPostInGroup});
             this.mnuJoinGroup1.Image = global::NinjaSystem.Properties.Resources.icons8_user_groups_50;
             this.mnuJoinGroup1.Name = "mnuJoinGroup1";
-            this.mnuJoinGroup1.Size = new System.Drawing.Size(333, 30);
+            this.mnuJoinGroup1.Size = new System.Drawing.Size(284, 30);
             this.mnuJoinGroup1.Text = "Tương tác nhóm";
             this.mnuJoinGroup1.Click += new System.EventHandler(this.mnuJoinGroup_Click);
             // 
@@ -1402,7 +1197,7 @@
             // 
             this.mnuJoinGroup.Image = global::NinjaSystem.Properties.Resources.Add_48px;
             this.mnuJoinGroup.Name = "mnuJoinGroup";
-            this.mnuJoinGroup.Size = new System.Drawing.Size(345, 26);
+            this.mnuJoinGroup.Size = new System.Drawing.Size(285, 22);
             this.mnuJoinGroup.Text = "Tham gia nhóm theo ID nhóm thủ công";
             this.mnuJoinGroup.Click += new System.EventHandler(this.mnuJoinGroup_Click_1);
             // 
@@ -1410,7 +1205,7 @@
             // 
             this.mnu_commentGroupID.Image = global::NinjaSystem.Properties.Resources._58_likecycle;
             this.mnu_commentGroupID.Name = "mnu_commentGroupID";
-            this.mnu_commentGroupID.Size = new System.Drawing.Size(345, 26);
+            this.mnu_commentGroupID.Size = new System.Drawing.Size(285, 22);
             this.mnu_commentGroupID.Text = "Tương tác vào danh sách ID nhóm";
             this.mnu_commentGroupID.Click += new System.EventHandler(this.mnu_commentGroupID_Click);
             // 
@@ -1418,7 +1213,7 @@
             // 
             this.mnuLeaveGroup.Image = global::NinjaSystem.Properties.Resources.Safe_Out_50px;
             this.mnuLeaveGroup.Name = "mnuLeaveGroup";
-            this.mnuLeaveGroup.Size = new System.Drawing.Size(345, 26);
+            this.mnuLeaveGroup.Size = new System.Drawing.Size(285, 22);
             this.mnuLeaveGroup.Text = "Rời nhóm";
             this.mnuLeaveGroup.Click += new System.EventHandler(this.mnuLeaveGroup_Click);
             // 
@@ -1426,7 +1221,7 @@
             // 
             this.mnuPostInGroup.Image = global::NinjaSystem.Properties.Resources.icons8_post;
             this.mnuPostInGroup.Name = "mnuPostInGroup";
-            this.mnuPostInGroup.Size = new System.Drawing.Size(345, 26);
+            this.mnuPostInGroup.Size = new System.Drawing.Size(285, 22);
             this.mnuPostInGroup.Text = "Đăng bài viết vào nhóm";
             this.mnuPostInGroup.Click += new System.EventHandler(this.mnuPostInGroup_Click);
             // 
@@ -1438,7 +1233,7 @@
             this.mnugetbirthday});
             this.cấuHìnhTàiKhoảnToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.icons8_settings_32;
             this.cấuHìnhTàiKhoảnToolStripMenuItem.Name = "cấuHìnhTàiKhoảnToolStripMenuItem";
-            this.cấuHìnhTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.cấuHìnhTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.cấuHìnhTàiKhoảnToolStripMenuItem.Text = "Cấu hình tài khoản";
             this.cấuHìnhTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.cấuHìnhTàiKhoảnToolStripMenuItem_Click);
             // 
@@ -1446,7 +1241,7 @@
             // 
             this.mnu_profile.Image = global::NinjaSystem.Properties.Resources.icons8_settings_32__2_;
             this.mnu_profile.Name = "mnu_profile";
-            this.mnu_profile.Size = new System.Drawing.Size(337, 26);
+            this.mnu_profile.Size = new System.Drawing.Size(281, 22);
             this.mnu_profile.Text = "Thay đổi thông tin cá nhân, mật khẩu...";
             this.mnu_profile.Click += new System.EventHandler(this.mnu_profile_Click);
             // 
@@ -1454,7 +1249,7 @@
             // 
             this.mnu_2Fa.Image = global::NinjaSystem.Properties.Resources.icons8_authentication_64;
             this.mnu_2Fa.Name = "mnu_2Fa";
-            this.mnu_2Fa.Size = new System.Drawing.Size(337, 26);
+            this.mnu_2Fa.Size = new System.Drawing.Size(281, 22);
             this.mnu_2Fa.Text = "Bật bảo mật 2 lớp - Xóa thiết bị";
             this.mnu_2Fa.Click += new System.EventHandler(this.mnu_2Fa_Click);
             // 
@@ -1462,7 +1257,7 @@
             // 
             this.mnugetbirthday.Image = global::NinjaSystem.Properties.Resources.iconfinder_Gift_669944;
             this.mnugetbirthday.Name = "mnugetbirthday";
-            this.mnugetbirthday.Size = new System.Drawing.Size(337, 26);
+            this.mnugetbirthday.Size = new System.Drawing.Size(281, 22);
             this.mnugetbirthday.Text = "Lấy thông tin ngày sinh";
             this.mnugetbirthday.Click += new System.EventHandler(this.mnugetbirthday_Click);
             // 
@@ -1478,7 +1273,7 @@
             this.xoaProfileBAckupToolStripMenuItem});
             this.mnuShowHide.Image = global::NinjaSystem.Properties.Resources.Gears_64px;
             this.mnuShowHide.Name = "mnuShowHide";
-            this.mnuShowHide.Size = new System.Drawing.Size(333, 30);
+            this.mnuShowHide.Size = new System.Drawing.Size(284, 30);
             this.mnuShowHide.Text = "Tiện ích khác";
             this.mnuShowHide.Click += new System.EventHandler(this.mnuShowHide_Click);
             // 
@@ -1486,7 +1281,7 @@
             // 
             this.tạoBàiViếtToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.send;
             this.tạoBàiViếtToolStripMenuItem.Name = "tạoBàiViếtToolStripMenuItem";
-            this.tạoBàiViếtToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
+            this.tạoBàiViếtToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.tạoBàiViếtToolStripMenuItem.Text = "Tạo Bài Viết";
             this.tạoBàiViếtToolStripMenuItem.Click += new System.EventHandler(this.tạoBàiViếtToolStripMenuItem_Click);
             // 
@@ -1494,7 +1289,7 @@
             // 
             this.mởDataBàiViếtToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Opened_Folder_30px;
             this.mởDataBàiViếtToolStripMenuItem.Name = "mởDataBàiViếtToolStripMenuItem";
-            this.mởDataBàiViếtToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
+            this.mởDataBàiViếtToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.mởDataBàiViếtToolStripMenuItem.Text = "Mở Data Bài Viết";
             this.mởDataBàiViếtToolStripMenuItem.Click += new System.EventHandler(this.mởDataBàiViếtToolStripMenuItem_Click);
             // 
@@ -1502,7 +1297,7 @@
             // 
             this.ẩnHiểnCộtToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.icons8_columns_48;
             this.ẩnHiểnCộtToolStripMenuItem.Name = "ẩnHiểnCộtToolStripMenuItem";
-            this.ẩnHiểnCộtToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
+            this.ẩnHiểnCộtToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.ẩnHiểnCộtToolStripMenuItem.Text = "Ẩn hiển cột";
             this.ẩnHiểnCộtToolStripMenuItem.Click += new System.EventHandler(this.ẩnHiểnCộtToolStripMenuItem_Click);
             // 
@@ -1510,7 +1305,7 @@
             // 
             this.pasteGhiChúToolStripMenuItem1.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.pasteGhiChúToolStripMenuItem1.Name = "pasteGhiChúToolStripMenuItem1";
-            this.pasteGhiChúToolStripMenuItem1.Size = new System.Drawing.Size(209, 26);
+            this.pasteGhiChúToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.pasteGhiChúToolStripMenuItem1.Text = "Paste Ghi Chú";
             this.pasteGhiChúToolStripMenuItem1.Click += new System.EventHandler(this.pasteGhiChúToolStripMenuItem1_Click);
             // 
@@ -1518,7 +1313,7 @@
             // 
             this.checkAvatarToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.avatar;
             this.checkAvatarToolStripMenuItem.Name = "checkAvatarToolStripMenuItem";
-            this.checkAvatarToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
+            this.checkAvatarToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.checkAvatarToolStripMenuItem.Text = "Check Avatar";
             this.checkAvatarToolStripMenuItem.Click += new System.EventHandler(this.checkAvatarToolStripMenuItem_Click);
             // 
@@ -1526,14 +1321,14 @@
             // 
             this.quétUIDGroupToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.icons8_broom_40;
             this.quétUIDGroupToolStripMenuItem.Name = "quétUIDGroupToolStripMenuItem";
-            this.quétUIDGroupToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
+            this.quétUIDGroupToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.quétUIDGroupToolStripMenuItem.Text = "Quét UID Group";
             this.quétUIDGroupToolStripMenuItem.Click += new System.EventHandler(this.quétUIDGroupToolStripMenuItem_Click);
             // 
             // xoaProfileBAckupToolStripMenuItem
             // 
             this.xoaProfileBAckupToolStripMenuItem.Name = "xoaProfileBAckupToolStripMenuItem";
-            this.xoaProfileBAckupToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
+            this.xoaProfileBAckupToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.xoaProfileBAckupToolStripMenuItem.Text = "Xóa Profile Backup";
             this.xoaProfileBAckupToolStripMenuItem.Click += new System.EventHandler(this.xoaProfileBAckupToolStripMenuItem_Click);
             // 
@@ -1545,27 +1340,27 @@
             this.xóaCácUIDTrùngToolStripMenuItem});
             this.xóaAccKhỏiThiếtBịToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("xóaAccKhỏiThiếtBịToolStripMenuItem.Image")));
             this.xóaAccKhỏiThiếtBịToolStripMenuItem.Name = "xóaAccKhỏiThiếtBịToolStripMenuItem";
-            this.xóaAccKhỏiThiếtBịToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.xóaAccKhỏiThiếtBịToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.xóaAccKhỏiThiếtBịToolStripMenuItem.Text = "Xoá Tài Khoản";
             // 
             // mnuRemoveAcc
             // 
             this.mnuRemoveAcc.Name = "mnuRemoveAcc";
-            this.mnuRemoveAcc.Size = new System.Drawing.Size(240, 26);
+            this.mnuRemoveAcc.Size = new System.Drawing.Size(199, 22);
             this.mnuRemoveAcc.Text = "Xóa khỏi LD";
             this.mnuRemoveAcc.Click += new System.EventHandler(this.mnuRemoveAcc_Click);
             // 
             // mnuDeleteAcc
             // 
             this.mnuDeleteAcc.Name = "mnuDeleteAcc";
-            this.mnuDeleteAcc.Size = new System.Drawing.Size(240, 26);
+            this.mnuDeleteAcc.Size = new System.Drawing.Size(199, 22);
             this.mnuDeleteAcc.Text = "Xóa khỏi hệ thống";
             this.mnuDeleteAcc.Click += new System.EventHandler(this.mnuDeleteAcc_Click);
             // 
             // xóaCácUIDTrùngToolStripMenuItem
             // 
             this.xóaCácUIDTrùngToolStripMenuItem.Name = "xóaCácUIDTrùngToolStripMenuItem";
-            this.xóaCácUIDTrùngToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
+            this.xóaCácUIDTrùngToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.xóaCácUIDTrùngToolStripMenuItem.Text = "Xóa các UID trùng nhau";
             this.xóaCácUIDTrùngToolStripMenuItem.Click += new System.EventHandler(this.xóaCácUIDTrùngToolStripMenuItem_Click);
             // 
@@ -1573,7 +1368,7 @@
             // 
             this.mởCheckpointNgàySinhToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.icons8_unlock_64;
             this.mởCheckpointNgàySinhToolStripMenuItem.Name = "mởCheckpointNgàySinhToolStripMenuItem";
-            this.mởCheckpointNgàySinhToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.mởCheckpointNgàySinhToolStripMenuItem.Size = new System.Drawing.Size(284, 30);
             this.mởCheckpointNgàySinhToolStripMenuItem.Text = "Mở Checkpoint Ngày Sinh";
             this.mởCheckpointNgàySinhToolStripMenuItem.Click += new System.EventHandler(this.mởCheckpointNgàySinhToolStripMenuItem_Click);
             // 
@@ -1581,7 +1376,7 @@
             // 
             this.mnusetupProxy.Image = global::NinjaSystem.Properties.Resources.icons8_firewall_52;
             this.mnusetupProxy.Name = "mnusetupProxy";
-            this.mnusetupProxy.Size = new System.Drawing.Size(333, 30);
+            this.mnusetupProxy.Size = new System.Drawing.Size(284, 30);
             this.mnusetupProxy.Text = "Gán Proxy cho account";
             this.mnusetupProxy.Click += new System.EventHandler(this.mnusetupProxy_Click);
             // 
@@ -1589,10 +1384,220 @@
             // 
             this.mnumoney.Image = global::NinjaSystem.Properties.Resources.icons8_money_bag;
             this.mnumoney.Name = "mnumoney";
-            this.mnumoney.Size = new System.Drawing.Size(333, 30);
+            this.mnumoney.Size = new System.Drawing.Size(284, 30);
             this.mnumoney.Text = "Make Monney";
             this.mnumoney.Visible = false;
             this.mnumoney.Click += new System.EventHandler(this.mnumoney_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuImageButton4);
+            this.panel1.Controls.Add(this.bunifuImageButton3);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblcountAcc);
+            this.panel1.Controls.Add(this.btnStop);
+            this.panel1.Controls.Add(this.btnCheckToken);
+            this.panel1.Controls.Add(this.btn_config_devices);
+            this.panel1.Controls.Add(this.txtSearch);
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Controls.Add(this.bunifuImageButton2);
+            this.panel1.Controls.Add(this.btn_addUser);
+            this.panel1.Controls.Add(this.pibStatus);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1134, 49);
+            this.panel1.TabIndex = 0;
+            // 
+            // bunifuImageButton4
+            // 
+            this.bunifuImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuImageButton4.Image = global::NinjaSystem.Properties.Resources.lite_login_label_facebook_logo;
+            this.bunifuImageButton4.ImageActive = null;
+            this.bunifuImageButton4.Location = new System.Drawing.Point(102, 2);
+            this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton4.Name = "bunifuImageButton4";
+            this.bunifuImageButton4.Size = new System.Drawing.Size(92, 40);
+            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton4.TabIndex = 171;
+            this.bunifuImageButton4.TabStop = false;
+            this.bunifuImageButton4.Zoom = 10;
+            this.bunifuImageButton4.Click += new System.EventHandler(this.bunifuImageButton4_Click);
+            // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuImageButton3.Image = global::NinjaSystem.Properties.Resources.icons8_facebook_48;
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(46, 2);
+            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 170;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(434, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 19);
+            this.label1.TabIndex = 168;
+            this.label1.Text = "Số acc đã chọn:";
+            // 
+            // lblcountAcc
+            // 
+            this.lblcountAcc.AutoSize = true;
+            this.lblcountAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcountAcc.ForeColor = System.Drawing.Color.Red;
+            this.lblcountAcc.Location = new System.Drawing.Point(609, 16);
+            this.lblcountAcc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcountAcc.Name = "lblcountAcc";
+            this.lblcountAcc.Size = new System.Drawing.Size(0, 17);
+            this.lblcountAcc.TabIndex = 169;
+            // 
+            // btnStop
+            // 
+            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStop.Image = global::NinjaSystem.Properties.Resources.Pause_Squared_48px;
+            this.btnStop.ImageActive = null;
+            this.btnStop.Location = new System.Drawing.Point(811, 5);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(41, 40);
+            this.btnStop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnStop.TabIndex = 9;
+            this.btnStop.TabStop = false;
+            this.btnStop.Visible = false;
+            this.btnStop.Zoom = 10;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // btnCheckToken
+            // 
+            this.btnCheckToken.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCheckToken.Image = global::NinjaSystem.Properties.Resources.Cursor_30px;
+            this.btnCheckToken.ImageActive = null;
+            this.btnCheckToken.Location = new System.Drawing.Point(900, 5);
+            this.btnCheckToken.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCheckToken.Name = "btnCheckToken";
+            this.btnCheckToken.Size = new System.Drawing.Size(40, 39);
+            this.btnCheckToken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCheckToken.TabIndex = 30;
+            this.btnCheckToken.TabStop = false;
+            this.btnCheckToken.Visible = false;
+            this.btnCheckToken.Zoom = 10;
+            this.btnCheckToken.Click += new System.EventHandler(this.btnCheckToken_Click);
+            // 
+            // btn_config_devices
+            // 
+            this.btn_config_devices.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_config_devices.Image = global::NinjaSystem.Properties.Resources.Shake_Phone_64px;
+            this.btn_config_devices.ImageActive = null;
+            this.btn_config_devices.Location = new System.Drawing.Point(856, 5);
+            this.btn_config_devices.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_config_devices.Name = "btn_config_devices";
+            this.btn_config_devices.Size = new System.Drawing.Size(40, 39);
+            this.btn_config_devices.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_config_devices.TabIndex = 30;
+            this.btn_config_devices.TabStop = false;
+            this.btn_config_devices.Visible = false;
+            this.btn_config_devices.Zoom = 10;
+            this.btn_config_devices.Click += new System.EventHandler(this.btn_config_devices_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(932, 9);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(1);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(147, 20);
+            this.txtSearch.TabIndex = 29;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Image = global::NinjaSystem.Properties.Resources.icons8_google_web_search_48;
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(1083, -3);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(34, 48);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 28;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuImageButton2.Image = global::NinjaSystem.Properties.Resources.Circled_Play_48px;
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(767, 4);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 26;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Visible = false;
+            this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
+            // btn_addUser
+            // 
+            this.btn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_addUser.Image = global::NinjaSystem.Properties.Resources.Add_48px;
+            this.btn_addUser.ImageActive = null;
+            this.btn_addUser.Location = new System.Drawing.Point(2, 2);
+            this.btn_addUser.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_addUser.Name = "btn_addUser";
+            this.btn_addUser.Size = new System.Drawing.Size(40, 40);
+            this.btn_addUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_addUser.TabIndex = 26;
+            this.btn_addUser.TabStop = false;
+            this.btn_addUser.Zoom = 10;
+            this.btn_addUser.Click += new System.EventHandler(this.btn_addUser_Click);
+            // 
+            // pibStatus
+            // 
+            this.pibStatus.Image = ((System.Drawing.Image)(resources.GetObject("pibStatus.Image")));
+            this.pibStatus.Location = new System.Drawing.Point(945, 35);
+            this.pibStatus.Name = "pibStatus";
+            this.pibStatus.Size = new System.Drawing.Size(97, 10);
+            this.pibStatus.TabIndex = 23;
+            this.pibStatus.TabStop = false;
+            this.pibStatus.Visible = false;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.pnLD);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(1);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(1);
+            this.tabPage4.Size = new System.Drawing.Size(1140, 636);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "LDView";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // pnLD
+            // 
+            this.pnLD.AutoScroll = true;
+            this.pnLD.BackColor = System.Drawing.Color.Black;
+            this.pnLD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnLD.Location = new System.Drawing.Point(1, 1);
+            this.pnLD.Margin = new System.Windows.Forms.Padding(1);
+            this.pnLD.Name = "pnLD";
+            this.pnLD.Size = new System.Drawing.Size(1138, 634);
+            this.pnLD.TabIndex = 0;
             // 
             // timer1
             // 
@@ -1632,10 +1637,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(148)))), ((int)(((byte)(29)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(148)))), ((int)(((byte)(29)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(96, 838);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(72, 681);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
             // btnreset
@@ -1645,10 +1650,10 @@
             this.btnreset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnreset.Image = global::NinjaSystem.Properties.Resources.icons8_reset_64;
             this.btnreset.ImageActive = null;
-            this.btnreset.Location = new System.Drawing.Point(1, 602);
-            this.btnreset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnreset.Location = new System.Drawing.Point(1, 489);
+            this.btnreset.Margin = new System.Windows.Forms.Padding(2);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(96, 48);
+            this.btnreset.Size = new System.Drawing.Size(72, 39);
             this.btnreset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnreset.TabIndex = 4;
             this.btnreset.TabStop = false;
@@ -1662,10 +1667,10 @@
             this.btnmanage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnmanage.Image = global::NinjaSystem.Properties.Resources.Team_50px;
             this.btnmanage.ImageActive = null;
-            this.btnmanage.Location = new System.Drawing.Point(3, 549);
-            this.btnmanage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnmanage.Location = new System.Drawing.Point(2, 446);
+            this.btnmanage.Margin = new System.Windows.Forms.Padding(2);
             this.btnmanage.Name = "btnmanage";
-            this.btnmanage.Size = new System.Drawing.Size(96, 48);
+            this.btnmanage.Size = new System.Drawing.Size(72, 39);
             this.btnmanage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnmanage.TabIndex = 3;
             this.btnmanage.TabStop = false;
@@ -1679,10 +1684,10 @@
             this.btnSync.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSync.Image = ((System.Drawing.Image)(resources.GetObject("btnSync.Image")));
             this.btnSync.ImageActive = null;
-            this.btnSync.Location = new System.Drawing.Point(3, 661);
-            this.btnSync.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSync.Location = new System.Drawing.Point(2, 537);
+            this.btnSync.Margin = new System.Windows.Forms.Padding(2);
             this.btnSync.Name = "btnSync";
-            this.btnSync.Size = new System.Drawing.Size(96, 48);
+            this.btnSync.Size = new System.Drawing.Size(72, 39);
             this.btnSync.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSync.TabIndex = 2;
             this.btnSync.TabStop = false;
@@ -1696,10 +1701,10 @@
             this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageActive = null;
-            this.btnSetting.Location = new System.Drawing.Point(3, 715);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSetting.Location = new System.Drawing.Point(2, 581);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(2);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(96, 48);
+            this.btnSetting.Size = new System.Drawing.Size(72, 39);
             this.btnSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSetting.TabIndex = 1;
             this.btnSetting.TabStop = false;
@@ -1713,10 +1718,10 @@
             this.btnRecycleBin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecycleBin.Image = ((System.Drawing.Image)(resources.GetObject("btnRecycleBin.Image")));
             this.btnRecycleBin.ImageActive = null;
-            this.btnRecycleBin.Location = new System.Drawing.Point(3, 780);
-            this.btnRecycleBin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRecycleBin.Location = new System.Drawing.Point(2, 634);
+            this.btnRecycleBin.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecycleBin.Name = "btnRecycleBin";
-            this.btnRecycleBin.Size = new System.Drawing.Size(96, 50);
+            this.btnRecycleBin.Size = new System.Drawing.Size(72, 41);
             this.btnRecycleBin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRecycleBin.TabIndex = 1;
             this.btnRecycleBin.TabStop = false;
@@ -1728,10 +1733,10 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(0, 11);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(0, 9);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(96, 54);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(72, 44);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 0;
             this.bunifuImageButton1.TabStop = false;
@@ -1741,14 +1746,13 @@
             // 
             // frm_MainLD_PRO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 838);
+            this.ClientSize = new System.Drawing.Size(1443, 681);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_MainLD_PRO";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_MainLD_Load);
@@ -1767,8 +1771,10 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            this.mnuUser.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCheckToken)).EndInit();
@@ -1778,7 +1784,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_addUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibStatus)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.mnuUser.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnreset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnmanage)).EndInit();
@@ -1944,5 +1949,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clProxy;
         private System.Windows.Forms.DataGridViewTextBoxColumn clBackupLD;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
     }
 }

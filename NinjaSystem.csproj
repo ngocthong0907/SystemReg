@@ -352,6 +352,12 @@
     <Compile Include="frm_LeaveGroup_PRO.Designer.cs">
       <DependentUpon>frm_LeaveGroup_PRO.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_regnick_novery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_regnick_novery.Designer.cs">
+      <DependentUpon>frm_regnick_novery.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ShareNhomLD_PRO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -776,6 +782,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LeaveGroup_PRO.resx">
       <DependentUpon>frm_LeaveGroup_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_regnick_novery.resx">
+      <DependentUpon>frm_regnick_novery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ShareNhomLD_PRO.resx">
       <DependentUpon>frm_ShareNhomLD_PRO.cs</DependentUpon>

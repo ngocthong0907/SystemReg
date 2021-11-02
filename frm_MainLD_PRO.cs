@@ -4090,6 +4090,12 @@ namespace NinjaSystem
             frm_regnick frm = new frm_regnick(this);
             frm.Show();
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            frm_regnick_novery frm = new frm_regnick_novery(this);
+            frm.Show();
+        }
        
        
        
