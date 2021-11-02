@@ -1238,7 +1238,7 @@ namespace NinjaSystem
                                 }
                                 dr.Cells["Message"].Value = "Watch video";
                                 u.setStatus(ldID, "Watch video");
-                                ld.scrollNewfeedWatch(u, ldID, acc, 6, 12, token, 5, 15);
+                                ld.scrollNewfeedWatch(u, ldID, acc, (int)numscrollmin.Value, (int)numscrollmax.Value, token, (int)numviewmin.Value, (int)numviewmax.Value);
                                 ld.Zip(acc, ldID);
                                int delay = rd.Next((int)numdelayregmin.Value, (int)numdelayregmax.Value);
 

@@ -17460,8 +17460,6 @@ namespace NinjaSystem
 
                 DetechModel kq = new DetechModel();
 
-            
-
                 kq = detechFunctionCatchImages(ldID, list_detech2fa);
                 if (!kq.status)
                     kq = detechFunction(ldID, SettingTool.lang.list_2fa);
@@ -17602,8 +17600,6 @@ namespace NinjaSystem
             }
             catch
             { }
-
-
             return "Bật 2fa không hoàn thành";
         }
         public string addEmail10phut(string ldID, Account acc, string app, CancellationToken token)
@@ -30656,7 +30652,7 @@ namespace NinjaSystem
                                 }
                                 if (kq.parent == "inputnumber")
                                 {
-                                    if (maxNumberfone > 1)
+                                    if (maxNumberfone >= 1)
                                     {
                                         dr.Cells["Message"].Value = "Get number fail ";
                                         u.setStatus(ldID, "Get number fail ");
@@ -30693,8 +30689,7 @@ namespace NinjaSystem
                                        rs = getPhoneCodetextnow(api);
                                       number = rs.phone;
                                     }
-                                      
-
+                                 
                                     if (!string.IsNullOrEmpty(number))
                                     {
                                         maxNumberfone++;
@@ -30795,7 +30790,7 @@ namespace NinjaSystem
                     i++;
                     if (i < 15)
                     {
-                        Delay(6);
+                        Delay(5);
                         goto Lb_start;
                     }
                 }

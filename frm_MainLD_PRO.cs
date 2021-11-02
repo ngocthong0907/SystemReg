@@ -4061,15 +4061,15 @@ namespace NinjaSystem
 
         private void mnumoney_Click(object sender, EventArgs e)
         {
-            List<Account> list_acc = new List<Account>();
-            foreach (DataGridViewRow dr in dgvUser.SelectedRows)
-            {
-                Account acc = (Account)dr.Tag;
-                list_acc.Add(acc);
-            }
-            frm_Makemoney_PRO frmadd = new frm_Makemoney_PRO(list_acc, this);
+            //List<Account> list_acc = new List<Account>();
+            //foreach (DataGridViewRow dr in dgvUser.SelectedRows)
+            //{
+            //    Account acc = (Account)dr.Tag;
+            //    list_acc.Add(acc);
+            //}
+            //frm_Makemoney_PRO frmadd = new frm_Makemoney_PRO(list_acc, this);
 
-            frmadd.Show();
+            //frmadd.Show();
         }
 
         private void dgvUser_CellClick(object sender, DataGridViewCellEventArgs e)

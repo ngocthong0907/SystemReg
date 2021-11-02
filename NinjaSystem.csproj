@@ -274,12 +274,6 @@
     <Compile Include="frm_MainLD.Designer.cs">
       <DependentUpon>frm_MainLD.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Makemoney_PRO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Makemoney_PRO.Designer.cs">
-      <DependentUpon>frm_Makemoney_PRO.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_ReactionLD_PRO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -743,9 +737,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_MainLD.resx">
       <DependentUpon>frm_MainLD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_Makemoney_PRO.resx">
-      <DependentUpon>frm_Makemoney_PRO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ReactionLD_PRO.resx">
       <DependentUpon>frm_ReactionLD_PRO.cs</DependentUpon>

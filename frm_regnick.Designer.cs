@@ -39,6 +39,12 @@
             this.clStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.numviewmax = new System.Windows.Forms.NumericUpDown();
+            this.numviewmin = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.numscrollmax = new System.Windows.Forms.NumericUpDown();
+            this.numscrollmin = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.cboWebsite = new System.Windows.Forms.ComboBox();
@@ -80,6 +86,10 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numviewmax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numviewmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numscrollmax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numscrollmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numdelayregmax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numdelayregmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numdelayclickmax)).BeginInit();
@@ -93,9 +103,9 @@
             // richLogs
             // 
             this.richLogs.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.richLogs.Location = new System.Drawing.Point(0, 456);
+            this.richLogs.Location = new System.Drawing.Point(0, 505);
             this.richLogs.Name = "richLogs";
-            this.richLogs.Size = new System.Drawing.Size(982, 112);
+            this.richLogs.Size = new System.Drawing.Size(982, 63);
             this.richLogs.TabIndex = 12;
             this.richLogs.Text = resources.GetString("richLogs.Text");
             this.richLogs.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richLogs_LinkClicked);
@@ -115,11 +125,11 @@
             this.clStatus,
             this.Message});
             this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUser.Location = new System.Drawing.Point(0, 96);
+            this.dgvUser.Location = new System.Drawing.Point(0, 133);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersVisible = false;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(982, 360);
+            this.dgvUser.Size = new System.Drawing.Size(982, 372);
             this.dgvUser.TabIndex = 13;
             this.dgvUser.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUser_CellMouseDown);
             // 
@@ -168,6 +178,12 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.numviewmax);
+            this.panel4.Controls.Add(this.numviewmin);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.numscrollmax);
+            this.panel4.Controls.Add(this.numscrollmin);
+            this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.cboWebsite);
@@ -209,14 +225,80 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(982, 96);
+            this.panel4.Size = new System.Drawing.Size(982, 133);
             this.panel4.TabIndex = 11;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // numviewmax
+            // 
+            this.numviewmax.Location = new System.Drawing.Point(882, 108);
+            this.numviewmax.Name = "numviewmax";
+            this.numviewmax.Size = new System.Drawing.Size(50, 20);
+            this.numviewmax.TabIndex = 232;
+            this.numviewmax.Value = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
+            // 
+            // numviewmin
+            // 
+            this.numviewmin.Location = new System.Drawing.Point(823, 108);
+            this.numviewmin.Name = "numviewmin";
+            this.numviewmin.Size = new System.Drawing.Size(50, 20);
+            this.numviewmin.TabIndex = 231;
+            this.numviewmin.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(761, 111);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(59, 13);
+            this.label13.TabIndex = 230;
+            this.label13.Text = "View video";
+            // 
+            // numscrollmax
+            // 
+            this.numscrollmax.Location = new System.Drawing.Point(713, 108);
+            this.numscrollmax.Name = "numscrollmax";
+            this.numscrollmax.Size = new System.Drawing.Size(44, 20);
+            this.numscrollmax.TabIndex = 229;
+            this.numscrollmax.Value = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            // 
+            // numscrollmin
+            // 
+            this.numscrollmin.Location = new System.Drawing.Point(657, 108);
+            this.numscrollmin.Name = "numscrollmin";
+            this.numscrollmin.Size = new System.Drawing.Size(44, 20);
+            this.numscrollmin.TabIndex = 228;
+            this.numscrollmin.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(590, 111);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(62, 13);
+            this.label14.TabIndex = 227;
+            this.label14.Text = "Scroll video";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(907, 59);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(882, 68);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 226;
@@ -242,7 +324,7 @@
             "otpmmo.com",
             "codetextnow.com"});
             this.cboWebsite.Location = new System.Drawing.Point(295, 70);
-            this.cboWebsite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboWebsite.Margin = new System.Windows.Forms.Padding(2);
             this.cboWebsite.Name = "cboWebsite";
             this.cboWebsite.Size = new System.Drawing.Size(122, 21);
             this.cboWebsite.TabIndex = 224;
@@ -251,7 +333,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(748, 72);
+            this.checkBox1.Location = new System.Drawing.Point(752, 74);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(37, 17);
             this.checkBox1.TabIndex = 40;
@@ -260,7 +342,7 @@
             // 
             // numdelayregmax
             // 
-            this.numdelayregmax.Location = new System.Drawing.Point(882, 37);
+            this.numdelayregmax.Location = new System.Drawing.Point(882, 41);
             this.numdelayregmax.Name = "numdelayregmax";
             this.numdelayregmax.Size = new System.Drawing.Size(50, 20);
             this.numdelayregmax.TabIndex = 223;
@@ -272,7 +354,7 @@
             // 
             // numdelayregmin
             // 
-            this.numdelayregmin.Location = new System.Drawing.Point(823, 36);
+            this.numdelayregmin.Location = new System.Drawing.Point(823, 40);
             this.numdelayregmin.Name = "numdelayregmin";
             this.numdelayregmin.Size = new System.Drawing.Size(50, 20);
             this.numdelayregmin.TabIndex = 222;
@@ -285,7 +367,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(766, 39);
+            this.label5.Location = new System.Drawing.Point(768, 43);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 221;
@@ -302,7 +384,7 @@
             // 
             // numdelayclickmax
             // 
-            this.numdelayclickmax.Location = new System.Drawing.Point(718, 37);
+            this.numdelayclickmax.Location = new System.Drawing.Point(718, 41);
             this.numdelayclickmax.Name = "numdelayclickmax";
             this.numdelayclickmax.Size = new System.Drawing.Size(39, 20);
             this.numdelayclickmax.TabIndex = 219;
@@ -314,7 +396,7 @@
             // 
             // numdelayclickmin
             // 
-            this.numdelayclickmin.Location = new System.Drawing.Point(662, 36);
+            this.numdelayclickmin.Location = new System.Drawing.Point(662, 40);
             this.numdelayclickmin.Name = "numdelayclickmin";
             this.numdelayclickmin.Size = new System.Drawing.Size(44, 20);
             this.numdelayclickmin.TabIndex = 218;
@@ -327,7 +409,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(602, 40);
+            this.label8.Location = new System.Drawing.Point(602, 44);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 13);
             this.label8.TabIndex = 217;
@@ -390,7 +472,7 @@
             // rdNam
             // 
             this.rdNam.AutoSize = true;
-            this.rdNam.Location = new System.Drawing.Point(698, 70);
+            this.rdNam.Location = new System.Drawing.Point(698, 74);
             this.rdNam.Name = "rdNam";
             this.rdNam.Size = new System.Drawing.Size(47, 17);
             this.rdNam.TabIndex = 213;
@@ -401,7 +483,7 @@
             // 
             this.rdNu.AutoSize = true;
             this.rdNu.Checked = true;
-            this.rdNu.Location = new System.Drawing.Point(651, 69);
+            this.rdNu.Location = new System.Drawing.Point(651, 73);
             this.rdNu.Name = "rdNu";
             this.rdNu.Size = new System.Drawing.Size(39, 17);
             this.rdNu.TabIndex = 212;
@@ -412,7 +494,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(599, 72);
+            this.label6.Location = new System.Drawing.Point(599, 76);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 211;
@@ -500,7 +582,7 @@
             // txtTen
             // 
             this.txtTen.Location = new System.Drawing.Point(49, 39);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(2);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(188, 20);
             this.txtTen.TabIndex = 203;
@@ -508,7 +590,7 @@
             // txtHo
             // 
             this.txtHo.Location = new System.Drawing.Point(48, 7);
-            this.txtHo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHo.Margin = new System.Windows.Forms.Padding(2);
             this.txtHo.Name = "txtHo";
             this.txtHo.Size = new System.Drawing.Size(188, 20);
             this.txtHo.TabIndex = 201;
@@ -672,8 +754,8 @@
             this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(837, 59);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(88, 92);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(35, 35);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -685,7 +767,7 @@
             // pibStatus
             // 
             this.pibStatus.Image = ((System.Drawing.Image)(resources.GetObject("pibStatus.Image")));
-            this.pibStatus.Location = new System.Drawing.Point(877, 81);
+            this.pibStatus.Location = new System.Drawing.Point(128, 114);
             this.pibStatus.Name = "pibStatus";
             this.pibStatus.Size = new System.Drawing.Size(97, 10);
             this.pibStatus.TabIndex = 14;
@@ -697,8 +779,8 @@
             this.btnRun.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRun.Image = global::NinjaSystem.Properties.Resources.Circled_Play_48px;
             this.btnRun.ImageActive = null;
-            this.btnRun.Location = new System.Drawing.Point(798, 59);
-            this.btnRun.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRun.Location = new System.Drawing.Point(49, 92);
+            this.btnRun.Margin = new System.Windows.Forms.Padding(2);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(35, 35);
             this.btnRun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -712,7 +794,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(13, 102);
+            this.checkBox2.Location = new System.Drawing.Point(16, 136);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 39;
@@ -736,6 +818,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numviewmax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numviewmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numscrollmax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numscrollmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numdelayregmax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numdelayregmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numdelayclickmax)).EndInit();
@@ -800,5 +886,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cboWebsite;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown numviewmax;
+        private System.Windows.Forms.NumericUpDown numviewmin;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.NumericUpDown numscrollmax;
+        private System.Windows.Forms.NumericUpDown numscrollmin;
+        private System.Windows.Forms.Label label14;
     }
 }
