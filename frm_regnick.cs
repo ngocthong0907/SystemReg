@@ -1130,12 +1130,20 @@ namespace NinjaSystem
                             List<string> list_file_image = new List<string>();
                             List<string> imagedelete = new List<string>();
                             list_file_image = System.IO.Directory.GetFiles(txtavatar.Text, "*.*").ToList();
-                           imagedelete = ld.copyimagenew(acc.ldid, list_file_image, 1);
-                            ld.killApp(acc.ldid, "com.facebook.katana");
+                            imagedelete = ld.copyimagenew(acc.ldid, list_file_image, 1);
+
                             Delay(2);
+                            dr.Cells["Message"].Value = "Create contact";
+                            u.setStatus(ldID, "Create contact");
+                            createContact(ldID);
+                            Delay(1);
+
+                            ld.killApp(acc.ldid, "com.facebook.katana");
+                            Delay(1);
                             ld.clearappfb(acc.ldid);
                             ld.runApp(acc.ldid, "com.facebook.katana");
                             ld.checkOpenFacebookFinish(u, acc.ldid);
+                           
                             dr.Cells["Message"].Value = "Reg nick";
                             u.setStatus(ldID, "Reg Nick");
                             u.setStatusSum(total);
@@ -1154,6 +1162,7 @@ namespace NinjaSystem
                             {
                                 acc.gender = "Female";
                             }
+
 
                             if (ld.regnick(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value,checkBox1.Checked,cboWebsite.Text, token))
                             {
@@ -1348,6 +1357,97 @@ namespace NinjaSystem
 
             changeColor(dr, Color.White);
             dr.Cells["Message"].Value = "Reg success: " + success.ToString() + "/" + total.ToString();
+        }
+
+        private void createContact(string ldid)
+        {
+            ld.runAdb(ldid, " shell pm clear com.android.providers.contacts");
+
+            List<string> strNumber = new List<string>();
+            List<string> lscontact = new List<string>();
+            lscontact = File.ReadLines(Application.StartupPath + "\\Contact.txt").ToList();
+            Random rd = new Random();
+            for (int i = 0; i < 300; i++)
+            {
+                strNumber.Add(lscontact[rd.Next(0,lscontact.Count)]);
+            }
+            Importcontact(ldid,strNumber);
+
+        }
+
+        private string Importcontact(string ldID, List<string> strNumber)
+        {
+            string cmd = string.Format(" shell pm clear com.android.providers.contacts");
+            string output = ld.runAdb(ldID, cmd);
+
+            // string[] strNumber = txtNumber.Lines;
+
+            List<string> ls = new List<string>();
+            string lsName = "{hùng|dũng|hoa|nụ|anh|tuấn|hồng|nhung|nguyệt|loan|thành|sỹ|phong|link|trinh|nga|mai|thảo|trang|ly|giang|tiến}";
+
+            string fullname = "{đinh| đinh nguyễn| lê trần| lê|trần|đỗ văn| đỗ|tạ|nguyễn|hứa hữu|lương|hồ ngọc|lân|bạch|huỳnh|hoàng nguyễn|lê|đường|trần huyền|đinh ngọc|cao thái|lý tiểu}";
+
+            Random rd = new Random();
+            if (strNumber.Count > 0)
+            {
+                for (int n = 0; n < strNumber.Count; n++)
+                {
+                    ls.Add("BEGIN:VCARD");
+                    ls.Add("VERSION:3.0");
+                    ls.Add("FN:" + FunctionHelper.method_Spin(fullname) + " " + FunctionHelper.method_Spin(lsName) + " " + FunctionHelper.method_Spin(lsName));
+                    ls.Add("TEL;TYPE=CELL:" + strNumber[n]);
+                    ls.Add("END:VCARD");
+                }
+                string nameRandom = string.Format("contact_{0}.vcf", rd.Next(0, 99999).ToString());
+                //  string namefilevcf = string.Format("c:\\test\\contact_{0}.vcf", nameRandom);
+
+                string namefilevcf = string.Format("c:\\test\\{0}\\pictures\\{1}", ldID, nameRandom);
+
+
+                File.AppendAllLines(namefilevcf, ls);
+                //if (SettingTool.configld.versionld == "3.x")
+                //    cmd = string.Format(" shell mv -i storage/emulated/legacy/pictures/{0} sdcard/", nameRandom);
+                //else
+                //{
+                //    cmd = string.Format(" shell mv -i storage/emulated/0/pictures/{0} sdcard/", nameRandom);
+                //}
+
+                output = ld.runAdb(ldID, cmd);
+                cmd = string.Format("shell am start -t text/x-vcard -d file:///storage/emulated/0/pictures/{0} -a android.intent.action.VIEW com.android.contacts", nameRandom);
+                cmd = ld.runAdb(ldID, cmd);
+
+                List<DetechModel> ls_detecth = new List<DetechModel>();
+                DetechModel dtmodel = new DetechModel();
+                dtmodel = new DetechModel();
+                dtmodel.content = "Nhập liên hệ từ vCard?";
+                dtmodel.text = "ok";
+                dtmodel.function = 1;
+                dtmodel.node = "//node[contains(@class,'android.widget.Button')]";
+                ls_detecth.Add(dtmodel);
+
+                dtmodel = new DetechModel();
+                dtmodel = new DetechModel();
+                dtmodel.content = "Cho phép";
+                dtmodel.text = "Cho phép";
+                dtmodel.function = 1;
+                dtmodel.node = "//node[contains(@class,'android.widget.Button')]";
+                ls_detecth.Add(dtmodel);
+
+            lb_start:
+                DetechModel result = ld.RunDetechFunction(ldID, ls_detecth, 2);
+
+                if (result.status)
+                {
+                    ld.ClickOnLeapdroidPosition(ldID, result.point);
+                    Thread.Sleep(1000);
+                    goto lb_start;
+                }
+
+                File.Delete(namefilevcf);
+                return "Cập nhập thành công: " + strNumber.Count().ToString() + " số";
+            }
+            return "Không có số điện thoại";
+
         }
 
         private List<string> getListfriend(string ldID, Account acc)

@@ -6349,7 +6349,7 @@ namespace NinjaSystem
                         Delay(1);
                         delay--;
                     }
-                    
+
                     if (checkContent(acc.ldid, "lệnh chat"))
                         back(acc.ldid, 2);
                 }
@@ -10549,7 +10549,7 @@ namespace NinjaSystem
                             List<Point> list_goiy = FindByXpathTree(ldID, "//node[contains(@class,'android.widget.HorizontalScrollView')]", "//node[contains(@class,'android.widget.Button')]");
                             if (list_goiy.Count > 0)
                             {
-                                ClickOnLeapdroidPosition(ldID, list_goiy[rd.Next(0,list_goiy.Count -1)]);
+                                ClickOnLeapdroidPosition(ldID, list_goiy[rd.Next(0, list_goiy.Count - 1)]);
 
                                 List<DetechModel> list_OK = new List<DetechModel>();
                                 DetechModel data = new DetechModel();
@@ -27974,7 +27974,7 @@ namespace NinjaSystem
             Delay(1);
             scroll_up_mid(ldID);
             scroll_up_short(ldID);
-           
+
 
             List<Bitmap> ls_image = new List<Bitmap>();
             List<string> ls_name = new List<string>();
@@ -30236,90 +30236,83 @@ namespace NinjaSystem
 
         public bool fakedevice_novery(string device)
         {
-            runApp(device, "zone.bytesreverser.xposeddeviceidmaskerlite");
-            Delay(3);
+            runApp(device, "xyz.easypro.androiddevicechanger");
+            Delay(6);
 
             List<DetechModel> ls_detecth = new List<DetechModel>();
             DetechModel data = new DetechModel();
             data.parent = "";
-            data.content = "Random All";
-            data.text = "Random All";
+            data.content = "Warning";
+            data.text = "OK";
             data.node = "//node[contains(@class,'android.widget.Button')]";
             data.function = 1;
+            ls_detecth.Add(data);
+
+            data = new DetechModel();
+            data.parent = "";
+            data.content = "Web View";
+            data.text = "Web View";
+            data.node = "//node[contains(@class,'android.webkit.WebView')]";
+            data.function = 0;
             ls_detecth.Add(data);
 
             int loop = 0;
             while (loop < 10)
             {
-                DetechModel kq = detechFunctionExact(device, ls_detecth);
+                DetechModel kq = detechFunction(device, ls_detecth);
 
                 if (kq.status)
                 {
+                    if (kq.function == 0)
+                        back(device, 1);
+                    else
+                    {
+                        ClickOnLeapdroidPosition(device, kq.point);
+                        back(device, 1);
+                        break;
 
-                    ClickOnLeapdroidPosition(device, kq.point);
-                    break;
+                    }
+                       
                 }
                 loop++;
-
-
             }
 
             Delay(2);
+            scroll_up_mid(device);
             ls_detecth = new List<DetechModel>();
             data = new DetechModel();
             data.parent = "";
-            data.content = "Apply All";
-            data.text = "Apply All";
+            data.content = "RANDOM";
+            data.text = "RANDOM";
             data.node = "//node[contains(@class,'android.widget.Button')]";
             data.function = 1;
             ls_detecth.Add(data);
 
-            DetechModel result = detechFunctionExact(device, ls_detecth);
-            if (result.status)
-            {
-                ClickOnLeapdroidPosition(device, result.point);
-            }
-
-            runApp(device, "com.phoneinfo.changer");
-
-            Delay(2);
-
-            ls_detecth = new List<DetechModel>();
-            data = new DetechModel();
-            data.parent = "";
-            data.content = "Random All";
-            data.text = "Random All";
-            data.node = "//node[contains(@class,'android.widget.Button')]";
-            data.function = 1;
-            ls_detecth.Add(data);
-
-            result = detechFunctionExact(device, ls_detecth);
-
+            DetechModel result = RunDetechFunction(device, ls_detecth);
             if (result.status)
             {
                 ClickOnLeapdroidPosition(device, result.point);
             }
             Delay(2);
-
             ls_detecth = new List<DetechModel>();
             data = new DetechModel();
             data.parent = "";
-            data.content = "Apply";
-            data.text = "Apply";
+            data.content = "APPLY";
+            data.text = "APPLY";
             data.node = "//node[contains(@class,'android.widget.Button')]";
             data.function = 1;
             ls_detecth.Add(data);
 
-            result = detechFunctionExact(device, ls_detecth);
-
+            result = RunDetechFunction(device, ls_detecth);
             if (result.status)
             {
                 ClickOnLeapdroidPosition(device, result.point);
             }
-            Delay(2);
+
             return true;
+           
         }
-        public bool regnick(Account acc, DataGridViewRow dr, userLD u, string api, int clickmin, int clicktmax, bool x8,string website, CancellationToken token)
+        public bool regnick(Account acc, DataGridViewRow dr, userLD u, string api, int clickmin, int clicktmax, bool x8, string website, CancellationToken token)
         {
             bool avatar = false;
 
@@ -30495,7 +30488,7 @@ namespace NinjaSystem
                 data.text = "Thay đổi số điện thoại";
                 data.node = "//node[contains(@class,'android.widget.Button')]";
                 data.function = 1;
-                ls_detecth.Insert(0,data);
+                ls_detecth.Insert(0, data);
 
                 data = new DetechModel();
                 data.parent = "error";
@@ -30504,6 +30497,14 @@ namespace NinjaSystem
                 data.node = "//node[contains(@class,'android.widget.TextView')]";
                 data.function = 1;
                 ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "failnumber";
+                data.content = "Vui lòng nhập một số điện thoại di động hợp lệ";
+                data.text = "Vui lòng nhập một số điện thoại di động hợp lệ";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 1;
+                ls_detecth.Insert(0,data);
 
                 List<DetechImageModel> list_detechimg = new List<DetechImageModel>();
                 DetechImageModel modelimg = new DetechImageModel();
@@ -30533,7 +30534,7 @@ namespace NinjaSystem
                 int maxNumberfone = 0;
                 int maxcode = 0;
                 int maxclick = 0;
-                 RaiSim rs = new RaiSim();
+                RaiSim rs = new RaiSim();
             Lb_start:
                 if (token.IsCancellationRequested)
                     token.ThrowIfCancellationRequested();
@@ -30552,6 +30553,13 @@ namespace NinjaSystem
                             }
                         case 1:
                             {
+                                if (kq.parent == "failnumber")
+                                {
+                                    dr.Cells["Message"].Value = "Fail number phone";
+                                    u.setStatus(ldID, "Fail number phone");
+
+                                    return false;
+                                }
                                 maxclick++;
                                 if (maxclick > 36)
                                     goto lb_end;
@@ -30638,8 +30646,8 @@ namespace NinjaSystem
                                             Delay(0.5);
                                             scroll_down_birth(ldID, lsp[n]);
                                             Delay(0.5);
-                                            
-                                            
+
+
                                             if (x8)
                                             {
                                                 scroll_down_birth(ldID, lsp[n]);
@@ -30769,13 +30777,13 @@ namespace NinjaSystem
 
                                     string number = "";
                                     if (website.Contains("otpmmo.com"))
-                                       number = getPhoneOtpmmo(api);
+                                        number = getPhoneOtpmmo(api);
                                     else
                                     {
-                                       rs = getPhoneCodetextnow(api);
-                                      number = rs.phone;
+                                        rs = getPhoneCodetextnow(api);
+                                        number = rs.phone;
                                     }
-                                 
+
                                     if (!string.IsNullOrEmpty(number))
                                     {
                                         maxNumberfone++;
@@ -30821,7 +30829,7 @@ namespace NinjaSystem
                                         dr.Cells["Message"].Value = "Hoàn tất đăng ký";
                                         u.setStatus(ldID, "Hoàn tất đăng ký ");
                                     }
-                                        
+
                                 }
                                 if (kq.parent == "code")
                                 {
@@ -30876,7 +30884,7 @@ namespace NinjaSystem
                     i++;
                     if (i < 15)
                     {
-                        Delay(5);
+                        Delay(4);
                         goto Lb_start;
                     }
                 }
@@ -31104,6 +31112,15 @@ namespace NinjaSystem
                 int maxcode = 0;
                 int maxclick = 0;
                 RaiSim rs = new RaiSim();
+
+                data = new DetechModel();
+                data.parent = "rememberpass";
+                data.content = "Nhớ số điện thoại và mật khẩu của bạn";
+                data.text = "Nhớ số điện thoại và mật khẩu của bạn";
+                data.node = "//node[contains(@class,'android.view.View')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
             Lb_start:
                 if (token.IsCancellationRequested)
                     token.ThrowIfCancellationRequested();
@@ -31131,6 +31148,10 @@ namespace NinjaSystem
                                     return false;
                                 }
                                 ClickOnLeapdroidPosition(ldID, kq.point);
+                                if (kq.parent == "rememberpass")
+                                {
+                                    ClickOnLeapdroidPosition(ldID, kq.point2.X -30,kq.point2.Y - 20);
+                                }
                                 if (kq.parent == "gallary")
                                 {
                                     avatar = true;
@@ -31338,13 +31359,13 @@ namespace NinjaSystem
                                     }
 
                                     string number = "";
-                                   
-                                    number = dauso + rd.Next(1000000,9999999);
+
+                                    number = dauso + rd.Next(1000000, 9999999);
                                     acc.phone = number;
                                     if (!string.IsNullOrEmpty(number))
                                     {
                                         maxNumberfone++;
-                                       
+
                                         dr.Cells["Message"].Value = "Get number success ";
                                         u.setStatus(ldID, "Get number success ");
                                         PressOnLeapdroid_vietnamese(ldID, number);
@@ -31565,7 +31586,7 @@ namespace NinjaSystem
         public RaiSim getPhoneCodetextnow(string api)
         {
             RaiSim rs = new RaiSim();
-           
+
             try
             {
                 int dem = 0;
@@ -31578,7 +31599,7 @@ namespace NinjaSystem
 
                 if (jobject["status"].ToString().Contains("200"))
                 {
-                    rs.phone =  jobject["results"]["data"][0]["sdt"].ToString();
+                    rs.phone = jobject["results"]["data"][0]["sdt"].ToString();
                     rs.sessionid = jobject["results"]["data"][0]["requestId"].ToString();
                     return rs;
                 }
@@ -31607,7 +31628,7 @@ namespace NinjaSystem
                 {
                     int dem = 0;
                 Lb_Start:
-                    string url = string.Format("http://codetextnow.com/api.php?apikey={0}&action=data-request&requestId={1}", api,requestId);
+                    string url = string.Format("http://codetextnow.com/api.php?apikey={0}&action=data-request&requestId={1}", api, requestId);
                     HttpRequest request10 = new HttpRequest();
                     string result = request10.Get(url).ToString();
 
