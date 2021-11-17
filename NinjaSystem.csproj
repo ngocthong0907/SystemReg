@@ -1400,12 +1400,15 @@
     <None Include="Resources\likepage_3x.png" />
     <None Include="Resources\naudo.png" />
     <None Include="Resources\invite_group2_3x.png" />
+    <None Include="Resources\inputnumbernew.png" />
+    <None Include="Resources\inputcodenew.png" />
     <Content Include="Resources\likepage_3x_299.png" />
     <None Include="Resources\location.png" />
     <Content Include="Resources\logoninja.png" />
     <None Include="Resources\okconfirm.png" />
     <None Include="Resources\moiquanhe.jpg" />
     <None Include="Resources\luu.jpg" />
+    <None Include="Resources\ok_changeinf.png" />
     <Content Include="Resources\pic.jpg" />
     <None Include="Resources\regnick1.png" />
     <None Include="Resources\regnick2.png" />

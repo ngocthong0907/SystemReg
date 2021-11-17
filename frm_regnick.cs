@@ -1162,9 +1162,13 @@ namespace NinjaSystem
                             {
                                 acc.gender = "Female";
                             }
+                            bool result_reg = false;
+                            if (chkchangenumber.Checked)
+                                result_reg = ld.regnick_V2(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text, token);
+                            else
+                                result_reg = ld.regnick(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text, token);
 
-
-                            if (ld.regnick(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value,checkBox1.Checked,cboWebsite.Text, token))
+                            if (result_reg)
                             {
                                 foreach (string del in imagedelete)
                                 {

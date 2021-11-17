@@ -4237,6 +4237,30 @@ namespace NinjaSystem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap ok_changeinf
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ok_changeinf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap inputnumbernew
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("inputnumbernew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap inputcodenew
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("inputcodenew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         //
         #region fb lite
         internal static System.Drawing.Bitmap lite_login_input_phone

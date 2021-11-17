@@ -84,6 +84,7 @@
             this.pibStatus = new System.Windows.Forms.PictureBox();
             this.btnRun = new Bunifu.Framework.UI.BunifuImageButton();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkchangenumber = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numviewmax)).BeginInit();
@@ -178,6 +179,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.chkchangenumber);
             this.panel4.Controls.Add(this.numviewmax);
             this.panel4.Controls.Add(this.numviewmin);
             this.panel4.Controls.Add(this.label13);
@@ -801,6 +803,16 @@
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
+            // chkchangenumber
+            // 
+            this.chkchangenumber.AutoSize = true;
+            this.chkchangenumber.Location = new System.Drawing.Point(295, 108);
+            this.chkchangenumber.Name = "chkchangenumber";
+            this.chkchangenumber.Size = new System.Drawing.Size(102, 17);
+            this.chkchangenumber.TabIndex = 233;
+            this.chkchangenumber.Text = "Đổi số nhiều lần";
+            this.chkchangenumber.UseVisualStyleBackColor = true;
+            // 
             // frm_regnick
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -892,5 +904,6 @@
         private System.Windows.Forms.NumericUpDown numscrollmax;
         private System.Windows.Forms.NumericUpDown numscrollmin;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckBox chkchangenumber;
     }
 }

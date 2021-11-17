@@ -158,7 +158,6 @@
             // 
             this.pibStatus.BackColor = System.Drawing.SystemColors.Desktop;
             this.pibStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pibStatus.Image = global::NinjaSystem.Properties.Resources.z2811450293996_4cc3dd6678ec5e51ed312ea0378145ac;
             this.pibStatus.Location = new System.Drawing.Point(0, 0);
             this.pibStatus.Name = "pibStatus";
             this.pibStatus.Size = new System.Drawing.Size(302, 526);
