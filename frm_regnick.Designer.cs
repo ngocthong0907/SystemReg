@@ -39,6 +39,7 @@
             this.clStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.chkchangenumber = new System.Windows.Forms.CheckBox();
             this.numviewmax = new System.Windows.Forms.NumericUpDown();
             this.numviewmin = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
@@ -84,7 +85,8 @@
             this.pibStatus = new System.Windows.Forms.PictureBox();
             this.btnRun = new Bunifu.Framework.UI.BunifuImageButton();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.chkchangenumber = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txt_dauso = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numviewmax)).BeginInit();
@@ -104,9 +106,10 @@
             // richLogs
             // 
             this.richLogs.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.richLogs.Location = new System.Drawing.Point(0, 505);
+            this.richLogs.Location = new System.Drawing.Point(0, 622);
+            this.richLogs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richLogs.Name = "richLogs";
-            this.richLogs.Size = new System.Drawing.Size(982, 63);
+            this.richLogs.Size = new System.Drawing.Size(1309, 77);
             this.richLogs.TabIndex = 12;
             this.richLogs.Text = resources.GetString("richLogs.Text");
             this.richLogs.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richLogs_LinkClicked);
@@ -126,11 +129,12 @@
             this.clStatus,
             this.Message});
             this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUser.Location = new System.Drawing.Point(0, 133);
+            this.dgvUser.Location = new System.Drawing.Point(0, 164);
+            this.dgvUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersVisible = false;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(982, 372);
+            this.dgvUser.Size = new System.Drawing.Size(1309, 458);
             this.dgvUser.TabIndex = 13;
             this.dgvUser.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUser_CellMouseDown);
             // 
@@ -179,6 +183,8 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.txt_dauso);
+            this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.chkchangenumber);
             this.panel4.Controls.Add(this.numviewmax);
             this.panel4.Controls.Add(this.numviewmin);
@@ -226,16 +232,29 @@
             this.panel4.Controls.Add(this.btnRun);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(982, 133);
+            this.panel4.Size = new System.Drawing.Size(1309, 164);
             this.panel4.TabIndex = 11;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // chkchangenumber
+            // 
+            this.chkchangenumber.AutoSize = true;
+            this.chkchangenumber.Location = new System.Drawing.Point(393, 133);
+            this.chkchangenumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkchangenumber.Name = "chkchangenumber";
+            this.chkchangenumber.Size = new System.Drawing.Size(132, 21);
+            this.chkchangenumber.TabIndex = 233;
+            this.chkchangenumber.Text = "Đổi số nhiều lần";
+            this.chkchangenumber.UseVisualStyleBackColor = true;
+            // 
             // numviewmax
             // 
-            this.numviewmax.Location = new System.Drawing.Point(882, 108);
+            this.numviewmax.Location = new System.Drawing.Point(1176, 133);
+            this.numviewmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numviewmax.Name = "numviewmax";
-            this.numviewmax.Size = new System.Drawing.Size(50, 20);
+            this.numviewmax.Size = new System.Drawing.Size(67, 22);
             this.numviewmax.TabIndex = 232;
             this.numviewmax.Value = new decimal(new int[] {
             11,
@@ -245,9 +264,10 @@
             // 
             // numviewmin
             // 
-            this.numviewmin.Location = new System.Drawing.Point(823, 108);
+            this.numviewmin.Location = new System.Drawing.Point(1097, 133);
+            this.numviewmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numviewmin.Name = "numviewmin";
-            this.numviewmin.Size = new System.Drawing.Size(50, 20);
+            this.numviewmin.Size = new System.Drawing.Size(67, 22);
             this.numviewmin.TabIndex = 231;
             this.numviewmin.Value = new decimal(new int[] {
             3,
@@ -258,17 +278,19 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(761, 111);
+            this.label13.Location = new System.Drawing.Point(1015, 137);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 13);
+            this.label13.Size = new System.Drawing.Size(75, 17);
             this.label13.TabIndex = 230;
             this.label13.Text = "View video";
             // 
             // numscrollmax
             // 
-            this.numscrollmax.Location = new System.Drawing.Point(713, 108);
+            this.numscrollmax.Location = new System.Drawing.Point(951, 133);
+            this.numscrollmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numscrollmax.Name = "numscrollmax";
-            this.numscrollmax.Size = new System.Drawing.Size(44, 20);
+            this.numscrollmax.Size = new System.Drawing.Size(59, 22);
             this.numscrollmax.TabIndex = 229;
             this.numscrollmax.Value = new decimal(new int[] {
             6,
@@ -278,9 +300,10 @@
             // 
             // numscrollmin
             // 
-            this.numscrollmin.Location = new System.Drawing.Point(657, 108);
+            this.numscrollmin.Location = new System.Drawing.Point(876, 133);
+            this.numscrollmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numscrollmin.Name = "numscrollmin";
-            this.numscrollmin.Size = new System.Drawing.Size(44, 20);
+            this.numscrollmin.Size = new System.Drawing.Size(59, 22);
             this.numscrollmin.TabIndex = 228;
             this.numscrollmin.Value = new decimal(new int[] {
             3,
@@ -291,18 +314,19 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(590, 111);
+            this.label14.Location = new System.Drawing.Point(791, 136);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(62, 13);
+            this.label14.Size = new System.Drawing.Size(81, 17);
             this.label14.TabIndex = 227;
             this.label14.Text = "Scroll video";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(882, 68);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(1176, 84);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 226;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -312,9 +336,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(243, 72);
+            this.label10.Location = new System.Drawing.Point(324, 89);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 13);
+            this.label10.Size = new System.Drawing.Size(59, 17);
             this.label10.TabIndex = 225;
             this.label10.Text = "Website";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,28 +350,30 @@
             this.cboWebsite.Items.AddRange(new object[] {
             "otpmmo.com",
             "codetextnow.com"});
-            this.cboWebsite.Location = new System.Drawing.Point(295, 70);
-            this.cboWebsite.Margin = new System.Windows.Forms.Padding(2);
+            this.cboWebsite.Location = new System.Drawing.Point(393, 86);
+            this.cboWebsite.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboWebsite.Name = "cboWebsite";
-            this.cboWebsite.Size = new System.Drawing.Size(122, 21);
+            this.cboWebsite.Size = new System.Drawing.Size(161, 24);
             this.cboWebsite.TabIndex = 224;
             this.cboWebsite.Text = "otpmmo.com";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(752, 74);
+            this.checkBox1.Location = new System.Drawing.Point(1003, 91);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(37, 17);
+            this.checkBox1.Size = new System.Drawing.Size(44, 21);
             this.checkBox1.TabIndex = 40;
             this.checkBox1.Text = "8x";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // numdelayregmax
             // 
-            this.numdelayregmax.Location = new System.Drawing.Point(882, 41);
+            this.numdelayregmax.Location = new System.Drawing.Point(1176, 50);
+            this.numdelayregmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numdelayregmax.Name = "numdelayregmax";
-            this.numdelayregmax.Size = new System.Drawing.Size(50, 20);
+            this.numdelayregmax.Size = new System.Drawing.Size(67, 22);
             this.numdelayregmax.TabIndex = 223;
             this.numdelayregmax.Value = new decimal(new int[] {
             30,
@@ -356,9 +383,10 @@
             // 
             // numdelayregmin
             // 
-            this.numdelayregmin.Location = new System.Drawing.Point(823, 40);
+            this.numdelayregmin.Location = new System.Drawing.Point(1097, 49);
+            this.numdelayregmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numdelayregmin.Name = "numdelayregmin";
-            this.numdelayregmin.Size = new System.Drawing.Size(50, 20);
+            this.numdelayregmin.Size = new System.Drawing.Size(67, 22);
             this.numdelayregmin.TabIndex = 222;
             this.numdelayregmin.Value = new decimal(new int[] {
             10,
@@ -369,26 +397,29 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(768, 43);
+            this.label5.Location = new System.Drawing.Point(1024, 53);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.Size = new System.Drawing.Size(69, 17);
             this.label5.TabIndex = 221;
             this.label5.Text = "Delay reg";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(599, 9);
+            this.label9.Location = new System.Drawing.Point(799, 11);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 13);
+            this.label9.Size = new System.Drawing.Size(71, 17);
             this.label9.TabIndex = 220;
             this.label9.Text = "D/mục lưu";
             // 
             // numdelayclickmax
             // 
-            this.numdelayclickmax.Location = new System.Drawing.Point(718, 41);
+            this.numdelayclickmax.Location = new System.Drawing.Point(957, 50);
+            this.numdelayclickmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numdelayclickmax.Name = "numdelayclickmax";
-            this.numdelayclickmax.Size = new System.Drawing.Size(39, 20);
+            this.numdelayclickmax.Size = new System.Drawing.Size(52, 22);
             this.numdelayclickmax.TabIndex = 219;
             this.numdelayclickmax.Value = new decimal(new int[] {
             5,
@@ -398,9 +429,10 @@
             // 
             // numdelayclickmin
             // 
-            this.numdelayclickmin.Location = new System.Drawing.Point(662, 40);
+            this.numdelayclickmin.Location = new System.Drawing.Point(883, 49);
+            this.numdelayclickmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numdelayclickmin.Name = "numdelayclickmin";
-            this.numdelayclickmin.Size = new System.Drawing.Size(44, 20);
+            this.numdelayclickmin.Size = new System.Drawing.Size(59, 22);
             this.numdelayclickmin.TabIndex = 218;
             this.numdelayclickmin.Value = new decimal(new int[] {
             1,
@@ -411,9 +443,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(602, 44);
+            this.label8.Location = new System.Drawing.Point(803, 54);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 13);
+            this.label8.Size = new System.Drawing.Size(75, 17);
             this.label8.TabIndex = 217;
             this.label8.Text = "Delay click";
             // 
@@ -439,14 +472,14 @@
             this.bunifuFlatButton4.IconVisible = false;
             this.bunifuFlatButton4.IconZoom = 40D;
             this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(569, 11);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(759, 14);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(66)))), ((int)(((byte)(8)))));
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.selected = true;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(25, 22);
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(33, 27);
             this.bunifuFlatButton4.TabIndex = 216;
             this.bunifuFlatButton4.Text = "...";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -456,17 +489,19 @@
             // 
             // txtcover
             // 
-            this.txtcover.Location = new System.Drawing.Point(332, 8);
+            this.txtcover.Location = new System.Drawing.Point(443, 10);
+            this.txtcover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcover.Name = "txtcover";
-            this.txtcover.Size = new System.Drawing.Size(230, 20);
+            this.txtcover.Size = new System.Drawing.Size(305, 22);
             this.txtcover.TabIndex = 215;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(285, 11);
+            this.label7.Location = new System.Drawing.Point(380, 14);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(45, 17);
             this.label7.TabIndex = 214;
             this.label7.Text = "Cover";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -474,9 +509,10 @@
             // rdNam
             // 
             this.rdNam.AutoSize = true;
-            this.rdNam.Location = new System.Drawing.Point(698, 74);
+            this.rdNam.Location = new System.Drawing.Point(931, 91);
+            this.rdNam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdNam.Name = "rdNam";
-            this.rdNam.Size = new System.Drawing.Size(47, 17);
+            this.rdNam.Size = new System.Drawing.Size(58, 21);
             this.rdNam.TabIndex = 213;
             this.rdNam.Text = "Nam";
             this.rdNam.UseVisualStyleBackColor = true;
@@ -485,9 +521,10 @@
             // 
             this.rdNu.AutoSize = true;
             this.rdNu.Checked = true;
-            this.rdNu.Location = new System.Drawing.Point(651, 73);
+            this.rdNu.Location = new System.Drawing.Point(868, 90);
+            this.rdNu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdNu.Name = "rdNu";
-            this.rdNu.Size = new System.Drawing.Size(39, 17);
+            this.rdNu.Size = new System.Drawing.Size(47, 21);
             this.rdNu.TabIndex = 212;
             this.rdNu.TabStop = true;
             this.rdNu.Text = "Nữ";
@@ -496,9 +533,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(599, 76);
+            this.label6.Location = new System.Drawing.Point(799, 94);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.Size = new System.Drawing.Size(60, 17);
             this.label6.TabIndex = 211;
             this.label6.Text = "Giới tính";
             // 
@@ -506,9 +544,10 @@
             // 
             this.cboNhom.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNhom.FormattingEnabled = true;
-            this.cboNhom.Location = new System.Drawing.Point(662, 6);
+            this.cboNhom.Location = new System.Drawing.Point(883, 7);
+            this.cboNhom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboNhom.Name = "cboNhom";
-            this.cboNhom.Size = new System.Drawing.Size(135, 24);
+            this.cboNhom.Size = new System.Drawing.Size(179, 29);
             this.cboNhom.TabIndex = 210;
             // 
             // bunifuFlatButton1
@@ -533,14 +572,14 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 40D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(568, 38);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(757, 47);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(66)))), ((int)(((byte)(8)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = true;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(25, 22);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(33, 27);
             this.bunifuFlatButton1.TabIndex = 208;
             this.bunifuFlatButton1.Text = "...";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -550,70 +589,74 @@
             // 
             // txtavatar
             // 
-            this.txtavatar.Location = new System.Drawing.Point(332, 37);
+            this.txtavatar.Location = new System.Drawing.Point(443, 46);
+            this.txtavatar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtavatar.Name = "txtavatar";
-            this.txtavatar.Size = new System.Drawing.Size(230, 20);
+            this.txtavatar.Size = new System.Drawing.Size(305, 22);
             this.txtavatar.TabIndex = 207;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(285, 38);
+            this.label4.Location = new System.Drawing.Point(380, 47);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(49, 17);
             this.label4.TabIndex = 206;
             this.label4.Text = "Avatar";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(477, 67);
+            this.txtPassword.Location = new System.Drawing.Point(636, 82);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(119, 20);
+            this.txtPassword.Size = new System.Drawing.Size(157, 22);
             this.txtPassword.TabIndex = 205;
             // 
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(422, 72);
+            this.Password.Location = new System.Drawing.Point(563, 89);
+            this.Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(53, 13);
+            this.Password.Size = new System.Drawing.Size(69, 17);
             this.Password.TabIndex = 204;
             this.Password.Text = "Password";
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(49, 39);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTen.Location = new System.Drawing.Point(65, 48);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(188, 20);
+            this.txtTen.Size = new System.Drawing.Size(249, 22);
             this.txtTen.TabIndex = 203;
             // 
             // txtHo
             // 
-            this.txtHo.Location = new System.Drawing.Point(48, 7);
-            this.txtHo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHo.Location = new System.Drawing.Point(64, 9);
+            this.txtHo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHo.Name = "txtHo";
-            this.txtHo.Size = new System.Drawing.Size(188, 20);
+            this.txtHo.Size = new System.Drawing.Size(249, 22);
             this.txtHo.TabIndex = 201;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 39);
+            this.label12.Location = new System.Drawing.Point(9, 48);
             this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.Size = new System.Drawing.Size(54, 17);
             this.label12.TabIndex = 199;
             this.label12.Text = "File tên";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 10);
+            this.label11.Location = new System.Drawing.Point(9, 12);
             this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.Size = new System.Drawing.Size(50, 17);
             this.label11.TabIndex = 198;
             this.label11.Text = "File họ";
             // 
@@ -639,14 +682,14 @@
             this.bunifuFlatButton3.IconVisible = false;
             this.bunifuFlatButton3.IconZoom = 40D;
             this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(244, 39);
-            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(325, 48);
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(66)))), ((int)(((byte)(8)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.selected = true;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(25, 22);
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(33, 27);
             this.bunifuFlatButton3.TabIndex = 202;
             this.bunifuFlatButton3.Text = "...";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -676,14 +719,14 @@
             this.bunifuFlatButton2.IconVisible = false;
             this.bunifuFlatButton2.IconZoom = 40D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(243, 7);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(324, 9);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(66)))), ((int)(((byte)(8)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = true;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(25, 22);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(33, 27);
             this.bunifuFlatButton2.TabIndex = 200;
             this.bunifuFlatButton2.Text = "...";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -693,39 +736,43 @@
             // 
             // txtApi
             // 
-            this.txtApi.Location = new System.Drawing.Point(49, 67);
+            this.txtApi.Location = new System.Drawing.Point(65, 82);
+            this.txtApi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApi.Name = "txtApi";
-            this.txtApi.Size = new System.Drawing.Size(188, 20);
+            this.txtApi.Size = new System.Drawing.Size(249, 22);
             this.txtApi.TabIndex = 36;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 70);
+            this.label3.Location = new System.Drawing.Point(7, 86);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(54, 17);
             this.label3.TabIndex = 35;
             this.label3.Text = "API sim";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(938, 9);
+            this.label2.Location = new System.Drawing.Point(1251, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 13);
+            this.label2.Size = new System.Drawing.Size(30, 17);
             this.label2.TabIndex = 34;
             this.label2.Text = "acc";
             // 
             // numtotal
             // 
-            this.numtotal.Location = new System.Drawing.Point(882, 7);
+            this.numtotal.Location = new System.Drawing.Point(1176, 9);
+            this.numtotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numtotal.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numtotal.Name = "numtotal";
-            this.numtotal.Size = new System.Drawing.Size(50, 20);
+            this.numtotal.Size = new System.Drawing.Size(67, 22);
             this.numtotal.TabIndex = 33;
             this.numtotal.Value = new decimal(new int[] {
             1,
@@ -736,9 +783,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(820, 10);
+            this.label1.Location = new System.Drawing.Point(1093, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(75, 17);
             this.label1.TabIndex = 32;
             this.label1.Text = "Mỗi Ld reg";
             // 
@@ -746,9 +794,10 @@
             // 
             this.lbAddress.AutoSize = true;
             this.lbAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAddress.Location = new System.Drawing.Point(997, 15);
+            this.lbAddress.Location = new System.Drawing.Point(1329, 18);
+            this.lbAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(0, 15);
+            this.lbAddress.Size = new System.Drawing.Size(0, 18);
             this.lbAddress.TabIndex = 31;
             // 
             // bunifuImageButton1
@@ -756,10 +805,10 @@
             this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(88, 92);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(117, 113);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 35);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(47, 43);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 26;
             this.bunifuImageButton1.TabStop = false;
@@ -769,9 +818,10 @@
             // pibStatus
             // 
             this.pibStatus.Image = ((System.Drawing.Image)(resources.GetObject("pibStatus.Image")));
-            this.pibStatus.Location = new System.Drawing.Point(128, 114);
+            this.pibStatus.Location = new System.Drawing.Point(171, 140);
+            this.pibStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pibStatus.Name = "pibStatus";
-            this.pibStatus.Size = new System.Drawing.Size(97, 10);
+            this.pibStatus.Size = new System.Drawing.Size(129, 12);
             this.pibStatus.TabIndex = 14;
             this.pibStatus.TabStop = false;
             this.pibStatus.Visible = false;
@@ -781,10 +831,10 @@
             this.btnRun.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRun.Image = global::NinjaSystem.Properties.Resources.Circled_Play_48px;
             this.btnRun.ImageActive = null;
-            this.btnRun.Location = new System.Drawing.Point(49, 92);
-            this.btnRun.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRun.Location = new System.Drawing.Point(65, 113);
+            this.btnRun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(35, 35);
+            this.btnRun.Size = new System.Drawing.Size(47, 43);
             this.btnRun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRun.TabIndex = 0;
             this.btnRun.TabStop = false;
@@ -796,33 +846,43 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(16, 136);
+            this.checkBox2.Location = new System.Drawing.Point(21, 167);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
             this.checkBox2.TabIndex = 39;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // chkchangenumber
+            // label15
             // 
-            this.chkchangenumber.AutoSize = true;
-            this.chkchangenumber.Location = new System.Drawing.Point(295, 108);
-            this.chkchangenumber.Name = "chkchangenumber";
-            this.chkchangenumber.Size = new System.Drawing.Size(102, 17);
-            this.chkchangenumber.TabIndex = 233;
-            this.chkchangenumber.Text = "Đổi số nhiều lần";
-            this.chkchangenumber.UseVisualStyleBackColor = true;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(563, 135);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 17);
+            this.label15.TabIndex = 234;
+            this.label15.Text = "Đầu số";
+            // 
+            // txt_dauso
+            // 
+            this.txt_dauso.Location = new System.Drawing.Point(633, 133);
+            this.txt_dauso.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_dauso.Name = "txt_dauso";
+            this.txt_dauso.Size = new System.Drawing.Size(157, 22);
+            this.txt_dauso.TabIndex = 235;
             // 
             // frm_regnick
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 568);
+            this.ClientSize = new System.Drawing.Size(1309, 699);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.richLogs);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_regnick";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reg nick";
@@ -905,5 +965,7 @@
         private System.Windows.Forms.NumericUpDown numscrollmin;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.CheckBox chkchangenumber;
+        private System.Windows.Forms.TextBox txt_dauso;
+        private System.Windows.Forms.Label label15;
     }
 }

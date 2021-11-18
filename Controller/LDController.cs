@@ -30922,7 +30922,7 @@ namespace NinjaSystem
             return avatar;
         }
 
-        public bool regnick_V2(Account acc, DataGridViewRow dr, userLD u, string api, int clickmin, int clicktmax, bool x8, string website, CancellationToken token)
+        public bool regnick_V2(Account acc, DataGridViewRow dr, userLD u, string api, int clickmin, int clicktmax, bool x8, string website,string dauso, CancellationToken token)
         {
             bool avatar = false;
 
@@ -30961,6 +30961,14 @@ namespace NinjaSystem
                 data.content = "Nhập số di động của bạn";
                 data.text = "Nhập số di động của bạn";
                 data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 2;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "inputnumbernew";
+                data.content = "Số điện thoại di động";
+                data.text = "Số điện thoại di động";
+                data.node = "//node[contains(@class,'android.widget.EditText')]";
                 data.function = 2;
                 ls_detecth.Add(data);
 
@@ -31108,11 +31116,19 @@ namespace NinjaSystem
                 data.function = 1;
                 ls_detecth.Add(data);
 
+                //data = new DetechModel();
+                //data.parent = "failnumber";
+                //data.content = "Vui lòng nhập một số điện thoại di động hợp lệ";
+                //data.text = "Vui lòng nhập một số điện thoại di động hợp lệ";
+                //data.node = "//node[contains(@class,'android.widget.TextView')]";
+                //data.function = 1;
+                //ls_detecth.Insert(0, data);
+
                 data = new DetechModel();
-                data.parent = "failnumber";
-                data.content = "Vui lòng nhập một số điện thoại di động hợp lệ";
-                data.text = "Vui lòng nhập một số điện thoại di động hợp lệ";
-                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.parent = "inputnumbernew";
+                data.content = "Thay đổi số điện thoại";
+                data.text = "Thay đổi số điện thoại";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
                 data.function = 1;
                 ls_detecth.Insert(0, data);
 
@@ -31142,14 +31158,14 @@ namespace NinjaSystem
                 list_detechimg.Add(modelimg);
 
                 modelimg = new DetechImageModel();
-                modelimg.function = 2;
-                modelimg.name = "inputnumbernew";
+                modelimg.function = 1;
+                modelimg.name = "error";
                 modelimg.img = Properties.Resources.inputnumbernew;
                 list_detechimg.Add(modelimg);
 
                 modelimg = new DetechImageModel();
-                modelimg.function = 2;
-                modelimg.name = "inputcodenew";
+                modelimg.function = 1;
+                modelimg.name = "error";
                 modelimg.img = Properties.Resources.inputcodenew;
                 list_detechimg.Add(modelimg);
 
@@ -31184,19 +31200,15 @@ namespace NinjaSystem
                                     return false;
                                 }
                                 maxclick++;
-                                if (maxclick > 36)
+                                if (maxclick > 100)
                                     goto lb_end;
                                 Delay(rd.Next(clickmin, clicktmax));
-                                if (kq.parent == "error" || kq.parent == "quitquick")
+                                if (kq.parent == "error" || kq.parent == "quitquick" || kq.parent == "moreinfo")
                                 {
                                     return false;
                                 }
                                 ClickOnLeapdroidPosition(ldID, kq.point);
-                                if (kq.parent == "moreinfo")
-                                {
-                                    ClickOnLeapdroidPosition(ldID, 30, 170);
-                                    goto Lb_start;
-                                }
+                               
                                 if (kq.parent == "gallary")
                                 {
                                     avatar = true;
@@ -31374,7 +31386,7 @@ namespace NinjaSystem
                                 }
                                 if (kq.parent == "inputnumbernew")
                                 {
-                                    if (maxNumberfone > 4)
+                                    if (maxNumberfone > 10)
                                     {
                                         dr.Cells["Message"].Value = "Get number fail ";
                                         u.setStatus(ldID, "Get number fail ");
@@ -31384,9 +31396,7 @@ namespace NinjaSystem
                                     dr.Cells["Message"].Value = "Get number phone ";
                                     u.setStatus(ldID, "Get number phone ");
 
-
                                     string number = "";
-
 
                                     if (website.Contains("otpmmo.com"))
                                         number = getPhoneOtpmmo(api);
@@ -31401,19 +31411,17 @@ namespace NinjaSystem
                                         MessageBox.Show("API sai");
                                         return false;
                                     }
-
+                                  
                                     if (!string.IsNullOrEmpty(number))
                                     {
-
                                         ClickOnLeapdroidPosition(ldID, kq.point.X + 2, kq.point.Y + 12);
-
                                         maxNumberfone++;
                                         acc.phone = "+1" + number;
                                         dr.Cells["Message"].Value = "Get number success ";
                                         u.setStatus(ldID, "Get number success ");
                                         PressOnLeapdroid_vietnamese(ldID, "+1" + number);
                                         Delay(1);
-                                        ClickOnLeapdroidPosition(ldID, 70, 270);
+                                        ClickOnLeapdroidPosition(ldID, kq.point.X + 20, kq.point.Y + 50);
                                         goto Lb_start;
                                     }
                                     else
@@ -31425,7 +31433,7 @@ namespace NinjaSystem
 
                                 if (kq.parent == "inputnumber")
                                 {
-                                    if (maxNumberfone > 4)
+                                    if (maxNumberfone > 10)
                                     {
                                         dr.Cells["Message"].Value = "Get number fail ";
                                         u.setStatus(ldID, "Get number fail ");
@@ -31455,39 +31463,22 @@ namespace NinjaSystem
                                     }
                                     string number = "";
 
+                                    //if (website.Contains("otpmmo.com"))
+                                    //    number = getPhoneOtpmmo(api);
+                                    //else
+                                    //{
+                                    //    rs = getPhoneCodetextnow(api);
+                                    //    number = rs.phone;
+                                    //}
 
-                                    if (website.Contains("otpmmo.com"))
-                                        number = getPhoneOtpmmo(api);
-                                    else
-                                    {
-                                        rs = getPhoneCodetextnow(api);
-                                        number = rs.phone;
-                                    }
-
-                                    if (number == "API sai")
-                                    {
-                                        MessageBox.Show("API sai");
-                                        return false;
-                                    }
-
+                                    //if (number == "API sai")
+                                    //{
+                                    //    MessageBox.Show("API sai");
+                                    //    return false;
+                                    //}
+                                    number = dauso + rd.Next(1000000,9999999).ToString();
                                     if (!string.IsNullOrEmpty(number))
                                     {
-
-                                        if (maxNumberfone < 3)
-                                        {
-                                            if (number.IndexOf('1') > 0)
-                                                number = number.Replace('1', '2');
-                                            else if (number.IndexOf('2') > 0)
-                                                number = number.Replace('2', '3');
-                                            else if (number.IndexOf('3') > 0)
-                                                number = number.Replace('3', '4');
-                                            else if (number.IndexOf('4') > 0)
-                                                number = number.Replace('4', '5');
-                                            else if (number.IndexOf('5') > 0)
-                                                number = number.Replace('5', '6');
-                                            else if (number.IndexOf('6') > 0)
-                                                number = number.Replace('6', '7');
-                                        }
                                         maxNumberfone++;
                                         acc.phone = "+1" + number;
                                         dr.Cells["Message"].Value = "Get number success ";

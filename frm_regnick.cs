@@ -1016,44 +1016,44 @@ namespace NinjaSystem
                 return;
             }
             Delay(10);
-            #region doi ip sau khi mo ld thanh cong
-            if (string.IsNullOrEmpty(proxy) == false)
-            {
-                u.setDevice(ldID, acc.id, proxy);
-                u.setStatus(ldID, "Change proxy : " + proxy);
-                if (SettingTool.configld.sock5)
-                {
-                    SettingTool.configld.proxytype = "socks5";
-                    ld.setProxyAuthentica_proxydroid(ldID, proxy, token);
-                    string yourip = ld.checkIPSock5(proxy);
-                    u.setDevice(ldID, proxy + " - " + yourip);
-                    if (SettingTool.configld.checkproxy)
-                    {
-                        if (string.IsNullOrEmpty(yourip))
-                        {
-                            sendLogs("Tắt LD do không lấy được ip public proxy: " + proxy);
+            //#region doi ip sau khi mo ld thanh cong
+            //if (string.IsNullOrEmpty(proxy) == false)
+            //{
+            //    u.setDevice(ldID, acc.id, proxy);
+            //    u.setStatus(ldID, "Change proxy : " + proxy);
+            //    if (SettingTool.configld.sock5)
+            //    {
+            //        SettingTool.configld.proxytype = "socks5";
+            //        ld.setProxyAuthentica_proxydroid(ldID, proxy, token);
+            //        string yourip = ld.checkIPSock5(proxy);
+            //        u.setDevice(ldID, proxy + " - " + yourip);
+            //        if (SettingTool.configld.checkproxy)
+            //        {
+            //            if (string.IsNullOrEmpty(yourip))
+            //            {
+            //                sendLogs("Tắt LD do không lấy được ip public proxy: " + proxy);
                             
-                        }
-                    }
-                }
-                else
-                {
-                    changeIpHelper.changeProxyAdb(ldID, proxy);
-                    //check ip
-                    string yourip = ld.checkIP(proxy);
-                    if (SettingTool.configld.checkproxy)
-                    {
-                        if (string.IsNullOrEmpty(yourip))
-                        {
-                            sendLogs("Tắt LD do không lấy được ip public proxy: " + proxy);
+            //            }
+            //        }
+            //    }
+            //    else
+            //    {
+            //        changeIpHelper.changeProxyAdb(ldID, proxy);
+            //        //check ip
+            //        string yourip = ld.checkIP(proxy);
+            //        if (SettingTool.configld.checkproxy)
+            //        {
+            //            if (string.IsNullOrEmpty(yourip))
+            //            {
+            //                sendLogs("Tắt LD do không lấy được ip public proxy: " + proxy);
                            
-                        }
-                    }
-                    u.setDevice(ldID, acc.id, proxy + " - " + yourip);
-                }
-            }
-            changeIpHelper.connectAfterOpen(u, richLogs, ldID, acc, token);
-            #endregion
+            //            }
+            //        }
+            //        u.setDevice(ldID, acc.id, proxy + " - " + yourip);
+            //    }
+            //}
+            //changeIpHelper.connectAfterOpen(u, richLogs, ldID, acc, token);
+            //#endregion
             Delay(2);
             u.setStatus(ldID, "Change device...");
             dr.Cells["Message"].Value = "Change device... ";
@@ -1132,7 +1132,7 @@ namespace NinjaSystem
                             list_file_image = System.IO.Directory.GetFiles(txtavatar.Text, "*.*").ToList();
                             imagedelete = ld.copyimagenew(acc.ldid, list_file_image, 1);
 
-                            Delay(2);
+                            Delay(1);
                             dr.Cells["Message"].Value = "Create contact";
                             u.setStatus(ldID, "Create contact");
                             createContact(ldID);
@@ -1164,7 +1164,7 @@ namespace NinjaSystem
                             }
                             bool result_reg = false;
                             if (chkchangenumber.Checked)
-                                result_reg = ld.regnick_V2(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text, token);
+                                result_reg = ld.regnick_V2(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text,txt_dauso.Text, token);
                             else
                                 result_reg = ld.regnick(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text, token);
 
@@ -1360,23 +1360,35 @@ namespace NinjaSystem
             }
 
             changeColor(dr, Color.White);
-            dr.Cells["Message"].Value = "Reg success: " + success.ToString() + "/" + total.ToString();
+            try
+            {
+                dr.Cells["Message"].Value = "Reg success: " + success.ToString() + "/" + total.ToString();
+
+            }
+            catch
+            {}
         }
 
         private void createContact(string ldid)
         {
-            ld.runAdb(ldid, " shell pm clear com.android.providers.contacts");
-
-            List<string> strNumber = new List<string>();
-            List<string> lscontact = new List<string>();
-            lscontact = File.ReadLines(Application.StartupPath + "\\Contact.txt").ToList();
-            Random rd = new Random();
-            for (int i = 0; i < 300; i++)
+            try
             {
-                strNumber.Add(lscontact[rd.Next(0,lscontact.Count)]);
-            }
-            Importcontact(ldid,strNumber);
+                ld.runAdb(ldid, " shell pm clear com.android.providers.contacts");
 
+                List<string> strNumber = new List<string>();
+                List<string> lscontact = new List<string>();
+                lscontact = File.ReadLines(Application.StartupPath + "\\Contact.txt").ToList();
+                Random rd = new Random();
+                for (int i = 0; i < 300; i++)
+                {
+                    strNumber.Add(lscontact[rd.Next(0, lscontact.Count)]);
+                }
+                Importcontact(ldid, strNumber);
+
+            }
+            catch
+            { }
+            
         }
 
         private string Importcontact(string ldID, List<string> strNumber)
