@@ -125,7 +125,8 @@ namespace NinjaSystem
             {
                 LDController ld = new LDController();
                 Random rd = new Random();
-                string filename = rd.Next(0, 1000000).ToString() + ".xml";
+                string file = rd.Next(0, 999999999).ToString();
+                string  filename =   file + ".xml";
                 string cmdCommand = "";
                 if (SettingTool.configld.versionld == "3.x")
                 {
@@ -136,16 +137,16 @@ namespace NinjaSystem
                     cmdCommand = string.Format("shell uiautomator dump storage/emulated/0/pictures/temp/{0}", filename);
                 }
 
-
+                
                 string data = ld.runAdb(ldid, cmdCommand);
-                data=ld.readFile(ldid, filename).ToLower();
-                File.WriteAllText("C:\\1.txt", data);
+                data=ld.readFile(ldid, filename);
+                File.WriteAllText("C:\\test\\" + file + ".uix", data);
 
                 var screen = ld.ScreenShoot(ldid);
-                screen.Save("c:\\1.png");
+                screen.Save("c:\\test\\"+ file +".png");
 
-                data=ld.checkScreen2(ldid);
-                File.WriteAllText("C:\\2.txt", data);
+                //data=ld.checkScreen2(ldid);
+                //File.WriteAllText("C:\\2.txt", data);
 
                // ld.ExecuteADB(ldid, Encoding.UTF8.GetString(Convert.FromBase64String("c2hlbGwgdGFyIC1jdnpmIC9kYXRhL2RhdGEudGFyLmd6IC9kYXRhL2RhdGEvY29tLmZhY2Vib29rLmthdGFuYSAtLWV4Y2x1ZGU9ZGV4IC0tZXhjbHVkZT1saWIteHpzIC0tZXhjbHVkZT1hcHBfY29tcGFjdGRpc2sgLS1leGNsdWRlPWFwcF9qcy1idW5kbGVzIC0tZXhjbHVkZT1hcHBfcmVzdHJpY2tzIC0tZXhjbHVkZT1maWxlcyAtLWV4Y2x1ZGU9YXBwX292ZXJ0aGVhaXIgLS1leGNsdWRlPWNhY2hlIC0tZXhjbHVkZT1hcHBfbW9kZWxzX2RhdGEgLS1leGNsdWRlPWFwcF9ncmFwaHNlcnZpY2UgLS1leGNsdWRlPW1vZHVsZXMgLS1leGNsdWRlPWFwcF9tc3FyZF9lZmZlY3RfYXNzZXRfZGlza19jYWNoZV9maXhlZF9zZXNzaW9ubGVzcyAtLWV4Y2x1ZGU9YXBwX21zcXJkX21vZGVsX2Fzc2V0X2Rpc2tfY2FjaGVfc2Vzc2lvbmxlc3MgLS1leGNsdWRlPWFwcF9yYXNfYmxvYnMgLS1leGNsdWRlPWFwcF9ncmFwaF9zZXJ2aWNlX2NhY2hlIC0tZXhjbHVkZT1hcHBfbXNxcmRfc2VnbWVudGF0aW9uX2Fzc2V0X2Rpc2tfY2FjaGVfc2Vzc2lvbmxlc3MgLS1leGNsdWRlPWFwcF9hY3JhLXJlcG9ydHMgLS1leGNsdWRlPWRhdGFiYXNlcyAtLWV4Y2x1ZGU9YXBwX3N0cmluZ3MgLS1leGNsdWRlPWFwcF9lcnJvcnJlcG9ydGluZyAtLWV4Y2x1ZGU9YXBwX2ZlZWRiYWNrX3JlYWN0aW9ucyAtLWV4Y2x1ZGU9YXBwX2ZpbGVfcG9vbHJlcG9ydHMgLS1leGNsdWRlPWFwcF9kb3dubG9hZHNlcnZpY2VfY2FjaGUgLS1leGNsdWRlPWFwcF9hbmFseXRpY3MgLS1leGNsdWRlPWFwcF93ZWJ2aWV3")), 50000, true);
             }

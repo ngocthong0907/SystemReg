@@ -87,8 +87,8 @@ namespace NinjaSystem
             }
             catch
             { } 
-           SettingTool.version =12.9;
-           SettingTool.versiontext = "12.9";
+           SettingTool.version =19.9;
+           SettingTool.versiontext = "19.9";
             SettingTool.privatekey = "9d31b084dd0d981de479c2a7abe4f557";
             lbnVersion.Text = "Version: " + SettingTool.versiontext;
         }
@@ -173,14 +173,14 @@ namespace NinjaSystem
                 else
                 {
 
-                    MessageBox.Show("Lỗi tự động cập nhật! Vui lòng tải full phần mềm để tiếp tục sử dụng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                   // MessageBox.Show("Lỗi tự động cập nhật! Vui lòng tải full phần mềm để tiếp tục sử dụng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
             }
             catch
             {
 
-                MessageBox.Show("Lỗi tự động cập nhật! Vui lòng tải full phần mềm để tiếp tục sử dụng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+               // MessageBox.Show("Lỗi tự động cập nhật! Vui lòng tải full phần mềm để tiếp tục sử dụng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
 

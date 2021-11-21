@@ -39,6 +39,8 @@
             this.clStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txt_dauso = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.chkchangenumber = new System.Windows.Forms.CheckBox();
             this.numviewmax = new System.Windows.Forms.NumericUpDown();
             this.numviewmin = new System.Windows.Forms.NumericUpDown();
@@ -46,7 +48,6 @@
             this.numscrollmax = new System.Windows.Forms.NumericUpDown();
             this.numscrollmin = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.cboWebsite = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -85,8 +86,7 @@
             this.pibStatus = new System.Windows.Forms.PictureBox();
             this.btnRun = new Bunifu.Framework.UI.BunifuImageButton();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_dauso = new System.Windows.Forms.TextBox();
+            this.chkautopass = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numviewmax)).BeginInit();
@@ -107,7 +107,7 @@
             // 
             this.richLogs.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.richLogs.Location = new System.Drawing.Point(0, 622);
-            this.richLogs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richLogs.Margin = new System.Windows.Forms.Padding(4);
             this.richLogs.Name = "richLogs";
             this.richLogs.Size = new System.Drawing.Size(1309, 77);
             this.richLogs.TabIndex = 12;
@@ -130,7 +130,7 @@
             this.Message});
             this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUser.Location = new System.Drawing.Point(0, 164);
-            this.dgvUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUser.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersVisible = false;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -183,6 +183,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.chkautopass);
             this.panel4.Controls.Add(this.txt_dauso);
             this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.chkchangenumber);
@@ -192,7 +193,6 @@
             this.panel4.Controls.Add(this.numscrollmax);
             this.panel4.Controls.Add(this.numscrollmin);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.cboWebsite);
             this.panel4.Controls.Add(this.checkBox1);
@@ -232,17 +232,35 @@
             this.panel4.Controls.Add(this.btnRun);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1309, 164);
             this.panel4.TabIndex = 11;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // txt_dauso
+            // 
+            this.txt_dauso.Location = new System.Drawing.Point(633, 133);
+            this.txt_dauso.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_dauso.Name = "txt_dauso";
+            this.txt_dauso.Size = new System.Drawing.Size(157, 22);
+            this.txt_dauso.TabIndex = 235;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(563, 135);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 17);
+            this.label15.TabIndex = 234;
+            this.label15.Text = "Đầu số";
+            // 
             // chkchangenumber
             // 
             this.chkchangenumber.AutoSize = true;
             this.chkchangenumber.Location = new System.Drawing.Point(393, 133);
-            this.chkchangenumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkchangenumber.Margin = new System.Windows.Forms.Padding(4);
             this.chkchangenumber.Name = "chkchangenumber";
             this.chkchangenumber.Size = new System.Drawing.Size(132, 21);
             this.chkchangenumber.TabIndex = 233;
@@ -252,7 +270,7 @@
             // numviewmax
             // 
             this.numviewmax.Location = new System.Drawing.Point(1176, 133);
-            this.numviewmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numviewmax.Margin = new System.Windows.Forms.Padding(4);
             this.numviewmax.Name = "numviewmax";
             this.numviewmax.Size = new System.Drawing.Size(67, 22);
             this.numviewmax.TabIndex = 232;
@@ -265,7 +283,7 @@
             // numviewmin
             // 
             this.numviewmin.Location = new System.Drawing.Point(1097, 133);
-            this.numviewmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numviewmin.Margin = new System.Windows.Forms.Padding(4);
             this.numviewmin.Name = "numviewmin";
             this.numviewmin.Size = new System.Drawing.Size(67, 22);
             this.numviewmin.TabIndex = 231;
@@ -288,7 +306,7 @@
             // numscrollmax
             // 
             this.numscrollmax.Location = new System.Drawing.Point(951, 133);
-            this.numscrollmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numscrollmax.Margin = new System.Windows.Forms.Padding(4);
             this.numscrollmax.Name = "numscrollmax";
             this.numscrollmax.Size = new System.Drawing.Size(59, 22);
             this.numscrollmax.TabIndex = 229;
@@ -301,7 +319,7 @@
             // numscrollmin
             // 
             this.numscrollmin.Location = new System.Drawing.Point(876, 133);
-            this.numscrollmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numscrollmin.Margin = new System.Windows.Forms.Padding(4);
             this.numscrollmin.Name = "numscrollmin";
             this.numscrollmin.Size = new System.Drawing.Size(59, 22);
             this.numscrollmin.TabIndex = 228;
@@ -320,18 +338,6 @@
             this.label14.Size = new System.Drawing.Size(81, 17);
             this.label14.TabIndex = 227;
             this.label14.Text = "Scroll video";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1176, 84);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 226;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 
@@ -360,8 +366,8 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(1003, 91);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Location = new System.Drawing.Point(1228, 89);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(44, 21);
             this.checkBox1.TabIndex = 40;
@@ -371,7 +377,7 @@
             // numdelayregmax
             // 
             this.numdelayregmax.Location = new System.Drawing.Point(1176, 50);
-            this.numdelayregmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numdelayregmax.Margin = new System.Windows.Forms.Padding(4);
             this.numdelayregmax.Name = "numdelayregmax";
             this.numdelayregmax.Size = new System.Drawing.Size(67, 22);
             this.numdelayregmax.TabIndex = 223;
@@ -384,7 +390,7 @@
             // numdelayregmin
             // 
             this.numdelayregmin.Location = new System.Drawing.Point(1097, 49);
-            this.numdelayregmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numdelayregmin.Margin = new System.Windows.Forms.Padding(4);
             this.numdelayregmin.Name = "numdelayregmin";
             this.numdelayregmin.Size = new System.Drawing.Size(67, 22);
             this.numdelayregmin.TabIndex = 222;
@@ -417,7 +423,7 @@
             // numdelayclickmax
             // 
             this.numdelayclickmax.Location = new System.Drawing.Point(957, 50);
-            this.numdelayclickmax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numdelayclickmax.Margin = new System.Windows.Forms.Padding(4);
             this.numdelayclickmax.Name = "numdelayclickmax";
             this.numdelayclickmax.Size = new System.Drawing.Size(52, 22);
             this.numdelayclickmax.TabIndex = 219;
@@ -430,7 +436,7 @@
             // numdelayclickmin
             // 
             this.numdelayclickmin.Location = new System.Drawing.Point(883, 49);
-            this.numdelayclickmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numdelayclickmin.Margin = new System.Windows.Forms.Padding(4);
             this.numdelayclickmin.Name = "numdelayclickmin";
             this.numdelayclickmin.Size = new System.Drawing.Size(59, 22);
             this.numdelayclickmin.TabIndex = 218;
@@ -490,7 +496,7 @@
             // txtcover
             // 
             this.txtcover.Location = new System.Drawing.Point(443, 10);
-            this.txtcover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcover.Margin = new System.Windows.Forms.Padding(4);
             this.txtcover.Name = "txtcover";
             this.txtcover.Size = new System.Drawing.Size(305, 22);
             this.txtcover.TabIndex = 215;
@@ -509,8 +515,8 @@
             // rdNam
             // 
             this.rdNam.AutoSize = true;
-            this.rdNam.Location = new System.Drawing.Point(931, 91);
-            this.rdNam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdNam.Location = new System.Drawing.Point(1156, 89);
+            this.rdNam.Margin = new System.Windows.Forms.Padding(4);
             this.rdNam.Name = "rdNam";
             this.rdNam.Size = new System.Drawing.Size(58, 21);
             this.rdNam.TabIndex = 213;
@@ -521,8 +527,8 @@
             // 
             this.rdNu.AutoSize = true;
             this.rdNu.Checked = true;
-            this.rdNu.Location = new System.Drawing.Point(868, 90);
-            this.rdNu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdNu.Location = new System.Drawing.Point(1093, 88);
+            this.rdNu.Margin = new System.Windows.Forms.Padding(4);
             this.rdNu.Name = "rdNu";
             this.rdNu.Size = new System.Drawing.Size(47, 21);
             this.rdNu.TabIndex = 212;
@@ -533,7 +539,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(799, 94);
+            this.label6.Location = new System.Drawing.Point(1024, 89);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 17);
@@ -545,7 +551,7 @@
             this.cboNhom.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNhom.FormattingEnabled = true;
             this.cboNhom.Location = new System.Drawing.Point(883, 7);
-            this.cboNhom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboNhom.Margin = new System.Windows.Forms.Padding(4);
             this.cboNhom.Name = "cboNhom";
             this.cboNhom.Size = new System.Drawing.Size(179, 29);
             this.cboNhom.TabIndex = 210;
@@ -590,7 +596,7 @@
             // txtavatar
             // 
             this.txtavatar.Location = new System.Drawing.Point(443, 46);
-            this.txtavatar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtavatar.Margin = new System.Windows.Forms.Padding(4);
             this.txtavatar.Name = "txtavatar";
             this.txtavatar.Size = new System.Drawing.Size(305, 22);
             this.txtavatar.TabIndex = 207;
@@ -608,8 +614,8 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(636, 82);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Location = new System.Drawing.Point(636, 88);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(157, 22);
             this.txtPassword.TabIndex = 205;
@@ -617,7 +623,7 @@
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(563, 89);
+            this.Password.Location = new System.Drawing.Point(563, 91);
             this.Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(69, 17);
@@ -737,7 +743,7 @@
             // txtApi
             // 
             this.txtApi.Location = new System.Drawing.Point(65, 82);
-            this.txtApi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApi.Margin = new System.Windows.Forms.Padding(4);
             this.txtApi.Name = "txtApi";
             this.txtApi.Size = new System.Drawing.Size(249, 22);
             this.txtApi.TabIndex = 36;
@@ -765,7 +771,7 @@
             // numtotal
             // 
             this.numtotal.Location = new System.Drawing.Point(1176, 9);
-            this.numtotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numtotal.Margin = new System.Windows.Forms.Padding(4);
             this.numtotal.Minimum = new decimal(new int[] {
             1,
             0,
@@ -819,7 +825,7 @@
             // 
             this.pibStatus.Image = ((System.Drawing.Image)(resources.GetObject("pibStatus.Image")));
             this.pibStatus.Location = new System.Drawing.Point(171, 140);
-            this.pibStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pibStatus.Margin = new System.Windows.Forms.Padding(4);
             this.pibStatus.Name = "pibStatus";
             this.pibStatus.Size = new System.Drawing.Size(129, 12);
             this.pibStatus.TabIndex = 14;
@@ -847,30 +853,23 @@
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(21, 167);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(18, 17);
             this.checkBox2.TabIndex = 39;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // label15
+            // chkautopass
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(563, 135);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 17);
-            this.label15.TabIndex = 234;
-            this.label15.Text = "Đầu số";
-            // 
-            // txt_dauso
-            // 
-            this.txt_dauso.Location = new System.Drawing.Point(633, 133);
-            this.txt_dauso.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_dauso.Name = "txt_dauso";
-            this.txt_dauso.Size = new System.Drawing.Size(157, 22);
-            this.txt_dauso.TabIndex = 235;
+            this.chkautopass.AutoSize = true;
+            this.chkautopass.Location = new System.Drawing.Point(806, 91);
+            this.chkautopass.Margin = new System.Windows.Forms.Padding(4);
+            this.chkautopass.Name = "chkautopass";
+            this.chkautopass.Size = new System.Drawing.Size(124, 21);
+            this.chkautopass.TabIndex = 236;
+            this.chkautopass.Text = "Auto Password";
+            this.chkautopass.UseVisualStyleBackColor = true;
             // 
             // frm_regnick
             // 
@@ -882,7 +881,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.richLogs);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_regnick";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reg nick";
@@ -957,7 +956,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cboWebsite;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown numviewmax;
         private System.Windows.Forms.NumericUpDown numviewmin;
         private System.Windows.Forms.Label label13;
@@ -967,5 +965,6 @@
         private System.Windows.Forms.CheckBox chkchangenumber;
         private System.Windows.Forms.TextBox txt_dauso;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox chkautopass;
     }
 }

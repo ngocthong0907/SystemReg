@@ -464,7 +464,7 @@ namespace NinjaSystem
         {
             try
             {
-               // setupLDGoc();
+                // setupLDGoc();
                 int lap = 0;
                 int numthread = SettingTool.configld.numthread;
                 if (numthread > list_dr.Count)
@@ -1032,7 +1032,7 @@ namespace NinjaSystem
             //            if (string.IsNullOrEmpty(yourip))
             //            {
             //                sendLogs("Tắt LD do không lấy được ip public proxy: " + proxy);
-                            
+
             //            }
             //        }
             //    }
@@ -1046,7 +1046,7 @@ namespace NinjaSystem
             //            if (string.IsNullOrEmpty(yourip))
             //            {
             //                sendLogs("Tắt LD do không lấy được ip public proxy: " + proxy);
-                           
+
             //            }
             //        }
             //        u.setDevice(ldID, acc.id, proxy + " - " + yourip);
@@ -1068,7 +1068,7 @@ namespace NinjaSystem
             ten = File.ReadLines(txtTen.Text).ToList();
             int total = (int)numtotal.Value;
             int success = 0;
-           
+
             try
             {
                 while (success < total)
@@ -1143,7 +1143,7 @@ namespace NinjaSystem
                             ld.clearappfb(acc.ldid);
                             ld.runApp(acc.ldid, "com.facebook.katana");
                             ld.checkOpenFacebookFinish(u, acc.ldid);
-                           
+
                             dr.Cells["Message"].Value = "Reg nick";
                             u.setStatus(ldID, "Reg Nick");
                             u.setStatusSum(total);
@@ -1151,7 +1151,11 @@ namespace NinjaSystem
 
                             acc.first_name = ho[rd.Next(0, ho.Count)];
                             acc.last_name = ten[rd.Next(0, ten.Count)];
-                            acc.Password = txtPassword.Text;
+                            if (chkautopass.Checked)
+                                acc.Password = CreatePassword(10);
+                            else
+                                acc.Password = txtPassword.Text;
+
                             acc.name = acc.first_name + " " + acc.last_name;
 
                             if (rdNam.Checked)
@@ -1164,7 +1168,7 @@ namespace NinjaSystem
                             }
                             bool result_reg = false;
                             if (chkchangenumber.Checked)
-                                result_reg = ld.regnick_V2(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text,txt_dauso.Text, token);
+                                result_reg = ld.regnick_V2(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text, txt_dauso.Text, token);
                             else
                                 result_reg = ld.regnick(acc, dr, u, txtApi.Text, (int)numdelayclickmin.Value, (int)numdelayclickmax.Value, checkBox1.Checked, cboWebsite.Text, token);
 
@@ -1178,7 +1182,7 @@ namespace NinjaSystem
                                 u.setStatus(ldID, "Reg Nick success");
                                 Delay(2);
                                 success++;
-                                acc.Password = txtPassword.Text;
+                               // acc.Password = txtPassword.Text;
                                 int id_danhmuc = Convert.ToInt32(cboNhom.SelectedValue.ToString());
                                 acc.id_danhmuc = id_danhmuc;
                                 acc.tendanhmuc = cboNhom.Text;
@@ -1208,34 +1212,34 @@ namespace NinjaSystem
                                 dr.Cells["Message"].Value = "Sở thích";
                                 u.setStatus(ldID, "Sở thích");
 
-                               if( ld.ChangeHobby(ldID, acc, "", token))
-                               {
+                                if (ld.ChangeHobby(ldID, acc, "", token))
+                                {
 
-                                   dr.Cells["Message"].Value = "Thêm Sở thích thành công";
-                                   u.setStatus(ldID, "Thêm Sở thích thành công");
-                               }
-                               else
-                               {
+                                    dr.Cells["Message"].Value = "Thêm Sở thích thành công";
+                                    u.setStatus(ldID, "Thêm Sở thích thành công");
+                                }
+                                else
+                                {
 
-                                   dr.Cells["Message"].Value = "Thêm Sở thích không thành công";
-                                   u.setStatus(ldID, "Thêm Sở thích không thành công");
-                               }
+                                    dr.Cells["Message"].Value = "Thêm Sở thích không thành công";
+                                    u.setStatus(ldID, "Thêm Sở thích không thành công");
+                                }
 
-                               dr.Cells["Message"].Value = "hôn nhân";
-                               u.setStatus(ldID, "hôn nhân");
+                                dr.Cells["Message"].Value = "hôn nhân";
+                                u.setStatus(ldID, "hôn nhân");
 
-                               if (ld.ChangeMarriage(ldID, acc, "", token))
-                               {
+                                if (ld.ChangeMarriage(ldID, acc, "", token))
+                                {
 
-                                   dr.Cells["Message"].Value = "Thêm hôn nhân thành công";
-                                   u.setStatus(ldID, "Thêm hôn nhân thành công");
-                               }
-                               else
-                               {
+                                    dr.Cells["Message"].Value = "Thêm hôn nhân thành công";
+                                    u.setStatus(ldID, "Thêm hôn nhân thành công");
+                                }
+                                else
+                                {
 
-                                   dr.Cells["Message"].Value = "Thêm hôn nhân không thành công";
-                                   u.setStatus(ldID, "Thêm hôn nhân không thành công");
-                               }
+                                    dr.Cells["Message"].Value = "Thêm hôn nhân không thành công";
+                                    u.setStatus(ldID, "Thêm hôn nhân không thành công");
+                                }
 
                                 List<Account> ls = new List<Account>();
                                 ls = nguoidung.loadUserbySql(string.Format("select * from Account where email = '{0}'", acc.phone.Trim()));
@@ -1253,7 +1257,7 @@ namespace NinjaSystem
                                 u.setStatus(ldID, "Watch video");
                                 ld.scrollNewfeedWatch(u, ldID, acc, (int)numscrollmin.Value, (int)numscrollmax.Value, token, (int)numviewmin.Value, (int)numviewmax.Value);
                                 ld.Zip(acc, ldID);
-                               int delay = rd.Next((int)numdelayregmin.Value, (int)numdelayregmax.Value);
+                                int delay = rd.Next((int)numdelayregmin.Value, (int)numdelayregmax.Value);
 
                                 while (delay >= 0)
                                 {
@@ -1268,7 +1272,7 @@ namespace NinjaSystem
                                 dr.Cells["Message"].Value = "Reg nick fail";
                                 u.setStatus(ldID, "Reg Nick fail");
                                 Delay(3);
-                              
+
                             }
                         }
                         catch
@@ -1366,7 +1370,7 @@ namespace NinjaSystem
 
             }
             catch
-            {}
+            { }
         }
 
         private void createContact(string ldid)
@@ -1388,7 +1392,7 @@ namespace NinjaSystem
             }
             catch
             { }
-            
+
         }
 
         private string Importcontact(string ldID, List<string> strNumber)
@@ -1694,6 +1698,16 @@ namespace NinjaSystem
         }
 
 
-
+        public string CreatePassword(int length)
+        {
+            const string valid = "@#$@#$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$";
+            StringBuilder res = new StringBuilder();
+            Random rnd = new Random();
+            while (0 < length--)
+            {
+                res.Append(valid[rnd.Next(valid.Length)]);
+            }
+            return res.ToString();
+        }
     }
 }
