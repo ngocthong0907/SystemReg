@@ -31134,6 +31134,14 @@ namespace NinjaSystem
 
                 data = new DetechModel();
                 data.parent = "error";
+                data.content = "Nhập mã từ SMS của bạn";
+                data.text = "Đã xảy ra lỗi. Vui lòng thử lại";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = -1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "error";
                 data.content = "Phone number already in use";
                 data.text = "Phone number already in use";
                 data.node = "//node[contains(@class,'android.widget.TextView')]";
@@ -31198,6 +31206,7 @@ namespace NinjaSystem
                 int maxNumberfone_real = 0;
                 int maxcode = 0;
                 int maxclick = 0;
+                int maxchangenation = 0;
                 RaiSim rs = new RaiSim();
             Lb_start:
                 if (token.IsCancellationRequested)
@@ -31211,8 +31220,16 @@ namespace NinjaSystem
                     i = 0;
                     switch (kq.function)
                     {
+                        case -1:
+                            {
+
+                                return false;
+                            }
                         case 4:
                             {
+                                if (maxchangenation >= 1)
+                                    return false;
+
                                 data = new DetechModel();
                                 data.parent = "";
                                 data.content = "Hoa Kỳ";
@@ -31248,7 +31265,11 @@ namespace NinjaSystem
 
                                             kq = detechFunctionOne(ldID, data);
                                             if (kq.status)
+                                            {
                                                 ClickOnLeapdroidPosition(ldID, kq.point);
+                                                maxchangenation++;
+                                            }
+                                                
                                         }
                                     }
 
