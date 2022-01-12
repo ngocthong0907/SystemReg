@@ -159,6 +159,7 @@
             this.mnusetupProxy = new System.Windows.Forms.ToolStripMenuItem();
             this.mnumoney = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -199,6 +200,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.mnuUser.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
@@ -796,13 +798,15 @@
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Data Profile";
+            this.Column5.HeaderText = "Pass email ";
             this.Column5.Name = "Column5";
+            this.Column5.Width = 120;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Data Group";
             this.Column6.Name = "Column6";
+            this.Column6.Visible = false;
             // 
             // clNote
             // 
@@ -1391,6 +1395,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bunifuImageButton5);
             this.panel1.Controls.Add(this.bunifuImageButton4);
             this.panel1.Controls.Add(this.bunifuImageButton3);
             this.panel1.Controls.Add(this.label1);
@@ -1409,18 +1414,34 @@
             this.panel1.Size = new System.Drawing.Size(1134, 49);
             this.panel1.TabIndex = 0;
             // 
+            // bunifuImageButton5
+            // 
+            this.bunifuImageButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuImageButton5.Image = global::NinjaSystem.Properties.Resources.icons8_invite_26;
+            this.bunifuImageButton5.ImageActive = null;
+            this.bunifuImageButton5.Location = new System.Drawing.Point(120, 4);
+            this.bunifuImageButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton5.Name = "bunifuImageButton5";
+            this.bunifuImageButton5.Size = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton5.TabIndex = 172;
+            this.bunifuImageButton5.TabStop = false;
+            this.bunifuImageButton5.Zoom = 10;
+            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click);
+            // 
             // bunifuImageButton4
             // 
             this.bunifuImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton4.Image = global::NinjaSystem.Properties.Resources.lite_login_label_facebook_logo;
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(102, 2);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(338, 4);
             this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(92, 40);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton4.TabIndex = 171;
             this.bunifuImageButton4.TabStop = false;
+            this.bunifuImageButton4.Visible = false;
             this.bunifuImageButton4.Zoom = 10;
             this.bunifuImageButton4.Click += new System.EventHandler(this.bunifuImageButton4_Click);
             // 
@@ -1774,6 +1795,7 @@
             this.mnuUser.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
@@ -1925,6 +1947,8 @@
         private System.Windows.Forms.ToolStripMenuItem mnuexportbackup;
         private System.Windows.Forms.ToolStripMenuItem mnureactionofnick;
         private System.Windows.Forms.ToolStripMenuItem mnumoney;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn UID;
@@ -1948,7 +1972,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn clProxy;
         private System.Windows.Forms.DataGridViewTextBoxColumn clBackupLD;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
     }
 }

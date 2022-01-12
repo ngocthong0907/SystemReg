@@ -173,6 +173,7 @@ namespace NinjaSystem
             para["gender"] = acc.gender;
             para["token"] = acc.token;
             para["cookies"] = acc.cookies;
+            para["dataprofile"] = acc.dataprofile;
             return data.insert(para, "Account");
         }
         public bool updateAccountByUID(Account acc)

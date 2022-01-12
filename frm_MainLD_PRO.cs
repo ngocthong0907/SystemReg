@@ -4016,7 +4016,7 @@ namespace NinjaSystem
                 }
             }
 
-            frmCopy frm = new frmCopy(list_acc);
+            frm_Copy frm = new frm_Copy(list_acc);
             frm.ShowDialog();
         }
 
@@ -4095,6 +4095,18 @@ namespace NinjaSystem
         {
             frm_regnick_novery frm = new frm_regnick_novery(this);
             frm.Show();
+        }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            frm_regnick_email frm = new frm_regnick_email(this);
+            frm.Show();
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
        
        

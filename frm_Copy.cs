@@ -60,6 +60,9 @@ namespace NinjaSystem
                                 case "email":
                                     line += acc.email + "|";
                                     break;
+                                case "Passemail":
+                                    line += acc.dataprofile + "|";
+                                    break;
                                 case "pass":
                                     line += acc.Password + "|";
                                     break;
@@ -158,6 +161,11 @@ namespace NinjaSystem
                     case "email":
                         email.Enabled = true;
                         break;
+
+                    case "Passemail":
+                        passemail.Enabled = true;
+                        break;
+
                     case "birthday":
                         birthday.Enabled = true;
                         break;
@@ -261,6 +269,16 @@ namespace NinjaSystem
             {
                 File.AppendAllText(String.Format("{0}\\logImage.txt", Application.StartupPath), DateTime.Now.ToString() + ": FORM CONFIG Error - " + ex.Message + "\n");
             }
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            DataGridViewCell cell = new DataGridViewLinkCell();
+            cell.Value = "Passemail";
+            row.Cells.Add(cell);
+            dgvLDin.Rows.Add(row);
+            passemail.Enabled = false;
         }
        
     }

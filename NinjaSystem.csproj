@@ -87,6 +87,11 @@
     <Reference Include="MessagingToolkit.QRCode">
       <HintPath>packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Office.Interop.Outlook.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Outlook.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MihaZupan.HttpToSocks5Proxy">
       <HintPath>packages\HttpToSocks5Proxy.1.4.0\lib\net45\MihaZupan.HttpToSocks5Proxy.dll</HintPath>
@@ -160,6 +165,12 @@
     <Compile Include="Data\Nhom_Bll.cs" />
     <Compile Include="Data\CauHinh_Bll.cs" />
     <Compile Include="Data\NguoiDung_Bll.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_RegisterHana.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +362,12 @@
     </Compile>
     <Compile Include="frm_LeaveGroup_PRO.Designer.cs">
       <DependentUpon>frm_LeaveGroup_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_regnick_email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_regnick_email.Designer.cs">
+      <DependentUpon>frm_regnick_email.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_regnick_novery.cs">
       <SubType>Form</SubType>
@@ -682,6 +699,9 @@
     <Compile Include="userLD.Designer.cs">
       <DependentUpon>userLD.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_2Fa.resx">
       <DependentUpon>frm_2Fa.cs</DependentUpon>
     </EmbeddedResource>
@@ -782,6 +802,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LeaveGroup_PRO.resx">
       <DependentUpon>frm_LeaveGroup_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_regnick_email.resx">
+      <DependentUpon>frm_regnick_email.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_regnick_novery.resx">
       <DependentUpon>frm_regnick_novery.cs</DependentUpon>
@@ -1383,6 +1406,7 @@
     <Content Include="Resources\check.png" />
     <None Include="Resources\chinhsuathongtin.png" />
     <None Include="Resources\chinhsuacongkhai.png" />
+    <None Include="Resources\chonthuvien.png" />
     <Content Include="Resources\Delete Shield_32px.png" />
     <None Include="Resources\gray.png" />
     <None Include="Resources\hongtim.png" />
@@ -1402,6 +1426,7 @@
     <None Include="Resources\invite_group2_3x.png" />
     <None Include="Resources\inputnumbernew.png" />
     <None Include="Resources\inputcodenew.png" />
+    <None Include="Resources\inputcode1.png" />
     <Content Include="Resources\likepage_3x_299.png" />
     <None Include="Resources\location.png" />
     <Content Include="Resources\logoninja.png" />

@@ -49,6 +49,8 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXoa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.passemail = new Bunifu.Framework.UI.BunifuImageButton();
+            this.chkpassemail = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.uid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.email)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pass)).BeginInit();
@@ -57,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cookie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birthday)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLDin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passemail)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOK
@@ -82,14 +85,14 @@
             this.btnOK.IconVisible = true;
             this.btnOK.IconZoom = 90D;
             this.btnOK.IsTab = false;
-            this.btnOK.Location = new System.Drawing.Point(11, 251);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnOK.Location = new System.Drawing.Point(15, 309);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnOK.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnOK.OnHoverTextColor = System.Drawing.Color.White;
             this.btnOK.selected = false;
-            this.btnOK.Size = new System.Drawing.Size(88, 30);
+            this.btnOK.Size = new System.Drawing.Size(117, 37);
             this.btnOK.TabIndex = 15;
             this.btnOK.Text = "Copy";
             this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,10 +106,10 @@
             this.chkUid.Checked = true;
             this.chkUid.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkUid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkUid.Location = new System.Drawing.Point(11, 8);
-            this.chkUid.Margin = new System.Windows.Forms.Padding(2);
+            this.chkUid.Location = new System.Drawing.Point(15, 10);
+            this.chkUid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkUid.Name = "chkUid";
-            this.chkUid.Size = new System.Drawing.Size(50, 21);
+            this.chkUid.Size = new System.Drawing.Size(60, 24);
             this.chkUid.TabIndex = 16;
             this.chkUid.Text = "UID";
             this.chkUid.UseVisualStyleBackColor = true;
@@ -117,10 +120,10 @@
             this.chkEmail.Checked = true;
             this.chkEmail.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEmail.Location = new System.Drawing.Point(11, 37);
-            this.chkEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.chkEmail.Location = new System.Drawing.Point(15, 46);
+            this.chkEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkEmail.Name = "chkEmail";
-            this.chkEmail.Size = new System.Drawing.Size(61, 21);
+            this.chkEmail.Size = new System.Drawing.Size(73, 24);
             this.chkEmail.TabIndex = 18;
             this.chkEmail.Text = "Email";
             this.chkEmail.UseVisualStyleBackColor = true;
@@ -131,10 +134,10 @@
             this.chkPass.Checked = true;
             this.chkPass.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkPass.Location = new System.Drawing.Point(11, 71);
-            this.chkPass.Margin = new System.Windows.Forms.Padding(2);
+            this.chkPass.Location = new System.Drawing.Point(15, 87);
+            this.chkPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkPass.Name = "chkPass";
-            this.chkPass.Size = new System.Drawing.Size(88, 21);
+            this.chkPass.Size = new System.Drawing.Size(105, 24);
             this.chkPass.TabIndex = 19;
             this.chkPass.Text = "Password";
             this.chkPass.UseVisualStyleBackColor = true;
@@ -145,10 +148,10 @@
             this.chkPrivate.Checked = true;
             this.chkPrivate.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkPrivate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkPrivate.Location = new System.Drawing.Point(11, 103);
-            this.chkPrivate.Margin = new System.Windows.Forms.Padding(2);
+            this.chkPrivate.Location = new System.Drawing.Point(15, 127);
+            this.chkPrivate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkPrivate.Name = "chkPrivate";
-            this.chkPrivate.Size = new System.Drawing.Size(97, 21);
+            this.chkPrivate.Size = new System.Drawing.Size(113, 24);
             this.chkPrivate.TabIndex = 20;
             this.chkPrivate.Text = "Private key";
             this.chkPrivate.UseVisualStyleBackColor = true;
@@ -159,10 +162,10 @@
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(12, 134);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox1.Location = new System.Drawing.Point(16, 165);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(67, 21);
+            this.checkBox1.Size = new System.Drawing.Size(76, 24);
             this.checkBox1.TabIndex = 21;
             this.checkBox1.Text = "Token";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -173,10 +176,10 @@
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(13, 166);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox2.Location = new System.Drawing.Point(17, 204);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(70, 21);
+            this.checkBox2.Size = new System.Drawing.Size(82, 24);
             this.checkBox2.TabIndex = 22;
             this.checkBox2.Text = "Cookie";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -187,10 +190,10 @@
             this.checkBox3.Checked = true;
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(13, 203);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox3.Location = new System.Drawing.Point(17, 250);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(79, 21);
+            this.checkBox3.Size = new System.Drawing.Size(93, 24);
             this.checkBox3.TabIndex = 23;
             this.checkBox3.Text = "Birthday";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -200,10 +203,10 @@
             this.uid.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uid.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.uid.ImageActive = null;
-            this.uid.Location = new System.Drawing.Point(112, 8);
-            this.uid.Margin = new System.Windows.Forms.Padding(2);
+            this.uid.Location = new System.Drawing.Point(149, 10);
+            this.uid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uid.Name = "uid";
-            this.uid.Size = new System.Drawing.Size(36, 20);
+            this.uid.Size = new System.Drawing.Size(48, 25);
             this.uid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.uid.TabIndex = 32;
             this.uid.TabStop = false;
@@ -215,10 +218,10 @@
             this.email.Cursor = System.Windows.Forms.Cursors.Hand;
             this.email.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.email.ImageActive = null;
-            this.email.Location = new System.Drawing.Point(112, 37);
-            this.email.Margin = new System.Windows.Forms.Padding(2);
+            this.email.Location = new System.Drawing.Point(149, 46);
+            this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(36, 20);
+            this.email.Size = new System.Drawing.Size(48, 25);
             this.email.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.email.TabIndex = 33;
             this.email.TabStop = false;
@@ -230,10 +233,10 @@
             this.pass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pass.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.pass.ImageActive = null;
-            this.pass.Location = new System.Drawing.Point(112, 71);
-            this.pass.Margin = new System.Windows.Forms.Padding(2);
+            this.pass.Location = new System.Drawing.Point(149, 87);
+            this.pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(36, 20);
+            this.pass.Size = new System.Drawing.Size(48, 25);
             this.pass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pass.TabIndex = 34;
             this.pass.TabStop = false;
@@ -245,10 +248,10 @@
             this.btnkey.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnkey.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.btnkey.ImageActive = null;
-            this.btnkey.Location = new System.Drawing.Point(112, 103);
-            this.btnkey.Margin = new System.Windows.Forms.Padding(2);
+            this.btnkey.Location = new System.Drawing.Point(149, 127);
+            this.btnkey.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnkey.Name = "btnkey";
-            this.btnkey.Size = new System.Drawing.Size(36, 20);
+            this.btnkey.Size = new System.Drawing.Size(48, 25);
             this.btnkey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnkey.TabIndex = 35;
             this.btnkey.TabStop = false;
@@ -260,10 +263,10 @@
             this.token.Cursor = System.Windows.Forms.Cursors.Hand;
             this.token.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.token.ImageActive = null;
-            this.token.Location = new System.Drawing.Point(112, 134);
-            this.token.Margin = new System.Windows.Forms.Padding(2);
+            this.token.Location = new System.Drawing.Point(149, 165);
+            this.token.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.token.Name = "token";
-            this.token.Size = new System.Drawing.Size(36, 20);
+            this.token.Size = new System.Drawing.Size(48, 25);
             this.token.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.token.TabIndex = 36;
             this.token.TabStop = false;
@@ -275,10 +278,10 @@
             this.cookie.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cookie.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.cookie.ImageActive = null;
-            this.cookie.Location = new System.Drawing.Point(112, 167);
-            this.cookie.Margin = new System.Windows.Forms.Padding(2);
+            this.cookie.Location = new System.Drawing.Point(149, 206);
+            this.cookie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cookie.Name = "cookie";
-            this.cookie.Size = new System.Drawing.Size(36, 20);
+            this.cookie.Size = new System.Drawing.Size(48, 25);
             this.cookie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cookie.TabIndex = 37;
             this.cookie.TabStop = false;
@@ -290,10 +293,10 @@
             this.birthday.Cursor = System.Windows.Forms.Cursors.Hand;
             this.birthday.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
             this.birthday.ImageActive = null;
-            this.birthday.Location = new System.Drawing.Point(112, 204);
-            this.birthday.Margin = new System.Windows.Forms.Padding(2);
+            this.birthday.Location = new System.Drawing.Point(149, 251);
+            this.birthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.birthday.Name = "birthday";
-            this.birthday.Size = new System.Drawing.Size(36, 20);
+            this.birthday.Size = new System.Drawing.Size(48, 25);
             this.birthday.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.birthday.TabIndex = 38;
             this.birthday.TabStop = false;
@@ -313,7 +316,8 @@
             this.dgvLDin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn2,
             this.dataGridViewTextBoxColumn1});
-            this.dgvLDin.Location = new System.Drawing.Point(333, 8);
+            this.dgvLDin.Location = new System.Drawing.Point(444, 10);
+            this.dgvLDin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvLDin.Name = "dgvLDin";
             this.dgvLDin.ReadOnly = true;
             this.dgvLDin.RowHeadersVisible = false;
@@ -321,7 +325,7 @@
             this.dgvLDin.RowTemplate.DividerHeight = 50;
             this.dgvLDin.RowTemplate.Height = 100;
             this.dgvLDin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLDin.Size = new System.Drawing.Size(153, 216);
+            this.dgvLDin.Size = new System.Drawing.Size(204, 266);
             this.dgvLDin.TabIndex = 39;
             // 
             // dataGridViewImageColumn2
@@ -364,14 +368,14 @@
             this.btnXoa.IconVisible = false;
             this.btnXoa.IconZoom = 90D;
             this.btnXoa.IsTab = false;
-            this.btnXoa.Location = new System.Drawing.Point(354, 251);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnXoa.Location = new System.Drawing.Point(472, 309);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnXoa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnXoa.OnHoverTextColor = System.Drawing.Color.White;
             this.btnXoa.selected = false;
-            this.btnXoa.Size = new System.Drawing.Size(88, 30);
+            this.btnXoa.Size = new System.Drawing.Size(117, 37);
             this.btnXoa.TabIndex = 41;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -402,14 +406,14 @@
             this.btnCancel.IconVisible = false;
             this.btnCancel.IconZoom = 90D;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(179, 251);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCancel.Location = new System.Drawing.Point(239, 309);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCancel.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnCancel.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCancel.selected = false;
-            this.btnCancel.Size = new System.Drawing.Size(99, 30);
+            this.btnCancel.Size = new System.Drawing.Size(132, 37);
             this.btnCancel.TabIndex = 42;
             this.btnCancel.Text = "Đóng";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -417,11 +421,41 @@
             this.btnCancel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // passemail
+            // 
+            this.passemail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.passemail.Image = global::NinjaSystem.Properties.Resources.Paste_50px;
+            this.passemail.ImageActive = null;
+            this.passemail.Location = new System.Drawing.Point(368, 46);
+            this.passemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.passemail.Name = "passemail";
+            this.passemail.Size = new System.Drawing.Size(48, 25);
+            this.passemail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.passemail.TabIndex = 46;
+            this.passemail.TabStop = false;
+            this.passemail.Zoom = 10;
+            // 
+            // chkpassemail
+            // 
+            this.chkpassemail.AutoSize = true;
+            this.chkpassemail.Checked = true;
+            this.chkpassemail.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkpassemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkpassemail.Location = new System.Drawing.Point(239, 47);
+            this.chkpassemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkpassemail.Name = "chkpassemail";
+            this.chkpassemail.Size = new System.Drawing.Size(116, 24);
+            this.chkpassemail.TabIndex = 45;
+            this.chkpassemail.Text = "Pass Email";
+            this.chkpassemail.UseVisualStyleBackColor = true;
+            // 
             // frmCopy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 284);
+            this.ClientSize = new System.Drawing.Size(743, 350);
+            this.Controls.Add(this.passemail);
+            this.Controls.Add(this.chkpassemail);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dgvLDin);
@@ -440,7 +474,7 @@
             this.Controls.Add(this.chkEmail);
             this.Controls.Add(this.chkUid);
             this.Controls.Add(this.btnOK);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmCopy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Copy tùy chỉnh";
@@ -453,6 +487,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cookie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.birthday)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLDin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passemail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,5 +515,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private Bunifu.Framework.UI.BunifuFlatButton btnXoa;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
+        private Bunifu.Framework.UI.BunifuImageButton passemail;
+        private System.Windows.Forms.CheckBox chkpassemail;
     }
 }

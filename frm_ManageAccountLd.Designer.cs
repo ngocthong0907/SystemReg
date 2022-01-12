@@ -35,8 +35,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.trvNhom = new System.Windows.Forms.TreeView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btn_rename = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteGroup = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnAddGroup = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -63,20 +66,18 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnChuyenNhom = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnXoa = new Bunifu.Framework.UI.BunifuImageButton();
             this.btn_addUser = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_rename = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteGroup = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAddGroup = new Bunifu.Framework.UI.BunifuImageButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddGroup)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel8.SuspendLayout();
@@ -86,7 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddGroup)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -107,9 +107,9 @@
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(217, 638);
+            this.panel2.Size = new System.Drawing.Size(289, 785);
             this.panel2.TabIndex = 2;
             // 
             // trvNhom
@@ -123,14 +123,14 @@
             this.trvNhom.ImageList = this.imageList1;
             this.trvNhom.Indent = 19;
             this.trvNhom.ItemHeight = 50;
-            this.trvNhom.Location = new System.Drawing.Point(0, 48);
-            this.trvNhom.Margin = new System.Windows.Forms.Padding(2);
+            this.trvNhom.Location = new System.Drawing.Point(0, 59);
+            this.trvNhom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trvNhom.Name = "trvNhom";
             this.trvNhom.SelectedImageIndex = 0;
             this.trvNhom.ShowLines = false;
             this.trvNhom.ShowPlusMinus = false;
             this.trvNhom.ShowRootLines = false;
-            this.trvNhom.Size = new System.Drawing.Size(217, 590);
+            this.trvNhom.Size = new System.Drawing.Size(289, 726);
             this.trvNhom.TabIndex = 1;
             this.trvNhom.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.trvNhom_AfterSelect);
             // 
@@ -141,7 +141,23 @@
             this.btn_rename,
             this.deleteGroup});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 56);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(132, 56);
+            // 
+            // btn_rename
+            // 
+            this.btn_rename.Image = global::NinjaSystem.Properties.Resources.Rename_48px;
+            this.btn_rename.Name = "btn_rename";
+            this.btn_rename.Size = new System.Drawing.Size(131, 26);
+            this.btn_rename.Text = "Đổi tên";
+            this.btn_rename.Click += new System.EventHandler(this.btn_rename_Click);
+            // 
+            // deleteGroup
+            // 
+            this.deleteGroup.Image = global::NinjaSystem.Properties.Resources.Minus_48px;
+            this.deleteGroup.Name = "deleteGroup";
+            this.deleteGroup.Size = new System.Drawing.Size(131, 26);
+            this.deleteGroup.Text = "Xóa";
+            this.deleteGroup.Click += new System.EventHandler(this.deleteGroup_Click);
             // 
             // imageList1
             // 
@@ -156,20 +172,33 @@
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(217, 48);
+            this.panel6.Size = new System.Drawing.Size(289, 59);
             this.panel6.TabIndex = 0;
+            // 
+            // btnAddGroup
+            // 
+            this.btnAddGroup.Image = global::NinjaSystem.Properties.Resources.Add2_48px;
+            this.btnAddGroup.ImageActive = null;
+            this.btnAddGroup.Location = new System.Drawing.Point(229, 12);
+            this.btnAddGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddGroup.Name = "btnAddGroup";
+            this.btnAddGroup.Size = new System.Drawing.Size(47, 36);
+            this.btnAddGroup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAddGroup.TabIndex = 1;
+            this.btnAddGroup.TabStop = false;
+            this.btnAddGroup.Zoom = 10;
+            this.btnAddGroup.Click += new System.EventHandler(this.bunifuImageButton5_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(7, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(9, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 19);
+            this.label2.Size = new System.Drawing.Size(89, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Danh mục";
             // 
@@ -177,20 +206,20 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(217, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(289, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 638);
+            this.panel3.Size = new System.Drawing.Size(1, 785);
             this.panel3.TabIndex = 3;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1016, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(1355, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 638);
+            this.panel5.Size = new System.Drawing.Size(1, 785);
             this.panel5.TabIndex = 5;
             // 
             // panel7
@@ -202,10 +231,10 @@
             this.panel7.Controls.Add(this.panel4);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(218, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(290, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(798, 638);
+            this.panel7.Size = new System.Drawing.Size(1065, 785);
             this.panel7.TabIndex = 6;
             // 
             // checkBox2
@@ -213,9 +242,10 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(13, 57);
+            this.checkBox2.Location = new System.Drawing.Point(17, 70);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
             this.checkBox2.TabIndex = 7;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
@@ -244,11 +274,12 @@
             this.Status,
             this.Message});
             this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUser.Location = new System.Drawing.Point(0, 55);
+            this.dgvUser.Location = new System.Drawing.Point(0, 67);
+            this.dgvUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersVisible = false;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(798, 485);
+            this.dgvUser.Size = new System.Drawing.Size(1065, 598);
             this.dgvUser.TabIndex = 3;
             this.dgvUser.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellValueChanged);
             // 
@@ -355,9 +386,10 @@
             // richLogs
             // 
             this.richLogs.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.richLogs.Location = new System.Drawing.Point(0, 540);
+            this.richLogs.Location = new System.Drawing.Point(0, 665);
+            this.richLogs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richLogs.Name = "richLogs";
-            this.richLogs.Size = new System.Drawing.Size(798, 98);
+            this.richLogs.Size = new System.Drawing.Size(1065, 120);
             this.richLogs.TabIndex = 5;
             this.richLogs.Text = "";
             this.richLogs.Visible = false;
@@ -367,9 +399,10 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(15, 91);
+            this.checkBox1.Location = new System.Drawing.Point(20, 112);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -377,9 +410,10 @@
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 49);
+            this.panel4.Location = new System.Drawing.Point(0, 60);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(798, 6);
+            this.panel4.Size = new System.Drawing.Size(1065, 7);
             this.panel4.TabIndex = 2;
             // 
             // panel8
@@ -394,37 +428,33 @@
             this.panel8.Controls.Add(this.btn_addUser);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(798, 49);
+            this.panel8.Size = new System.Drawing.Size(1065, 60);
             this.panel8.TabIndex = 0;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Location = new System.Drawing.Point(525, 16);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(219, 20);
-            this.txtSearch.TabIndex = 6;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.Image = global::NinjaSystem.Properties.Resources.inputcodenew;
+            this.bunifuImageButton1.Image = global::NinjaSystem.Properties.Resources.chonthuvien;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(278, 7);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(371, 9);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 29);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(47, 36);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 2;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Visible = false;
             this.bunifuImageButton1.Zoom = 10;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(702, 20);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(291, 22);
+            this.txtSearch.TabIndex = 6;
             // 
             // btnSearch
             // 
@@ -432,10 +462,10 @@
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Image = global::NinjaSystem.Properties.Resources.icons8_google_web_search_48;
             this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(747, 1);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Location = new System.Drawing.Point(998, 1);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(34, 48);
+            this.btnSearch.Size = new System.Drawing.Size(45, 59);
             this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSearch.TabIndex = 4;
             this.btnSearch.TabStop = false;
@@ -447,10 +477,10 @@
             this.btnChuyenNhom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChuyenNhom.Image = global::NinjaSystem.Properties.Resources.icons8_sign_out_48;
             this.btnChuyenNhom.ImageActive = null;
-            this.btnChuyenNhom.Location = new System.Drawing.Point(126, 0);
-            this.btnChuyenNhom.Margin = new System.Windows.Forms.Padding(2);
+            this.btnChuyenNhom.Location = new System.Drawing.Point(168, 0);
+            this.btnChuyenNhom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChuyenNhom.Name = "btnChuyenNhom";
-            this.btnChuyenNhom.Size = new System.Drawing.Size(34, 48);
+            this.btnChuyenNhom.Size = new System.Drawing.Size(45, 59);
             this.btnChuyenNhom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnChuyenNhom.TabIndex = 2;
             this.btnChuyenNhom.TabStop = false;
@@ -462,10 +492,10 @@
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Image = global::NinjaSystem.Properties.Resources.Edit_File_48px;
             this.btnUpdate.ImageActive = null;
-            this.btnUpdate.Location = new System.Drawing.Point(50, 0);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Location = new System.Drawing.Point(67, 0);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(31, 48);
+            this.btnUpdate.Size = new System.Drawing.Size(41, 59);
             this.btnUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.TabStop = false;
@@ -477,10 +507,10 @@
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.Image = global::NinjaSystem.Properties.Resources.icons8_cancel_48;
             this.btnXoa.ImageActive = null;
-            this.btnXoa.Location = new System.Drawing.Point(86, 0);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Location = new System.Drawing.Point(115, 0);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(34, 48);
+            this.btnXoa.Size = new System.Drawing.Size(45, 59);
             this.btnXoa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnXoa.TabIndex = 0;
             this.btnXoa.TabStop = false;
@@ -492,53 +522,27 @@
             this.btn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_addUser.Image = global::NinjaSystem.Properties.Resources.Add_48px;
             this.btn_addUser.ImageActive = null;
-            this.btn_addUser.Location = new System.Drawing.Point(13, 0);
-            this.btn_addUser.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_addUser.Location = new System.Drawing.Point(17, 0);
+            this.btn_addUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addUser.Name = "btn_addUser";
-            this.btn_addUser.Size = new System.Drawing.Size(34, 48);
+            this.btn_addUser.Size = new System.Drawing.Size(45, 59);
             this.btn_addUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_addUser.TabIndex = 0;
             this.btn_addUser.TabStop = false;
             this.btn_addUser.Zoom = 10;
             this.btn_addUser.Click += new System.EventHandler(this.btn_addUser_Click);
             // 
-            // btn_rename
+            // timer1
             // 
-            this.btn_rename.Image = global::NinjaSystem.Properties.Resources.Rename_48px;
-            this.btn_rename.Name = "btn_rename";
-            this.btn_rename.Size = new System.Drawing.Size(116, 26);
-            this.btn_rename.Text = "Đổi tên";
-            this.btn_rename.Click += new System.EventHandler(this.btn_rename_Click);
-            // 
-            // deleteGroup
-            // 
-            this.deleteGroup.Image = global::NinjaSystem.Properties.Resources.Minus_48px;
-            this.deleteGroup.Name = "deleteGroup";
-            this.deleteGroup.Size = new System.Drawing.Size(116, 26);
-            this.deleteGroup.Text = "Xóa";
-            this.deleteGroup.Click += new System.EventHandler(this.deleteGroup_Click);
-            // 
-            // btnAddGroup
-            // 
-            this.btnAddGroup.Image = global::NinjaSystem.Properties.Resources.Add2_48px;
-            this.btnAddGroup.ImageActive = null;
-            this.btnAddGroup.Location = new System.Drawing.Point(172, 10);
-            this.btnAddGroup.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddGroup.Name = "btnAddGroup";
-            this.btnAddGroup.Size = new System.Drawing.Size(35, 29);
-            this.btnAddGroup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAddGroup.TabIndex = 1;
-            this.btnAddGroup.TabStop = false;
-            this.btnAddGroup.Zoom = 10;
-            this.btnAddGroup.Click += new System.EventHandler(this.bunifuImageButton5_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frm_ManageAccountLd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1017, 638);
+            this.ClientSize = new System.Drawing.Size(1356, 785);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -546,7 +550,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_ManageAccountLd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý account";
@@ -556,6 +560,7 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddGroup)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
@@ -567,7 +572,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddGroup)).EndInit();
             this.ResumeLayout(false);
 
         }

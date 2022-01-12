@@ -80,6 +80,15 @@ namespace NinjaSystem
                 cell41.Value = acc.birthday;
                 dataGridViewRow.Cells.Add(cell41);
 
+                DataGridViewTextBoxCell cell42 = new DataGridViewTextBoxCell();
+                cell42.Value = acc.email;
+                dataGridViewRow.Cells.Add(cell42);
+
+                DataGridViewTextBoxCell cell43 = new DataGridViewTextBoxCell();
+                cell43.Value = acc.dataprofile;
+                dataGridViewRow.Cells.Add(cell43);
+
+
                 DataGridViewTextBoxCell cell5 = new DataGridViewTextBoxCell();
                 cell5.Value = "";
                 dataGridViewRow.Cells.Add(cell5);
@@ -144,14 +153,33 @@ namespace NinjaSystem
                     {
                         acc.privatekey = "";
                     }
+                    //try
+                    //{
+                    //    acc.birthday = arr[3].Trim();
+                    //}
+                    //catch
+                    //{
+                    //    acc.birthday = "";
+                    //}
+
                     try
                     {
-                        acc.birthday = arr[3].Trim();
+                        acc.email = arr[3].Trim();
                     }
                     catch
                     {
-                        acc.birthday = "";
+                        acc.email = "";
                     }
+
+                    try
+                    {
+                        acc.dataprofile = arr[4].Trim();
+                    }
+                    catch
+                    {
+                        acc.dataprofile = "";
+                    }
+
                     acc.ghichu = "";
                     method_Datagridview(acc);
 

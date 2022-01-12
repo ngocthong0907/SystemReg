@@ -25,6 +25,7 @@ using MihaZupan;
 using System.Net.Http;
 using System.Xml.Linq;
 using xNet;
+using OpenPop.Pop3;
 namespace NinjaSystem
 {
     public class LDController
@@ -10529,6 +10530,15 @@ namespace NinjaSystem
             image.img = Properties.Resources.ok_changeinf;
             list_images.Add(image);
 
+
+            DetechModel data = new DetechModel();
+            data.parent = "";
+            data.content = "Không thể thêm thành phố hiện tại";
+            data.text = "ok";
+            data.node = "//node[contains(@class,'android.widget.Button')]";
+            data.function = 1;
+
+            SettingTool.lang.list_changeinfo.Add(data);
         Lb_start:
             DetechModel kq = detechFunction(ldID, SettingTool.lang.list_changeinfo);
             if (kq.status)
@@ -10562,7 +10572,7 @@ namespace NinjaSystem
                                 else
                                     ClickOnLeapdroidPosition(ldID, list_goiy[rd.Next(0, list_goiy.Count)]);
                                 List<DetechModel> list_OK = new List<DetechModel>();
-                                DetechModel data = new DetechModel();
+                                data = new DetechModel();
                                 data.parent = "Avatar";
                                 data.content = "LƯU";
                                 data.text = "LƯU";
@@ -10604,7 +10614,7 @@ namespace NinjaSystem
                             else
                             {
                                 List<DetechModel> list_OK = new List<DetechModel>();
-                                DetechModel data = new DetechModel();
+                               
                                 data = new DetechModel();
                                 data.parent = "Avatar";
                                 data.content = "Bỏ qua";
@@ -20582,53 +20592,61 @@ namespace NinjaSystem
 
         public void SaveTokenCookies(Account acc)
         {
-            string token = "";
-            string path = string.Format("c:\\test\\{0}\\pictures\\temp\\{0}.txt", acc.ldid);
-            copyfileToken(acc.ldid);
-            //  string cmd = String.Format("pull \"/storage/emulated/0/authentication\" \"{0}\"", path);
-            //string kq = runAdb(acc.ldid, cmd);
-            if (File.Exists(path))
+            try
             {
-                string html = File.ReadAllText(path);
-                string uid = FunctionHelper.smethod_6(html, html.IndexOf("EAAAAUa"), "\\").Trim();
-                token = Regex.Match(uid, @"([A-Z])\w+").Value;
-                File.AppendAllText(path, uid + "\n");
-                if (!string.IsNullOrEmpty(token))
-                    acc.token = token;
-
-                string[] arr = html.Split('[');
-                if (arr.Length > 1)
+                string token = "";
+                string path = string.Format("c:\\test\\{0}\\pictures\\temp\\{0}.txt", acc.ldid);
+                copyfileToken(acc.ldid);
+                //  string cmd = String.Format("pull \"/storage/emulated/0/authentication\" \"{0}\"", path);
+                //string kq = runAdb(acc.ldid, cmd);
+                if (File.Exists(path))
                 {
-                    string data = "[" + arr[1];
-                    JArray jarr = JArray.Parse(data);
-                    string cookie = "";
-                    foreach (var item in jarr)
+                    string html = File.ReadAllText(path);
+                    string uid = FunctionHelper.smethod_6(html, html.IndexOf("EAAAAUa"), "\\").Trim();
+                    token = Regex.Match(uid, @"([A-Z])\w+").Value;
+                    File.AppendAllText(path, uid + "\n");
+                    if (!string.IsNullOrEmpty(token))
+                        acc.token = token;
+
+                    string[] arr = html.Split('[');
+                    if (arr.Length > 1)
                     {
-                        cookie = String.Format("{0};{1}={2}", cookie, item["name"].ToString(), item["value"].ToString());
+                        string data = "[" + arr[1];
+                        JArray jarr = JArray.Parse(data);
+                        string cookie = "";
+                        foreach (var item in jarr)
+                        {
+                            cookie = String.Format("{0};{1}={2}", cookie, item["name"].ToString(), item["value"].ToString());
+                        }
+                        cookie = cookie.Remove(0, 1);
+                        if (!string.IsNullOrEmpty(cookie))
+                            acc.cookies = cookie;
                     }
-                    cookie = cookie.Remove(0, 1);
-                    if (!string.IsNullOrEmpty(cookie))
-                        acc.cookies = cookie;
+
+
+                    NguoiDung_Bll nguoidung = new NguoiDung_Bll();
+                    if (acc.id.Contains('@'))
+                    {
+                        string[] cokie = acc.cookies.Split(';');
+                        acc.email = acc.id;
+                        acc.id = FunctionHelper.smethod_6(cokie[0], cokie[0].IndexOf("user=") + 5, "");
+                        //if (!string.IsNullOrEmpty(acc.id))
+                        //    nguoidung.updateuidEmail(acc);
+                    }
+                    //if (acc.cookies.Contains(acc.id))
+                    //{
+                    // File.AppendAllText(path, token + "\n" + acc.cookies);
+
+                    //nguoidung.updateTokenCookie(acc);
+                    // }
+                    File.Delete(path);
                 }
-
-
-                NguoiDung_Bll nguoidung = new NguoiDung_Bll();
-                if (acc.id.Contains('@'))
-                {
-                    string[] cokie = acc.cookies.Split(';');
-                    acc.email = acc.id;
-                    acc.id = FunctionHelper.smethod_6(cokie[0], cokie[0].IndexOf("user=") + 5, "");
-                    //if (!string.IsNullOrEmpty(acc.id))
-                    //    nguoidung.updateuidEmail(acc);
-                }
-                //if (acc.cookies.Contains(acc.id))
-                //{
-                // File.AppendAllText(path, token + "\n" + acc.cookies);
-
-                //nguoidung.updateTokenCookie(acc);
-                // }
-                File.Delete(path);
             }
+            catch
+            {
+
+            }
+           
         }
         private void resetFacebook(Account acc, Point pt, CancellationToken token)
         {
@@ -28004,7 +28022,7 @@ namespace NinjaSystem
             ls_name.Add("2_quanhe");
             ls_image.Add(Properties.Resources.luu);
             ls_name.Add("3_quanhe");
-
+            int max_step4 = 0;
         Lb_start:
             if (token.IsCancellationRequested)
                 token.ThrowIfCancellationRequested();
@@ -28040,6 +28058,15 @@ namespace NinjaSystem
                                 scroll_up_short(ldID);
                                 Delay(1);
                                 scroll_up_short(ldID);
+                            }
+                            else if (kq.parent == "step4")
+                            {
+                                max_step4++;
+                                if (max_step4 == 4)
+                                    back(ldID,1);
+                                if (max_step4 > 8)
+                                    return false; 
+
                             }
                             break;
                         }
@@ -31037,6 +31064,22 @@ namespace NinjaSystem
                 ls_detecth.Add(data);
 
                 data = new DetechModel();
+                data.parent = "gallary";
+                data.content = "Chọn từ thư viện";
+                data.text = "Chọn từ thư viện";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "uploading";
+                data.content = "Đang tải lên";
+                data.text = "Đang tải lên";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
                 data.parent = "code";
                 data.content = "Mã xác nhận";
                 data.text = "Mã xác nhận";
@@ -31045,8 +31088,24 @@ namespace NinjaSystem
                 ls_detecth.Add(data);
 
                 data = new DetechModel();
+                data.parent = "codeV2";
+                data.content = "Nhập mã xác nhận";
+                data.text = "Nhập mã xác nhận";
+                data.node = "//node[contains(@class,'android.view.View')]";
+                data.function = 2;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
                 data.parent = "inputnumbernew";
                 data.content = "Vui lòng nhập một số điện thoại di động hợp lệ";
+                data.text = "+1";
+                data.node = "//node[contains(@class,'android.widget.EditText')]";
+                data.function = 2;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "inputnumbernew";
+                data.content = "Email hoặc số điện thoại đang được tài khoản khác sử dụng";
                 data.text = "+1";
                 data.node = "//node[contains(@class,'android.widget.EditText')]";
                 data.function = 2;
@@ -31142,8 +31201,33 @@ namespace NinjaSystem
 
                 data = new DetechModel();
                 data.parent = "error";
+                data.content = "Vui lòng nhập họ và tên của bạn";
+                data.text = "Vui lòng nhập họ và tên của bạn";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = -1;
+                ls_detecth.Add(data);
+
+
+                data = new DetechModel();
+                data.parent = "error";
+                data.content = "Tên hoặc họ trên Facebook không được quá ngắn";
+                data.text = "Tên hoặc họ trên Facebook không được quá ngắn";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = -1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "error";
                 data.content = "Phone number already in use";
                 data.text = "Phone number already in use";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "error";
+                data.content = "Chúng tôi không thể liên hệ với bạn theo số";
+                data.text = "Chúng tôi không thể liên hệ với bạn theo số";
                 data.node = "//node[contains(@class,'android.widget.TextView')]";
                 data.function = 1;
                 ls_detecth.Add(data);
@@ -31179,6 +31263,12 @@ namespace NinjaSystem
 
                 modelimg = new DetechImageModel();
                 modelimg.function = 1;
+                modelimg.name = "gallary";
+                modelimg.img = Properties.Resources.chonthuvien;
+                list_detechimg.Add(modelimg);
+
+                modelimg = new DetechImageModel();
+                modelimg.function = 1;
                 modelimg.name = "moreinfo";
                 modelimg.img = Properties.Resources.canthemthongtin;
                 list_detechimg.Add(modelimg);
@@ -31189,11 +31279,11 @@ namespace NinjaSystem
                 modelimg.img = Properties.Resources.dungtenthat;
                 list_detechimg.Add(modelimg);
 
-                //modelimg = new DetechImageModel();
-                //modelimg.function = 1;
-                //modelimg.name = "error";
-                //modelimg.img = Properties.Resources.inputnumbernew;
-                //list_detechimg.Add(modelimg);
+                modelimg = new DetechImageModel();
+                modelimg.function = 2;
+                modelimg.name = "code";
+                modelimg.img = Properties.Resources.inputcode1;
+                list_detechimg.Add(modelimg);
 
                 modelimg = new DetechImageModel();
                 modelimg.function = 1;
@@ -31282,6 +31372,12 @@ namespace NinjaSystem
                             }
                         case 1:
                             {
+
+                                if (kq.parent == "uploading")
+                                {
+                                    avatar = true;
+                                    return true;
+                                }
                                 if (kq.parent == "changenumber")
                                 {
                                     ls_detecth.RemoveAt(0);
@@ -31499,7 +31595,7 @@ namespace NinjaSystem
                                 }
                                 if (kq.parent == "inputnumbernew")
                                 {
-                                    if (maxNumberfone_real > 3)
+                                    if (maxNumberfone_real > 4)
                                     {
                                         dr.Cells["Message"].Value = "Get number fail ";
                                         u.setStatus(ldID, "Get number fail ");
@@ -31654,11 +31750,16 @@ namespace NinjaSystem
                                         ClickOnLeapdroidPosition(ldID, kq.point);
                                         dr.Cells["Message"].Value = "Hoàn tất đăng ký";
                                         u.setStatus(ldID, "Hoàn tất đăng ký ");
-                                    }
-
+                                    }                               
                                 }
-                                if (kq.parent == "code")
+
+
+                                if (kq.parent == "code" || kq.parent == "codeV2")
                                 {
+                                    if (kq.parent == "codeV2")
+                                    {
+                                        ClickOnLeapdroidPosition(ldID, kq.point.X +30 , kq.point.Y + 100);
+                                    }
                                     if (maxcode > 3)
                                     {
                                         dr.Cells["Message"].Value = "Get code fail";
@@ -31679,18 +31780,29 @@ namespace NinjaSystem
                                     {
                                         dr.Cells["Message"].Value = "Get code success";
                                         u.setStatus(ldID, "Get code success");
-
                                         ClickOnLeapdroidPosition(ldID, kq.point);
                                         Delay(1);
                                         PressOnLeapdroid_vietnamese(ldID, code);
                                         Delay(1);
+
+                                        List<DetechModel> ls_tiep = new List<DetechModel>();
                                         data = new DetechModel();
                                         data.parent = "";
                                         data.content = "Xác nhận";
                                         data.text = "Xác nhận";
                                         data.node = "//node[contains(@class,'android.widget.Button')]";
                                         data.function = 1;
-                                        kq = detechFunctionOne(ldID, data);
+                                        ls_tiep.Add(data);
+
+                                        data = new DetechModel();
+                                        data.parent = "";
+                                        data.content = "Tiếp tục";
+                                        data.text = "Tiếp tục";
+                                        data.node = "//node[contains(@class,'android.view.View')]";
+                                        data.function = 1;
+                                        ls_tiep.Add(data);
+
+                                        kq = RunDetechFunction(ldID, ls_tiep);
                                         if (kq.status)
                                             ClickOnLeapdroidPosition(ldID, kq.point);
                                     }
@@ -31730,6 +31842,568 @@ namespace NinjaSystem
                                         Delay(2);
                                         goto Lb_start;
 
+                                    }
+                                    else
+                                    {
+                                        dr.Cells["Message"].Value = "Get code fail ";
+                                        u.setStatus(ldID, "Get code fail");
+                                    }
+
+                                }
+                                break;
+                            }
+                        default:
+                            break;
+                    }
+                    goto Lb_start;
+                }
+                else
+                {
+                    i++;
+                    if (i < 15)
+                    {
+                        Delay(4);
+                        goto Lb_start;
+                    }
+                }
+            lb_end:
+                Delay(1);
+            }
+            catch
+            { }
+
+            return avatar;
+        }
+
+        public bool regnick_Email(Account acc, DataGridViewRow dr, userLD u, string api, int clickmin, int clicktmax, bool x8, string website, CancellationToken token)
+        {
+            bool avatar = false;
+
+            try
+            {
+                string ldID = acc.ldid;
+                int i = 0;
+                //int max = 0;
+                List<DetechModel> ls_detecth = new List<DetechModel>();
+                DetechModel data = new DetechModel();
+                data.parent = "inputname";
+                data.content = "Bạn tên gì?";
+                data.text = "Bạn tên gì?";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 2;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "error";
+                data.content = "Hiện đã có tài khoản liên kết với địa chỉ email";
+                data.text = "Hiện đã có tài khoản liên kết với địa chỉ email";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Đăng ký bằng địa chỉ email";
+                data.text = "Đăng ký bằng địa chỉ email";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Đi tới trang cá nhân";
+                data.text = "Đi tới trang cá nhân";
+                data.node = "//node[contains(@class,'android.view.View')]";
+                data.function = 3;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Viết bài trên Facebook";
+                data.text = "Viết bài trên Facebook";
+                data.node = "//node[contains(@class,'android.view.View')]";
+                data.function = 3;
+                ls_detecth.Add(data);
+
+                //data = new DetechModel();
+                //data.parent = "inputnumber";
+                //data.content = "Nhập số di động của bạn";
+                //data.text = "Nhập số di động của bạn";
+                //data.node = "//node[contains(@class,'android.widget.TextView')]";
+                //data.function = 2;
+                //ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "inputpass";
+                data.content = "Chọn mật khẩu";
+                data.text = "Chọn mật khẩu";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 2;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "birthday";
+                data.content = "Chọn ngày sinh";
+                data.text = "Chọn ngày sinh";
+                data.node = "//node[contains(@class,'android.widget.EditText')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "gender";
+                if (acc.gender == "Female")
+                {
+                    data.content = "Nữ";
+                    data.text = "Nữ";
+                }
+                else
+                {
+                    data.content = "Nam";
+                    data.text = "Nam";
+                }
+                data.node = "//node[contains(@class,'android.widget.RadioButton')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Đăng ký";
+                data.text = "Đăng ký";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Đăng ký bằng địa chỉ email";
+                data.text = "Đăng ký bằng địa chỉ email";
+                data.node = "//node[contains(@class,'android.widget.TextView')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Lúc khác";
+                data.text = "Lúc khác";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "gallary";
+                data.content = "Chọn từ thư viện";
+                data.text = "Chọn từ thư viện";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "code";
+                data.content = "Mã xác nhận";
+                data.text = "Mã xác nhận";
+                data.node = "//node[contains(@class,'android.widget.EditText')]";
+                data.function = 2;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "inputemail";
+                data.content = "Địa chỉ email";
+                data.text = "Địa chỉ email";
+                data.node = "//node[contains(@class,'android.widget.EditText')]";
+                data.function = 2;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Tiếp";
+                data.text = "Tiếp";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                
+
+                //data = new DetechModel();
+                //data.parent = "error";
+                //data.content = "Lỗi xác nhận số điện thoại";
+                //data.text = "Lỗi xác nhận số điện thoại";
+                //data.node = "//node[contains(@class,'android.widget.TextView')]";
+                //data.function = 1;
+                //ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "saveavatar";
+                data.content = "LƯU";
+                data.text = "LƯU";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Thêm";
+                data.text = "Thêm";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "OK";
+                data.text = "OK";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Không, tạo tài khoản mới";
+                data.text = "Không, tạo tài khoản mới";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "";
+                data.content = "Xong";
+                data.text = "Xong";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                data = new DetechModel();
+                data.parent = "quitquick";
+                data.content = "Chúng tôi cần thêm thông tin";
+                data.text = "Tiếp tục";
+                data.node = "//node[contains(@class,'android.widget.Button')]";
+                data.function = 1;
+                ls_detecth.Add(data);
+
+                //data = new DetechModel();
+                //data.parent = "";
+                //data.content = "Lỗi xác nhận số điện thoại";
+                //data.text = "Thay đổi số điện thoại";
+                //data.node = "//node[contains(@class,'android.widget.Button')]";
+                //data.function = 1;
+                //ls_detecth.Insert(0, data);
+
+              
+
+                //data = new DetechModel();
+                //data.parent = "failnumber";
+                //data.content = "Vui lòng nhập một số điện thoại di động hợp lệ";
+                //data.text = "Vui lòng nhập một số điện thoại di động hợp lệ";
+                //data.node = "//node[contains(@class,'android.widget.TextView')]";
+                //data.function = 1;
+                //ls_detecth.Insert(0, data);
+
+                List<DetechImageModel> list_detechimg = new List<DetechImageModel>();
+                DetechImageModel modelimg = new DetechImageModel();
+                modelimg.function = 1;
+                modelimg.name = "tao";
+                modelimg.img = Properties.Resources.taotaikhoan;
+                list_detechimg.Add(modelimg);
+
+                modelimg = new DetechImageModel();
+                modelimg.function = 1;
+                modelimg.name = "ok";
+                modelimg.img = Properties.Resources.okconfirm;
+                list_detechimg.Add(modelimg);
+
+                modelimg = new DetechImageModel();
+                modelimg.function = 1;
+                modelimg.name = "error";
+                modelimg.img = Properties.Resources.canthemthongtin;
+                list_detechimg.Add(modelimg);
+
+                modelimg = new DetechImageModel();
+                modelimg.function = 1;
+                modelimg.name = "error";
+                modelimg.img = Properties.Resources.dungtenthat;
+                list_detechimg.Add(modelimg);
+                Random rd = new Random();
+               
+                int maxcode = 0;
+                int maxclick = 0;
+                RaiSim rs = new RaiSim();
+            Lb_start:
+                if (token.IsCancellationRequested)
+                    token.ThrowIfCancellationRequested();
+
+                DetechModel kq = detechFunction(ldID, ls_detecth);
+                if (!kq.status)
+                    kq = detechFunctionCatchImages(ldID, list_detechimg);
+                if (kq.status & kq.point.Y > 5)
+                {
+                    i = 0;
+                    switch (kq.function)
+                    {
+                        case 3:
+                            {
+                                return true;
+                            }
+                        case 1:
+                            {
+                                if (kq.parent == "failnumber")
+                                {
+                                    dr.Cells["Message"].Value = "Fail number phone";
+                                    u.setStatus(ldID, "Fail number phone");
+
+                                    return false;
+                                }
+                                maxclick++;
+                                if (maxclick > 36)
+                                    goto lb_end;
+                                Delay(rd.Next(clickmin, clicktmax));
+                                if (kq.parent == "error" || kq.parent == "quitquick")
+                                {
+                                    return false;
+                                }
+                                ClickOnLeapdroidPosition(ldID, kq.point);
+                                if (kq.parent == "gallary")
+                                {
+                                    avatar = true;
+                                    dr.Cells["Message"].Value = "Avatar";
+                                    u.setStatus(ldID, "Avatar");
+
+                                    List<string> ls_desc = new List<string>();
+                                    ls_desc.Add("ảnh");
+                                    ls_desc.Add("Video");
+                                    ls_desc.Add("Photo");
+                                    List<Point> ls_point = FindByXpathDescList(ldID, "//node[contains(@class,'android.widget.FrameLayout')]", ls_desc);
+                                    if (ls_point.Count() == 0)
+                                        ls_point = FindByXpathDescList(ldID, "//node[contains(@class,'android.widget.ImageView')]", ls_desc);
+
+                                    if (ls_point.Count > 0)
+                                    {
+                                        ClickOnLeapdroidPosition(acc.ldid, ls_point[0].X + 10, ls_point[0].Y + 3);
+                                        Delay(1);
+                                        data = new DetechModel();
+                                        data.parent = "";
+                                        data.content = "XONG";
+                                        data.text = "XONG";
+                                        data.node = "//node[contains(@class,'android.widget.Button')]";
+                                        data.function = 1;
+
+                                        kq = detechFunctionOne(ldID, data);
+                                        if (kq.status)
+                                            ClickOnLeapdroidPosition(ldID, kq.point);
+
+                                    }
+
+                                }
+                                if (kq.parent == "gender")
+                                {
+                                    dr.Cells["Message"].Value = "Gender";
+                                    u.setStatus(ldID, "Gender ");
+                                    Delay(1);
+                                    data = new DetechModel();
+                                    data.parent = "";
+                                    data.content = "Tiếp";
+                                    data.text = "Tiếp";
+                                    data.node = "//node[contains(@class,'android.widget.Button')]";
+                                    data.function = 1;
+
+                                    kq = detechFunctionOne(ldID, data);
+                                    if (kq.status)
+                                        ClickOnLeapdroidPosition(ldID, kq.point);
+                                }
+                                if (kq.parent == "birthday")
+                                {
+                                    dr.Cells["Message"].Value = "Birth day ";
+                                    u.setStatus(ldID, "Birth day ");
+                                    List<Point> lsp = FindByXpathList(ldID, "//node[contains(@class,'android.widget.EditText')]");
+                                    for (int n = 0; n < lsp.Count; n++)
+                                    {
+                                        int rand = rd.Next(0, 2);
+                                        if (n == 2) // chon nam
+                                        {
+                                            rand = 1;
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(1);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+                                            scroll_down_birth(ldID, lsp[n]);
+                                            Delay(0.5);
+
+
+                                            if (x8)
+                                            {
+                                                scroll_down_birth(ldID, lsp[n]);
+                                                Delay(0.5);
+                                                scroll_down_birth(ldID, lsp[n]);
+                                                Delay(0.5);
+                                                scroll_down_birth(ldID, lsp[n]);
+                                                Delay(0.5);
+                                            }
+                                        }
+
+                                        if (rand == 0)
+                                        {
+                                            rand = rd.Next(0, 4);
+                                            if (rand == 0 || rand == 2)
+                                                scroll_up_birth(ldID, lsp[n]);
+                                            else
+                                            {
+                                                scroll_up_birth(ldID, lsp[n]);
+                                                Delay(1);
+                                                scroll_up_birth(ldID, lsp[n]);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            rand = rd.Next(0, 4);
+                                            if (rand == 0 || rand == 2)
+                                                scroll_down_birth(ldID, lsp[n]);
+                                            else
+                                            {
+                                                scroll_down_birth(ldID, lsp[n]);
+                                                Delay(1);
+                                                scroll_down_birth(ldID, lsp[n]);
+                                                Delay(1);
+                                                scroll_down_birth(ldID, lsp[n]);
+                                            }
+                                        }
+
+                                    }
+                                    Delay(1);
+                                    data = new DetechModel();
+                                    data.parent = "";
+                                    data.content = "OK";
+                                    data.text = "OK";
+                                    data.node = "//node[contains(@class,'android.widget.Button')]";
+                                    data.function = 1;
+
+                                    kq = detechFunctionOne(ldID, data);
+                                    if (kq.status)
+                                        ClickOnLeapdroidPosition(ldID, kq.point);
+
+                                    Delay(1);
+                                    data = new DetechModel();
+                                    data.parent = "";
+                                    data.content = "Tiếp";
+                                    data.text = "Tiếp";
+                                    data.node = "//node[contains(@class,'android.widget.Button')]";
+                                    data.function = 1;
+
+                                    kq = detechFunctionOne(ldID, data);
+                                    if (kq.status)
+                                        ClickOnLeapdroidPosition(ldID, kq.point);
+
+                                }
+                                break;
+                            }
+                        case 2:
+                            {
+                                Delay(rd.Next(clickmin, clicktmax));
+                                if (kq.parent == "inputname")
+                                {
+                                    dr.Cells["Message"].Value = "Input name ";
+                                    u.setStatus(ldID, "Input name ");
+                                    Delay(2);
+                                    PressOnLeapdroid_vietnamese(ldID, acc.first_name);
+                                    Delay(2);
+                                    ClickOnLeapdroidPosition(ldID, 165, 155);
+                                    Delay(1);
+                                    PressOnLeapdroid_vietnamese(ldID, acc.last_name);
+                                    Delay(2);
+                                    data = new DetechModel();
+                                    data.parent = "";
+                                    data.content = "Tiếp";
+                                    data.text = "Tiếp";
+                                    data.node = "//node[contains(@class,'android.widget.Button')]";
+                                    data.function = 1;
+
+                                    kq = detechFunctionOne(ldID, data);
+                                    if (kq.status)
+                                    {
+                                        dr.Cells["Message"].Value = "Next ";
+                                        u.setStatus(ldID, "Next ");
+                                        ClickOnLeapdroidPosition(ldID, kq.point);
+                                    }
+
+                                }
+                                if (kq.parent == "inputemail")
+                                {
+                                    dr.Cells["Message"].Value = "Input email ";
+                                    u.setStatus(ldID, "Input email ");
+                                    PressOnLeapdroid_vietnamese(ldID, acc.email);
+                                    data = new DetechModel();
+                                    data.parent = "";
+                                    data.content = "Tiếp";
+                                    data.text = "Tiếp";
+                                    data.node = "//node[contains(@class,'android.widget.Button')]";
+                                    data.function = 1;
+
+                                    kq = detechFunctionOne(ldID, data);
+                                    if (kq.status)
+                                    {
+                                        ClickOnLeapdroidPosition(ldID, kq.point);
+                                       
+                                    }
+                                }
+                                if (kq.parent == "inputpass")
+                                {
+                                    dr.Cells["Message"].Value = "Input pass ";
+                                    u.setStatus(ldID, "Input pass ");
+                                    PressOnLeapdroid_vietnamese(ldID, acc.Password);
+                                    Delay(1);
+                                    data = new DetechModel();
+                                    data.parent = "";
+                                    data.content = "Tiếp";
+                                    data.text = "Tiếp";
+                                    data.node = "//node[contains(@class,'android.widget.Button')]";
+                                    data.function = 1;
+
+                                    kq = detechFunctionOne(ldID, data);
+                                    if (kq.status)
+                                    {
+                                        ClickOnLeapdroidPosition(ldID, kq.point);
+                                        dr.Cells["Message"].Value = "Hoàn tất đăng ký";
+                                        u.setStatus(ldID, "Hoàn tất đăng ký ");
+                                    }
+
+                                }
+                                if (kq.parent == "code")
+                                {
+                                    if (maxcode > 3)
+                                    {
+                                        dr.Cells["Message"].Value = "Get code fail";
+                                        u.setStatus(ldID, "Get code fail");
+                                        return false;
+
+                                    }
+                                    dr.Cells["Message"].Value = "Get code ";
+                                    u.setStatus(ldID, "Get code ");
+                                    string code = getcodeoutlook(acc.email, acc.dataprofile);
+                                    maxcode++;
+                                    if (!string.IsNullOrEmpty(code))
+                                    {
+                                        dr.Cells["Message"].Value = "Get code success";
+                                        u.setStatus(ldID, "Get code success");
+                                        PressOnLeapdroid_vietnamese(ldID, code);
+                                        Delay(1);
+                                        data = new DetechModel();
+                                        data.parent = "";
+                                        data.content = "Xác nhận";
+                                        data.text = "Xác nhận";
+                                        data.node = "//node[contains(@class,'android.widget.Button')]";
+                                        data.function = 1;
+                                        kq = detechFunctionOne(ldID, data);
+                                        if (kq.status)
+                                            ClickOnLeapdroidPosition(ldID, kq.point);
                                     }
                                     else
                                     {
@@ -32526,7 +33200,39 @@ namespace NinjaSystem
             return null;
 
         }
+        private string getcodeoutlook(string user,string pass)
+        {
+            int i = 10;
+            string result = "";
+            try
+            {
+                while (i > 0)
+                {
+                    OpenPop.Pop3.Pop3Client client = new OpenPop.Pop3.Pop3Client();
+                    client.Connect("outlook.office365.com", 995, true);
+                    client.Authenticate(user, pass, OpenPop.Pop3.AuthenticationMethod.UsernameAndPassword);
+                    var count = client.GetMessageCount();
+                    OpenPop.Mime.Message message = client.GetMessage(count);
+                    OpenPop.Mime.MessagePart text = message.FindFirstPlainTextVersion();
+                    OpenPop.Mime.Header.MessageHeader header = message.Headers;
+                    //  MessageBox.Show(text.());
+
+                    string email = header.Subject.ToString();
+                    result = email.Substring(0, 5);
+                    client.Disconnect();
+                    if (!string.IsNullOrEmpty(result))
+                        break;
+                    // Delay(3);
+                    i--;
+                }
+            }
+            catch
+            {
+                // File.AppendAllText(String.Format("{0}\\logImage.txt", Application.StartupPath), DateTime.Now.ToString() + " : " + ex.Message + "\n");
+            }
+
+             return result;
+        }
     }
 
 }
-//7/5 27946 27/4 28412 20/4 27986 16/4 27921 13/4 27964  1/4 27428

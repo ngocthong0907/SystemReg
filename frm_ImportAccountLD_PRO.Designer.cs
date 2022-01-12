@@ -31,35 +31,37 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ImportAccountLD_PRO));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCopy = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cboNhom = new System.Windows.Forms.ComboBox();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnInput = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.dgvUser = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.chọnDòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PassEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clstatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,47 +75,10 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(865, 42);
+            this.panel1.Size = new System.Drawing.Size(1153, 52);
             this.panel1.TabIndex = 0;
-            // 
-            // bunifuFlatButton4
-            // 
-            this.bunifuFlatButton4.Active = false;
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "Cập nhật Password";
-            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.Iconimage = null;
-            this.bunifuFlatButton4.Iconimage_right = null;
-            this.bunifuFlatButton4.Iconimage_right_Selected = null;
-            this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconMarginLeft = 0;
-            this.bunifuFlatButton4.IconMarginRight = 0;
-            this.bunifuFlatButton4.IconRightVisible = true;
-            this.bunifuFlatButton4.IconRightZoom = 0D;
-            this.bunifuFlatButton4.IconVisible = true;
-            this.bunifuFlatButton4.IconZoom = 90D;
-            this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(150, 4);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(132, 30);
-            this.bunifuFlatButton4.TabIndex = 33;
-            this.bunifuFlatButton4.Text = "Cập nhật Password";
-            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton4.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // btnCopy
             // 
@@ -138,14 +103,14 @@
             this.btnCopy.IconVisible = true;
             this.btnCopy.IconZoom = 90D;
             this.btnCopy.IsTab = false;
-            this.btnCopy.Location = new System.Drawing.Point(431, 7);
-            this.btnCopy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCopy.Location = new System.Drawing.Point(575, 9);
+            this.btnCopy.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnCopy.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnCopy.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCopy.selected = false;
-            this.btnCopy.Size = new System.Drawing.Size(119, 30);
+            this.btnCopy.Size = new System.Drawing.Size(159, 37);
             this.btnCopy.TabIndex = 34;
             this.btnCopy.Text = "Paste Clipboard";
             this.btnCopy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,9 +122,10 @@
             // 
             this.cboNhom.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNhom.FormattingEnabled = true;
-            this.cboNhom.Location = new System.Drawing.Point(95, 10);
+            this.cboNhom.Location = new System.Drawing.Point(127, 12);
+            this.cboNhom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboNhom.Name = "cboNhom";
-            this.cboNhom.Size = new System.Drawing.Size(132, 24);
+            this.cboNhom.Size = new System.Drawing.Size(175, 29);
             this.cboNhom.TabIndex = 32;
             // 
             // bunifuFlatButton1
@@ -185,14 +151,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(558, 6);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(744, 7);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(103, 30);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(137, 37);
             this.bunifuFlatButton1.TabIndex = 33;
             this.bunifuFlatButton1.Text = "Lưu Account";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -223,14 +189,14 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(236, 6);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(315, 7);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(92, 30);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(123, 37);
             this.bunifuFlatButton2.TabIndex = 33;
             this.bunifuFlatButton2.Text = "Load Account";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -261,14 +227,14 @@
             this.btnInput.IconVisible = true;
             this.btnInput.IconZoom = 90D;
             this.btnInput.IsTab = false;
-            this.btnInput.Location = new System.Drawing.Point(336, 7);
-            this.btnInput.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnInput.Location = new System.Drawing.Point(448, 9);
+            this.btnInput.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnInput.Name = "btnInput";
             this.btnInput.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnInput.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnInput.OnHoverTextColor = System.Drawing.Color.White;
             this.btnInput.selected = false;
-            this.btnInput.Size = new System.Drawing.Size(87, 30);
+            this.btnInput.Size = new System.Drawing.Size(116, 37);
             this.btnInput.TabIndex = 33;
             this.btnInput.Text = "Nhập File";
             this.btnInput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -280,21 +246,61 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 13);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
+            this.label3.Size = new System.Drawing.Size(82, 20);
             this.label3.TabIndex = 31;
             this.label3.Text = "Danh Mục";
+            // 
+            // bunifuFlatButton4
+            // 
+            this.bunifuFlatButton4.Active = false;
+            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton4.BorderRadius = 0;
+            this.bunifuFlatButton4.ButtonText = "Cập nhật Password";
+            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.Iconimage = null;
+            this.bunifuFlatButton4.Iconimage_right = null;
+            this.bunifuFlatButton4.Iconimage_right_Selected = null;
+            this.bunifuFlatButton4.Iconimage_Selected = null;
+            this.bunifuFlatButton4.IconMarginLeft = 0;
+            this.bunifuFlatButton4.IconMarginRight = 0;
+            this.bunifuFlatButton4.IconRightVisible = true;
+            this.bunifuFlatButton4.IconRightZoom = 0D;
+            this.bunifuFlatButton4.IconVisible = true;
+            this.bunifuFlatButton4.IconZoom = 90D;
+            this.bunifuFlatButton4.IsTab = false;
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(200, 5);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
+            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton4.selected = false;
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(176, 37);
+            this.bunifuFlatButton4.TabIndex = 33;
+            this.bunifuFlatButton4.Text = "Cập nhật Password";
+            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton4.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 42);
+            this.panel2.Location = new System.Drawing.Point(0, 52);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(865, 571);
+            this.panel2.Size = new System.Drawing.Size(1153, 702);
             this.panel2.TabIndex = 1;
             // 
             // groupBox1
@@ -304,64 +310,24 @@
             this.groupBox1.Controls.Add(this.dgvUser);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(865, 571);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1153, 702);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách tài khoản";
             // 
-            // checkBox2
+            // panel4
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(13, 21);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 135;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // dgvUser
-            // 
-            this.dgvUser.AllowUserToAddRows = false;
-            this.dgvUser.AllowUserToDeleteRows = false;
-            this.dgvUser.AllowUserToResizeRows = false;
-            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.UID,
-            this.Password,
-            this.clName,
-            this.Column5,
-            this.clstatus,
-            this.Column4});
-            this.dgvUser.ContextMenuStrip = this.contextMenuStrip1;
-            this.dgvUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgvUser.Location = new System.Drawing.Point(3, 16);
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.RowHeadersVisible = false;
-            this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(859, 512);
-            this.dgvUser.TabIndex = 4;
-            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
-            this.dgvUser.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUser_CellMouseDown);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chọnDòngToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(135, 26);
-            // 
-            // chọnDòngToolStripMenuItem
-            // 
-            this.chọnDòngToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Checked_50px;
-            this.chọnDòngToolStripMenuItem.Name = "chọnDòngToolStripMenuItem";
-            this.chọnDòngToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.chọnDòngToolStripMenuItem.Text = "Chọn dòng";
-            this.chọnDòngToolStripMenuItem.Click += new System.EventHandler(this.chọnDòngToolStripMenuItem_Click);
+            this.panel4.Controls.Add(this.bunifuFlatButton5);
+            this.panel4.Controls.Add(this.bunifuFlatButton4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(4, 649);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1145, 49);
+            this.panel4.TabIndex = 136;
             // 
             // bunifuFlatButton5
             // 
@@ -386,14 +352,14 @@
             this.bunifuFlatButton5.IconVisible = true;
             this.bunifuFlatButton5.IconZoom = 90D;
             this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(10, 4);
-            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuFlatButton5.Location = new System.Drawing.Point(13, 5);
+            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuFlatButton5.Name = "bunifuFlatButton5";
             this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(132, 30);
+            this.bunifuFlatButton5.Size = new System.Drawing.Size(176, 37);
             this.bunifuFlatButton5.TabIndex = 34;
             this.bunifuFlatButton5.Text = "Cập nhật Ngày Sinh";
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -401,15 +367,63 @@
             this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton5.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
             // 
-            // panel4
+            // checkBox2
             // 
-            this.panel4.Controls.Add(this.bunifuFlatButton5);
-            this.panel4.Controls.Add(this.bunifuFlatButton4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(3, 528);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(859, 40);
-            this.panel4.TabIndex = 136;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Checked = true;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox2.Location = new System.Drawing.Point(17, 26);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
+            this.checkBox2.TabIndex = 135;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // dgvUser
+            // 
+            this.dgvUser.AllowUserToAddRows = false;
+            this.dgvUser.AllowUserToDeleteRows = false;
+            this.dgvUser.AllowUserToResizeRows = false;
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.UID,
+            this.Password,
+            this.clName,
+            this.Column5,
+            this.Email,
+            this.PassEmail,
+            this.clstatus,
+            this.Column4});
+            this.dgvUser.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvUser.Location = new System.Drawing.Point(4, 19);
+            this.dgvUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.RowHeadersVisible = false;
+            this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUser.Size = new System.Drawing.Size(1145, 630);
+            this.dgvUser.TabIndex = 4;
+            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
+            this.dgvUser.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUser_CellMouseDown);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chọnDòngToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(156, 30);
+            // 
+            // chọnDòngToolStripMenuItem
+            // 
+            this.chọnDòngToolStripMenuItem.Image = global::NinjaSystem.Properties.Resources.Checked_50px;
+            this.chọnDòngToolStripMenuItem.Name = "chọnDòngToolStripMenuItem";
+            this.chọnDòngToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.chọnDòngToolStripMenuItem.Text = "Chọn dòng";
+            this.chọnDòngToolStripMenuItem.Click += new System.EventHandler(this.chọnDòngToolStripMenuItem_Click);
             // 
             // Column1
             // 
@@ -439,14 +453,25 @@
             // 
             // clName
             // 
-            this.clName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.clName.HeaderText = "Private Key";
             this.clName.Name = "clName";
+            this.clName.Width = 150;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Birthday";
             this.Column5.Name = "Column5";
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // PassEmail
+            // 
+            this.PassEmail.HeaderText = "Pass Email";
+            this.PassEmail.Name = "PassEmail";
+            this.PassEmail.Width = 120;
             // 
             // clstatus
             // 
@@ -455,19 +480,20 @@
             // 
             // Column4
             // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "Note";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 200;
             // 
-            // frm_ImportAccountLD
+            // frm_ImportAccountLD_PRO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 613);
+            this.ClientSize = new System.Drawing.Size(1153, 754);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frm_ImportAccountLD";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frm_ImportAccountLD_PRO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập tài khoản Facebook";
             this.Load += new System.EventHandler(this.frm_ImportAccountLD_Load);
@@ -476,9 +502,9 @@
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -507,6 +533,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Password;
         private System.Windows.Forms.DataGridViewTextBoxColumn clName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PassEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn clstatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }

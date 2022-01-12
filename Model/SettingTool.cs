@@ -54,6 +54,7 @@ namespace NinjaSystem
         public static List<string> list_ld = new List<string>();
 
         public static object synld = new object();
+
         public static object lockobj = new object();
 
     }

@@ -14,5 +14,7 @@ namespace NinjaSystem
         public string avatar { set; get; }
         public string cover { set; get; }
         public string password { set; get; }
+
+        public string email { set; get; }
     }
 }
