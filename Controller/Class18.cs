@@ -20,7 +20,7 @@ namespace NinjaSystem
         public Class18(string str)
         {
             string_ninja = str;
-            SettingTool.hid = "NINJA-SYSTEM-225D-6D58-FE5A-EEF3-C90B-E829-7C28-F184";// method_0();
+            SettingTool.hid = "NINJA-SYSTEM-3B5B-05AD-6EBD-CCDA-B076-1264-A2C7-E022";//"NINJA-SYSTEM-225D-6D58-FE5A-EEF3-C90B-E829-7C28-F184";// method_0();
             System.IO.File.WriteAllText(Application.StartupPath + "\\logs.txt", SettingTool.hid);
 
         }

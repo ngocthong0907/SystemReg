@@ -782,7 +782,7 @@ namespace NinjaSystem
                 }
                 else
                 {
-                    cmd = String.Format("modify --index {0} --resolution 1080,1920,480", ldID);
+                    cmd = String.Format("modify --index {0} --resolution 320,480,120", ldID);
                 }
                 string html = ExecuteAsAdmin(SettingTool.pathLD, cmd);
             }
@@ -811,7 +811,7 @@ namespace NinjaSystem
                 }
                 else
                 {
-                    cmd = String.Format("modify --index {0} --resolution 1080,1920,480 --cpu {1} --memory {2} --manufacturer {3} --model {4} --pnumber {5} --imei {6} --imsi auto --simserial auto --androidid auto --mac auto", ldID, m.cpu, m.ram, m.manufacturer, m.model, m.phonenumber, m.imei);
+                    cmd = String.Format("modify --index {0} --resolution 320,480,120 --cpu {1} --memory {2} --manufacturer {3} --model {4} --pnumber {5} --imei {6} --imsi auto --simserial auto --androidid auto --mac auto", ldID, m.cpu, m.ram, m.manufacturer, m.model, m.phonenumber, m.imei);
                 }
 
                 string html = ExecuteAsAdmin(SettingTool.pathLD, cmd);
@@ -833,7 +833,7 @@ namespace NinjaSystem
                 }
                 else
                 {
-                    cmd = String.Format("modify --index {0} --resolution 1080,1920,480 --cpu {1} --memory {2}", ldID, cpu, ram);
+                    cmd = String.Format("modify --index {0} --resolution 320,480,120 --cpu {1} --memory {2}", ldID, cpu, ram);
                 }
 
                 string html = ExecuteAsAdmin(SettingTool.pathLD, cmd);
@@ -2103,7 +2103,7 @@ namespace NinjaSystem
             detech = detechFunctionCatchImages(ldID, list_detechimg);
             if (detech.status)
                 return detech.point;
-            if (SettingTool.configld.versionld == "3.x")
+            if (SettingTool.configld.versionld == "3.x" || SettingTool.configld.versionld == "4.x")
             {
                 return PointDefault.p_logoutmenu;
             }
@@ -3559,7 +3559,7 @@ namespace NinjaSystem
                                         }
                                         Delay(1);
 
-                                        if (SettingTool.configld.versionld == "3.x")
+                                        if (SettingTool.configld.versionld == "3.x" || SettingTool.configld.versionld == "4.x")
                                         {
                                             ClickOnLeapdroidPosition(acc.ldid, PointDefault.p_login_2fa);
                                             Delay(1);
@@ -3754,7 +3754,7 @@ namespace NinjaSystem
                             else
                                 PressOnLeapdroid(acc.ldid, acc.id.Trim());
                             Delay(1);
-                            if (SettingTool.configld.versionld == "3.x")
+                            if (SettingTool.configld.versionld == "3.x" || SettingTool.configld.versionld == "4.x")
                                 ClickOnLeapdroidPosition(acc.ldid, kq.point.X + 200, kq.point.Y + 10);
                             else
                                 ClickOnLeapdroidPosition(acc.ldid, kq.point.X + 600, kq.point.Y);
@@ -7761,31 +7761,23 @@ namespace NinjaSystem
         }
         public void scroll_up_short(string ldID)
         {
-            if (SettingTool.configld.versionld == "3.x")
+           
             {
                 string cmd = "shell input swipe 150 250 150 100";
                 runAdb(ldID, cmd);
             }
-            else
-            {
-                string cmd = "shell input swipe 100 1700 100 1600";
-                runAdb(ldID, cmd);
-            }
+            
 
         }
 
         public void scroll_up_2short(string ldID)
         {
-            if (SettingTool.configld.versionld == "3.x")
+           
             {
                 string cmd = "shell input swipe 150 250 150 200";
                 runAdb(ldID, cmd);
             }
-            else
-            {
-                string cmd = "shell input swipe 100 1700 100 1700";
-                runAdb(ldID, cmd);
-            }
+           
         }
         public void scroll_up_short(string ldID, Point pt)
         {
@@ -8406,7 +8398,7 @@ namespace NinjaSystem
 
                     runAdb(ldid, cmd);
 
-                    if (SettingTool.configld.versionld == "3.x")
+                    
                         onoffproxydroid(ldid);
 
                 }
@@ -9963,7 +9955,7 @@ namespace NinjaSystem
                     case 2:
                         {
                             Random rd = new Random();
-                            if (SettingTool.configld.versionld == "3.x")
+                            if (SettingTool.configld.versionld == "3.x" || SettingTool.configld.versionld == "4.x")
                             {
                                 ClickOnLeapdroidPosition(ldID, kq.point);
                                 Delay(1);
@@ -19986,10 +19978,9 @@ namespace NinjaSystem
                                 else
                                     PressOnLeapdroid(acc.ldid, acc.id.Trim());
                                 Delay(1);
-                                if (SettingTool.configld.versionld == "3.x")
+                                
                                     ClickOnLeapdroidPosition(acc.ldid, kq.point.X + 200, kq.point.Y + 10);
-                                else
-                                    ClickOnLeapdroidPosition(acc.ldid, kq.point.X + 600, kq.point.Y);
+                               
 
                                 //List<Bitmap> ls_imagepass = new List<Bitmap>();
                                 //List<string> ls_namepass = new List<string>();
@@ -26181,10 +26172,9 @@ namespace NinjaSystem
                     //dns 1
                     if (kq.data != arr[0])
                     {
-                        if (SettingTool.configld.versionld == "3.x")
+                       
                             ClickOnLeapdroidPosition(ldid, kq.point.X + 200, kq.point.Y);
-                        else
-                            ClickOnLeapdroidPosition(ldid, kq.point.X + 700, kq.point.Y);
+                        
                         for (int n = 0; n < kq.data.Length + 5; n++)
                         {
                             runAdb(ldid, "shell input keyevent 67");
@@ -26208,10 +26198,9 @@ namespace NinjaSystem
                     {
                         if (kq.status)
                         {
-                            if (SettingTool.configld.versionld == "3.x")
+                           
                                 ClickOnLeapdroidPosition(ldid, kq.point.X + 200, kq.point.Y);
-                            else
-                                ClickOnLeapdroidPosition(ldid, kq.point.X + 600, kq.point.Y);
+                           
 
                             for (int n = 0; n < kq.data.Length + 5; n++)
                             {

@@ -237,7 +237,7 @@ namespace NinjaSystem
             cus.Email = txtEmail.Text.Trim();
             cus.Password = txtPass.Text.Trim();
             cus.HID = SettingTool.hid;
-            cus.Refer = "Login Ninja Ninja System";
+            cus.Refer = "Login Ninja System";
             cus.Random = rd.Next(888888);
             cus.Version = SettingTool.version.ToString();
             SettingTool.email = cus.Email;
